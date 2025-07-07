@@ -1,40 +1,12 @@
-const CACHE_NAME = 'pwa-cache-v1';
-const urlsToCache = [
-  '/',
-  '/index.html',
-  '/indexphone.html',
-  '/style.css',
-  '/app.js',
-  '/manifest.json',
-  '/icon.png'
-];
-
-self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
-    })
-  );
-});
-
-self.addEventListener('activate', (event) => {
-  event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cache) => {
-          if (cache !== CACHE_NAME) {
-            return caches.delete(cache);
-          }
-        })
-      );
-    })
-  );
-});
-
-self.addEventListener('fetch', (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
-  );
-});
+// Yeh code service worker ko browser me register karta hai.
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js')
+      .then(registration => {
+        console.log('Digital ERP Service Worker registered successfully with scope: ', registration.scope);
+      })
+      .catch(error => {
+        console.log('Digital ERP Service Worker registration failed: ', error);
+      });
+  });
+}
