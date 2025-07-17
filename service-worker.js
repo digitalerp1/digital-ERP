@@ -8,6 +8,7 @@ const urlsToCache = [
   // Agar aapke paas style.css hai to use yahan add karein, warna hata dein
   // '/style.css', 
   '/manifest.json',
+  '/chatbot.html',
   // Agar aapke paas icon.png hai to use yahan add karein
   // '/icon.png'
 ];
