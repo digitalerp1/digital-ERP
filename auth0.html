@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Photos API Authentication</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4285F4;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #357ae8;
+        }
+        #status {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #333;
+        }
+        #token-display {
+            word-break: break-all;
+            background-color: #e9e9e9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-family: monospace;
+            display: none;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Google Photos API में लॉगिन करें</h1>
+        <p>यह पेज टेस्टिंग के लिए है और ऑथ टोकन को डिस्प्ले करेगा।</p>
+        <button id="loginButton">Google के साथ लॉगिन करें</button>
+        
+        <div id="status"></div>
+        <div id="token-display"></div>
+    </div>
+
+    <script>
+        const CLIENT_ID = "319995659862-ds9kt7e9hjescaqu6i9jviist5v5a5pc.apps.googleusercontent.com";
+        const REDIRECT_URI = "https://digitaler.shop/auth0.html";
+        const SCOPES = "https://www.googleapis.com/auth/photoslibrary.readonly"; 
+
+        const loginButton = document.getElementById("loginButton");
+        const statusDiv = document.getElementById("status");
+        const tokenDisplayDiv = document.getElementById("token-display");
+
+        function handleLogin() {
+            const authUrl = "https://accounts.google.com/o/oauth2/v2/auth?" +
+                            "client_id=" + CLIENT_ID +
+                            "&redirect_uri=" + encodeURIComponent(REDIRECT_URI) +
+                            "&response_type=token" +
+                            "&scope=" + encodeURIComponent(SCOPES) +
+                            "&state=testing";
+            
+            window.location.href = authUrl;
+        }
+
+        function getAuthDataFromUrl() {
+            const params = new URLSearchParams(window.location.hash.substring(1));
+            return {
+                accessToken: params.get("access_token"),
+                expiresIn: params.get("expires_in")
+            };
+        }
+
+        window.onload = function() {
+            const authData = getAuthDataFromUrl();
+
+            if (authData.accessToken) {
+                statusDiv.innerText = "आप सफलतापूर्वक लॉगिन हो गए हैं!";
+                tokenDisplayDiv.style.display = "block";
+                tokenDisplayDiv.innerHTML = `<b>Access Token:</b> ${authData.accessToken}<br><br><b>Expires In:</b> ${authData.expiresIn} seconds`;
+                loginButton.style.display = "none";
+            } else {
+                statusDiv.innerText = "लॉगिन करने के लिए ऊपर बटन पर क्लिक करें।";
+                loginButton.addEventListener("click", handleLogin);
+            }
+        };
+
+    </script>
+</body>
+</html>
+
