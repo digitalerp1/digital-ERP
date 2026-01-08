@@ -3,157 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zini API Tester</title>
+    <title>Direct Upload (No Token)</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
+        body { font-family: sans-serif; padding: 20px; display: flex; justify-content: center; }
+        .container { 
+            border: 1px solid #ccc; padding: 20px; border-radius: 8px; 
+            width: 100%; max-width: 400px; background: #fff;
         }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 450px;
-        }
-        h2 { text-align: center; color: #333; margin-bottom: 20px; }
-        .form-group { margin-bottom: 15px; }
-        label { display: block; margin-bottom: 5px; font-weight: 600; color: #555; }
-        input[type="text"], input[type="file"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-sizing: border-box; /* Ensures padding doesn't affect width */
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #0070f3;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        button:hover { background-color: #005bb5; }
-        button:disabled { background-color: #ccc; cursor: not-allowed; }
-        
-        #response-area {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #f1f1f1;
-            border-radius: 6px;
-            font-family: monospace;
-            font-size: 13px;
-            white-space: pre-wrap; /* Wraps long JSON */
-            display: none; /* Hidden by default */
-            border-left: 5px solid #0070f3;
-        }
-        .error { border-left-color: #ff4444 !important; background-color: #ffe6e6 !important; }
-        .success { border-left-color: #00c851 !important; background-color: #e8f5e9 !important; }
+        input, button { width: 100%; margin-top: 10px; padding: 10px; box-sizing: border-box; }
+        button { background-color: #f6821f; color: white; border: none; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #e6720f; }
+        #status { margin-top: 15px; white-space: pre-wrap; word-break: break-all; font-size: 14px; }
+        .error { color: red; }
+        .success { color: green; }
     </style>
 </head>
 <body>
 
-<div class="card">
-    <h2>🚀 Upload to Cloudflare</h2>
+<div class="container">
+    <h2>☁️ Upload Without Token</h2>
     
-    <div class="form-group">
-        <label>Token API (Password):</label>
-        <input type="text" id="token_api" placeholder="Enter your AUTH_TOKEN here">
-    </div>
-
-    <div class="form-group">
-        <label>School Name:</label>
-        <input type="text" id="school_name" placeholder="e.g. Delhi Public School">
-    </div>
-
-    <div class="form-group">
-        <label>School UID:</label>
-        <input type="text" id="school_uid" placeholder="e.g. DPS101">
-    </div>
-
-    <div class="form-group">
-        <label>Select Image:</label>
-        <input type="file" id="image_file" accept="image/*">
-    </div>
-
-    <button onclick="sendData()" id="uploadBtn">Upload Data</button>
-
-    <div id="response-area"></div>
+    <input type="text" id="school_name" placeholder="School Name (e.g. DPS)">
+    <input type="text" id="school_uid" placeholder="School UID (e.g. 101)">
+    <input type="file" id="imageInput" accept="image/*">
+    
+    <button onclick="uploadFile()">Upload Image</button>
+    
+    <div id="status"></div>
 </div>
 
 <script>
-    async function sendData() {
-        // 1. Elements ko get karna
-        const token = document.getElementById('token_api').value;
+    async function uploadFile() {
         const schoolName = document.getElementById('school_name').value;
         const schoolUid = document.getElementById('school_uid').value;
-        const fileInput = document.getElementById('image_file');
-        const responseArea = document.getElementById('response-area');
-        const btn = document.getElementById('uploadBtn');
-
-        // 2. Validation
-        if (!token || !schoolName || !schoolUid || fileInput.files.length === 0) {
-            alert("Please fill all fields and select an image.");
+        const fileInput = document.getElementById('imageInput');
+        const status = document.getElementById('status');
+        
+        // Validation
+        if (!schoolName || !schoolUid || fileInput.files.length === 0) {
+            status.innerText = "❌ Please fill all fields!";
+            status.className = "error";
             return;
         }
 
-        // 3. UI Update (Loading state)
-        btn.innerText = "Uploading...";
-        btn.disabled = true;
-        responseArea.style.display = 'none';
-        responseArea.className = '';
+        const file = fileInput.files[0];
+        status.innerText = "⏳ Uploading...";
+        status.className = "";
 
-        // 4. Data Setup (FormData)
         const formData = new FormData();
-        formData.append('token_api', token);
         formData.append('school_name', schoolName);
         formData.append('school_uid', schoolUid);
-        formData.append('image', fileInput.files[0]);
+        formData.append('image', file);
 
-        // **Aapka Worker URL**
-        const WORKER_URL = "https://apizini.teamdigitalerp.workers.dev";
+        // AAPKA WORKER URL
+        const workerUrl = "https://apizini.teamdigitalerp.workers.dev";
 
         try {
-            // 5. Request Bhejna
-            const res = await fetch(WORKER_URL, {
+            const response = await fetch(workerUrl, {
                 method: 'POST',
                 body: formData
             });
 
-            const result = await res.json();
+            const result = await response.json();
 
-            // 6. Response Show karna
-            responseArea.style.display = 'block';
-            responseArea.textContent = JSON.stringify(result, null, 2);
-
-            if (res.ok) {
-                responseArea.classList.add('success');
-                // Optional: Form clear karna ho to niche wali line uncomment karein
-                // fileInput.value = ""; 
+            if (response.ok) {
+                status.innerText = "✅ Success:\n" + JSON.stringify(result, null, 2);
+                status.className = "success";
             } else {
-                responseArea.classList.add('error');
+                status.innerText = "❌ Error:\n" + JSON.stringify(result, null, 2);
+                status.className = "error";
             }
-
         } catch (error) {
-            console.error(error);
-            responseArea.style.display = 'block';
-            responseArea.textContent = "Error: " + error.message;
-            responseArea.classList.add('error');
-        } finally {
-            // Button wapas normal karna
-            btn.innerText = "Upload Data";
-            btn.disabled = false;
+            status.innerText = "❌ Network Error: " + error.message;
+            status.className = "error";
         }
     }
 </script>
