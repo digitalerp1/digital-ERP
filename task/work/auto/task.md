@@ -1,1 +1,1 @@
-complete code ko analysis karke aur website me kiya kiya problems hai uska complete list banao, ok, and https://myzini.digitalerp.shop website me ja kar teamdigitalerp@gmail.com and pass 123456 ke sath login karke uske andar menu side baar me jitna bhi features hai sabhi ko analysis karke likho digitalerp.md file ke andar ok,
+task complete
