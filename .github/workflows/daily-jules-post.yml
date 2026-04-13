@@ -2,9 +2,8 @@ name: Jules AI Task Master
 
 on:
   schedule:
-    # Yeh har ghante (at the start of every hour) apne aap chalega
     - cron: '0 * * * *'
-  workflow_dispatch: # Manual test karne ke liye button
+  workflow_dispatch:
 
 jobs:
   execute-tasks:
@@ -19,10 +18,11 @@ jobs:
       - name: Jules AI Task Executor
         uses: google-labs-code/jules-action@main
         id: jules
+        # YAHAN CHANGE HAI: Jules ko keys 'env' ke through chahiye
+        env:
+          JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          jules-api-key: ${{ secrets.JULES_API_KEY }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          # Yahan humne robot ko poori instruction de di hai
           prompt: |
             Aapka kaam 'task/work/auto/task.md' file ko manage karna hai.
             1. Sabse pehle 'task/work/auto/task.md' file ko read karein.
