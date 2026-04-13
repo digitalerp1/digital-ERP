@@ -1,0 +1,39 @@
+name: Jules AI Task Master
+
+on:
+  schedule:
+    # Yeh har ghante (at the start of every hour) apne aap chalega
+    - cron: '0 * * * *'
+  workflow_dispatch: # Manual test karne ke liye button
+
+jobs:
+  execute-tasks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Jules AI Task Executor
+        uses: google-labs-code/jules-action@main
+        id: jules
+        with:
+          jules-api-key: ${{ secrets.JULES_API_KEY }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # Yahan humne robot ko poori instruction de di hai
+          prompt: |
+            Aapka kaam 'task/work/auto/task.md' file ko manage karna hai.
+            1. Sabse pehle 'task/work/auto/task.md' file ko read karein.
+            2. Agar usme koi task likha hai, toh us task ko analysis karein aur use poora (execute) karein. 
+            3. Task poora karne ke baad, us task ko file se hata (delete) dein.
+            4. Agar file ke saare tasks poore ho jayein, toh file mein 'task complete' likh dein.
+            5. Agar file check karte waqt koi task na mile ya 'task complete' likha ho, toh use badal kar 'mujhe koi task nahi mila' likh dein aur ruk jayein.
+            Jo bhi badlav karein, use directly repository mein commit karein.
+
+      - name: Auto-Merge Changes
+        if: steps.jules.outputs.pull-request-number
+        run: gh pr merge ${{ steps.jules.outputs.pull-request-number }} --auto --merge
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
