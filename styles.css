@@ -1,0 +1,57 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+
+        .animated-gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-flow 5s linear infinite;
+        }
+        @keyframes gradient-flow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #preloader {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #f8fafc; z-index: 99999; display: flex;
+            justify-content: center; align-items: center; transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        #preloader.hidden { opacity: 0; visibility: hidden; }
+        .spinner {
+            width: 48px; height: 48px; border: 4px solid rgba(59, 130, 246, 0.2);
+            border-top-color: #3b82f6; border-radius: 50%; animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .nav-link.active { color: #3b82f6; font-weight: 600; }
+
+
+        #main-header.scrolled {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .feature-card, .service-card { transition: all 0.3s ease-in-out; }
+        .feature-card:hover, .service-card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+
+        #terms-page h2 { font-size: 1.875rem; font-weight: 700; color: #1e293b; margin-bottom: 1.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.75rem; }
+        #terms-page h3 { font-size: 1.25rem; font-weight: 600; color: #334155; margin-top: 2rem; margin-bottom: 1rem; }
+        #terms-page p, #terms-page li { color: #475569; line-height: 1.75; margin-bottom: 1rem; }
+        #terms-page ul { list-style-type: disc; padding-left: 1.5rem; }
