@@ -1,26 +1,37 @@
-# Task: Refactor Monolithic HTML Files into Multiple Pages
+# Task: Modularize the Codebase
 
-Tumhara kaam is repository ke monolithic HTML files (`index.html` aur `indexphone.html`) ko refactor karke multiple chhote aur manageable code files (jaise `home.html`, `pricing.html`, `terms.html`, etc.) mein convert karna hai.
+**Objective**:
+Our project's main HTML files (`index.html` and `indexphone.html`) are currently very large and monolithic. Your task is to refactor and modularize these files to improve maintainability, readability, and performance.
 
-## Detailed Requirements:
+**Detailed Instructions for AI Model**:
+1. **Analyze Current Code**:
+   - Thoroughly review `index.html`, `indexphone.html`, `main.js`, and `styles.css`.
+   - Identify distinct sections/components within the HTML files (e.g., Header, Navigation, Hero Section, Features Section, Pricing, Footer, Modals).
 
-1. **Analysis & File Splitting**:
-   - `index.html` aur `indexphone.html` files ko acche se read karo. Abhi inme multiple pages ka content ek hi file me hai (jaise Home, Pricing, Terms & Conditions) jo JavaScript (main.js) ke through hide/show hota hai (`id="pricing-page"`, `id="terms-page"` etc. ka use karke).
-   - In sections ko alag-alag files me split karo. Example:
-     - `index.html` (Sirf Home page ka content)
-     - `pricing.html` (Sirf Pricing page ka content)
-     - `terms.html` (Sirf Terms & Conditions ka content)
+2. **Component Separation**:
+   - Extract these identified sections into their own separate HTML files (e.g., `components/header.html`, `components/footer.html`, `components/hero.html`, etc.).
+   - Ensure the structure remains valid when components are isolated.
 
-2. **Update Navigation Links**:
-   - Sabhi nav links `<a href="#" data-page="...">` ko update karke actual file paths banao (jaise `<a href="pricing.html">`).
-   - Header aur footer components ko sabhi nayi files me sahi tarah se include karo.
+3. **Dynamic Loading Implementation (Vanilla JS)**:
+   - Since there is no modern framework (like React or Vue) in use, implement a robust Vanilla JavaScript solution to dynamically load these components into a main layout file.
+   - Use `fetch` API to load the HTML fragments and inject them into designated container elements (e.g., `<div id="header-placeholder"></div>`).
+   - Create a central layout file (or modify `index.html` / `indexphone.html`) to act as the skeleton that loads these components.
 
-3. **Refactor `main.js`**:
-   - `main.js` me jo `showPage` function hai jo classes ko `hidden` ya remove karta hai, usko modify ya hata do kyunki ab actual page loads honge.
-   - Dusri functionality jaise form submission, mobile menu toggle, aur preloader ko properly preserve karo har page ke liye.
+4. **Handle Script Dependencies**:
+   - Ensure that JavaScript logic in `main.js` that depends on DOM elements from these components is executed *after* the components are successfully loaded.
+   - You might need to implement a callback mechanism or emit custom events when a component finishes loading.
 
-4. **Testing & Verification**:
-   - Make sure ki koi bhi styles ya scripts break na ho.
-   - Har naya page individually load hone par sahi dikhna chahiye.
+5. **CSS Modularization (Optional but Recommended)**:
+   - If feasible, split `styles.css` into smaller, component-specific CSS files and load them dynamically, or keep them centralized but well-organized using CSS comments and clear scoping.
 
-Yeh task bina kisi galti ke pura karna, dhyan rahe ki code files sahi se split ho aur navigation perfect kaam kare.
+6. **Testing and Verification**:
+   - Ensure the website functions exactly as before. The transition should be seamless for the end-user.
+   - Verify that all navigation links, modals, scroll animations, and external integrations (like Google Tag Manager) still work correctly.
+
+**Expected Outcome**:
+- Multiple smaller HTML component files.
+- A modernized, cleaner `index.html` acting as a template/skeleton.
+- Updated `main.js` capable of dynamic component loading and initialization.
+- A fully functional frontend website without any visual or functional regressions.
+
+*Note: You are expected to manage these changes autonomously. Make sure to commit the changes and mark this task as 'task complete' when done.*
