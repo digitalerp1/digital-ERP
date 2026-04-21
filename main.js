@@ -1,5 +1,5 @@
 
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('componentsLoaded', () => {
 
             const googleAppsScriptUrl = 'https://script.google.com/macros/s/AKfycby4H7pjWBrQLTI0VnSnIVLu-4g_XgA9F1nKE0-X0_SwDWW5SpXyTgykFYI0qIfOeP5PJg/exec';
             const mainContent = document.getElementById('main-content');
