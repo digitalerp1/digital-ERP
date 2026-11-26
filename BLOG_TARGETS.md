@@ -6,7 +6,7 @@
 | Day / # | Feature Name | Route | Slug | Primary SEO Keyword | Status | Image Path | Published Date |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Student Management & Admissions | `/students` | `how-to-use-student-management-myzini-erp` | how to use student management in myzini digital erp | published | `blogs/images/how-to-use-student-management-myzini-erp.png` | 2026-11-26 |
-| 2 | School Dashboard & Quick Actions | `/dashboard` | `how-to-use-school-dashboard-quick-actions-myzini-erp` | school erp dashboard overview myzini digital erp | pending | `blogs/images/how-to-use-school-dashboard-quick-actions-myzini-erp.png` | - |
+| 2 | School Dashboard & Quick Actions | `/dashboard` | `how-to-use-school-dashboard-quick-actions-myzini-erp` | school erp dashboard overview myzini digital erp | published | `blogs/images/dash_ai_hero_banner.jpg` | 2026-11-26 |
 | 3 | Daily Attendance & Attendance Report | `/attendance-report` | `how-to-take-attendance-and-view-reports-myzini-erp` | how to take student attendance in school erp | pending | `blogs/images/how-to-take-attendance-and-view-reports-myzini-erp.png` | - |
 | 4 | Fee Collection & Finance Management | `/finance` | `how-to-manage-fee-collection-finance-myzini-erp` | school fee collection software myzini erp | pending | `blogs/images/how-to-manage-fee-collection-finance-myzini-erp.png` | - |
 | 5 | Pending Dues List & Fee Reminders | `/dues-list` | `how-to-track-student-dues-list-myzini-erp` | how to track school fee dues list online | pending | `blogs/images/how-to-track-student-dues-list-myzini-erp.png` | - |
