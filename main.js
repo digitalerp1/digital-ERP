@@ -132,7 +132,7 @@
                     console.error('Form submission error:', error);
                 } finally {
                     submitButton.disabled = false;
-                    btnText.innerText = 'Register Now for Free';
+                    btnText.innerText = 'Register Now (₹100 Registration Fee)';
                     spinnerIcon.classList.add('hidden');
                 }
             });
