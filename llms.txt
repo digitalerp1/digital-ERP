@@ -7,6 +7,7 @@
 - [Live ERP Portal](https://myzini.digitalerp.shop/): School administration dashboard.
 
 ## Verified How-To Guides
+- [My Zini Digital ERP Fee Collection & Finance (Hinglish Guide)](https://digitalerp.shop/blogs/how-to-manage-fee-collection-finance-myzini-erp.html): Complete Hinglish guide covering Finance Command Center (/finance), Today's Inflow, Total Debt, Jan-Dec Class-wise Matrix, 7 Department Tabs, and Payments & Shortcuts Hub (/shortcut Cashier Terminal).
 - [My Zini Digital ERP Daily Attendance & Reports (Hinglish Guide)](https://digitalerp.shop/blogs/how-to-take-attendance-and-view-reports-myzini-erp.html): Complete Hinglish guide covering Take Attendance (/attendance), Only Active Students, Customize Notice Templates, Staff Attendance (/staff-attendance), Exit Attendance, and Date-Aware Attendance Reports (/attendance-report).
 - [My Zini Digital ERP School Dashboard & Quick Actions (Hinglish Guide)](https://digitalerp.shop/blogs/how-to-use-school-dashboard-quick-actions-myzini-erp.html): Complete Hinglish guide covering Live Sync KPIs, Today's Attendance Overview, 8 Quick Actions, Class-wise Attendance, Inactive Students filter, Financial Overview, Staff Pending Balances, and 6 Analytics Charts.
 - [How to Use Student Management in My Zini Digital ERP](https://digitalerp.shop/blogs/how-to-use-student-management-myzini-erp.html): Step-by-step guide covering student search, class filtering, Add Student form fields (personal, parent, hostel, transport, fees), Upload Bulk, and Export (JSON, CSV, Excel).
