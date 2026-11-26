@@ -125,6 +125,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <nav id="main-nav" class="hidden md:flex items-center space-x-8">
                     <ul class="flex items-center space-x-8">
                         <li><a href="#" data-page="home" class="nav-link font-medium text-slate-600 hover:text-blue-600 transition-colors">Homes</a></li>
+                        <li><a href="#" data-page="blogs" class="nav-link font-medium text-slate-600 hover:text-blue-600 transition-colors">Blogs</a></li>
                         <li><a href="#" data-page="pricing" class="nav-link font-medium text-slate-600 hover:text-blue-600 transition-colors">Pricing</a></li>
                         <li><a href="#" data-page="terms" class="nav-link font-medium text-slate-600 hover:text-blue-600 transition-colors">Terms & Conditions</a></li>
                         <li><a href="#contact" class="nav-link-contact font-medium text-slate-600 hover:text-blue-600 transition-colors">Contact</a></li>
@@ -139,6 +140,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <div id="mobile-menu" class="hidden md:hidden mt-4">
                  <ul class="flex flex-col space-y-4">
                     <li><a href="#" data-page="home" class="nav-link block font-medium text-slate-600 hover:text-blue-600 transition-colors py-2">Home</a></li>
+                    <li><a href="#" data-page="blogs" class="nav-link block font-medium text-slate-600 hover:text-blue-600 transition-colors py-2">Blogs</a></li>
                     <li><a href="#" data-page="pricing" class="nav-link block font-medium text-slate-600 hover:text-blue-600 transition-colors py-2">Pricing</a></li>
                     <li><a href="#" data-page="terms" class="nav-link block font-medium text-slate-600 hover:text-blue-600 transition-colors py-2">Terms & Conditions</a></li>
                     <li><a href="#contact" class="nav-link-contact block font-medium text-slate-600 hover:text-blue-600 transition-colors py-2">Contact us</a></li>
@@ -284,6 +286,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                         </div>
                      </div>
+                </div>
+            </section>
+
+            <!-- Latest How-To Blogs Section -->
+            <section id="blogs-preview" class="py-20 bg-slate-50">
+                <div class="container mx-auto px-6">
+                    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                        <div>
+                            <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">How-To Guides &amp; Tutorials</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-slate-800">My Zini ERP Blogs</h2>
+                            <p class="text-slate-600 mt-2 max-w-2xl">Step-by-step guides with real screenshots showing how to use every feature in My Zini Digital ERP.</p>
+                        </div>
+                        <a href="#" data-page="blogs" class="nav-link inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700">View All Guides &rarr;</a>
+                    </div>
+                    <div id="home-blogs-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
                 </div>
             </section>
 
@@ -514,6 +531,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </section>
         </div>
+
+        <!-- Blogs Page Wrapper -->
+        <div id="blogs-page" class="hidden">
+            <section class="py-20 md:py-24 bg-slate-50 min-h-screen">
+                <div class="container mx-auto px-6">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Knowledge Base</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">How to Use My Zini Digital ERP</h2>
+                        <p class="text-lg text-slate-600 mb-8">Verified, step-by-step tutorials with real dashboard screenshots for every school ERP feature.</p>
+                        <input type="search" id="blog-search-input" placeholder="Search guides (e.g., Student Management, Attendance, Fees)..." class="w-full max-w-xl px-5 py-3 rounded-xl border border-slate-300 bg-white shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none">
+                    </div>
+                    <div id="blogs-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -559,7 +591,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             const mainContent = document.getElementById('main-content');
             const pricingPage = document.getElementById('pricing-page');
             const termsPage = document.getElementById('terms-page');
-            const allPages = [mainContent, pricingPage, termsPage];
+            const blogsPage = document.getElementById('blogs-page');
+            const allPages = [mainContent, pricingPage, termsPage, blogsPage];
             const allNavLinks = document.querySelectorAll('.nav-link');
             const allContactLinks = document.querySelectorAll('.nav-link-contact');
             const allLogoLinks = document.querySelectorAll('.nav-logo');
@@ -727,6 +760,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             if(regPopup) regPopup.addEventListener('click', (e) => {
                 if (e.target === regPopup) closeRegPopup();
             });
+
+            // Load and render Blogs from blogs/posts.json
+            const homeBlogsGrid = document.getElementById('home-blogs-grid');
+            const blogsGrid = document.getElementById('blogs-grid');
+            const blogSearchInput = document.getElementById('blog-search-input');
+            let allBlogPosts = [];
+
+            const renderBlogCards = (posts, targetEl) => {
+                if (!targetEl) return;
+                if (!posts.length) {
+                    targetEl.innerHTML = '<p class="text-slate-500 col-span-full text-center py-8">No guides found matching your search.</p>';
+                    return;
+                }
+                targetEl.innerHTML = posts.map(post => `
+                    <article class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-100 flex flex-col hover:shadow-xl transition-shadow duration-300">
+                        <a href="${post.url}" class="block overflow-hidden bg-slate-100 aspect-video">
+                            <img src="${post.image}" alt="${post.imageAlt || post.title}" loading="lazy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300">
+                        </a>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+                                <span class="bg-blue-50 text-blue-700 font-semibold px-2.5 py-1 rounded-full">${post.category}</span>
+                                <span>${post.publishedAt} &bull; ${post.readTime}</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2 leading-snug">
+                                <a href="${post.url}" class="hover:text-blue-600 transition-colors">${post.title}</a>
+                            </h3>
+                            <p class="text-slate-600 text-sm mb-4 flex-grow">${post.description}</p>
+                            <a href="${post.url}" class="inline-flex items-center gap-1 text-blue-600 font-semibold text-sm hover:text-blue-700">Read How-To Guide &rarr;</a>
+                        </div>
+                    </article>
+                `).join('');
+            };
+
+            fetch('blogs/posts.json')
+                .then(r => r.ok ? r.json() : [])
+                .then(posts => {
+                    allBlogPosts = Array.isArray(posts) ? posts : [];
+                    renderBlogCards(allBlogPosts.slice(0, 6), homeBlogsGrid);
+                    renderBlogCards(allBlogPosts, blogsGrid);
+                })
+                .catch(err => console.error('Failed to load blogs:', err));
+
+            if (blogSearchInput) {
+                blogSearchInput.addEventListener('input', (e) => {
+                    const q = e.target.value.trim().toLowerCase();
+                    const filtered = allBlogPosts.filter(p =>
+                        p.title.toLowerCase().includes(q) ||
+                        p.description.toLowerCase().includes(q) ||
+                        p.category.toLowerCase().includes(q)
+                    );
+                    renderBlogCards(filtered, blogsGrid);
+                });
+            }
 
             document.getElementById('currentYear').textContent = new Date().getFullYear();
         });

@@ -1,0 +1,10 @@
+# My Zini Digital ERP
+
+> All-in-one School, Coaching, and Institution Management ERP software (`https://digitalerp.shop` / `https://myzini.digitalerp.shop`). Registration Fee: ₹100.
+
+## Core Documentation & Pages
+- [Home & Registration](https://digitalerp.shop/): Main product overview, 50+ ERP features, pricing plans, and institution registration (₹100 Registration Fee).
+- [Live ERP Portal](https://myzini.digitalerp.shop/): School administration dashboard.
+
+## Verified How-To Guides
+- [How to Use Student Management in My Zini Digital ERP](https://digitalerp.shop/blogs/how-to-use-student-management-myzini-erp.html): Step-by-step guide covering student search, class filtering, Add Student form fields (personal, parent, hostel, transport, fees), Upload Bulk, and Export (JSON, CSV, Excel).
