@@ -1,5 +1,16 @@
 [
   {
+    "slug": "how-to-use-rfid-cards-for-students-myzini-erp",
+    "title": "My Zini Digital ERP mein Assigned RFID Cards aur Smart Attendance Kaise Use Karein? (Hinglish Guide)",
+    "description": "Assigned RFID Cards (/assigned-rfid-cards) ka poora Hinglish guide: Device Setup (MACHINE SS TOKEN, Fetch IP, Scanner Polling), Assign RFID Card (Auto Scanned), Class Assignment List (Unassign / Assign RFID) aur Smart Gate Attendance 12 images ke saath.",
+    "category": "Smart RFID Attendance",
+    "image": "blogs/images/rfid_visual_01_hero.png",
+    "imageAlt": "My Zini Digital ERP Assigned RFID Cards & Smart Attendance Banner",
+    "publishedAt": "2026-11-27",
+    "readTime": "14 min read",
+    "url": "blogs/how-to-use-rfid-cards-for-students-myzini-erp.html"
+  },
+  {
     "slug": "how-to-create-and-manage-classes-myzini-erp",
     "title": "My Zini Digital ERP mein Classes, Subjects aur Academic Timetable Kaise Manage Karein? (Hinglish Guide)",
     "description": "Academic & Curriculum Management (/classes) ke sabhi options: Add Class, Add Subject (24 Curriculum Subjects), Class Standards (Monthly Fees, Session, Weekly Off, Class Mentors), aur Weekly Academic Timetable (+ Add First Period) ka poora Hinglish guide 12 images ke saath.",

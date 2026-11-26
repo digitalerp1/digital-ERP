@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Zini Digital ERP mein Assigned RFID Cards aur Smart Attendance Kaise Use Karein? | Hinglish Guide</title>
+    <meta name="description" content="My Zini Digital ERP (/assigned-rfid-cards) ka complete Hinglish guide: Device Setup (MACHINE SS TOKEN, Fetch IP, Scanner Polling), Assign RFID Card (Auto Scanned), Class Assignment List (Unassign/Assign RFID) aur Smart Gate Attendance.">
+    <meta name="keywords" content="school rfid attendance card management system, myzini digital erp assigned rfid cards, smart rfid student id card attendance, machine ss token fetch ip, unassign rfid card">
+    <meta name="author" content="Digital Education System">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://digitalerp.shop/blogs/how-to-use-rfid-cards-for-students-myzini-erp.html">
+    <link rel="icon" type="image/png" href="/icon.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://digitalerp.shop/blogs/how-to-use-rfid-cards-for-students-myzini-erp.html">
+    <meta property="og:title" content="My Zini Digital ERP mein Assigned RFID Cards aur Smart Attendance Kaise Use Karein?">
+    <meta property="og:description" content="Assigned RFID Cards (/assigned-rfid-cards) ke har ek option ka live verified Hinglish step-by-step guide.">
+    <meta property="og:image" content="https://digitalerp.shop/blogs/images/rfid_visual_01_hero.png">
+    <meta property="article:published_time" content="2026-11-27T02:20:00+05:30">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Zini Digital ERP Assigned RFID Cards & Smart Attendance (Hinglish Guide)">
+    <meta name="twitter:description" content="12 real screenshots & visual diagrams ke saath RFID Smart Card Attendance ka poora Hinglish guide.">
+    <meta name="twitter:image" content="https://digitalerp.shop/blogs/images/rfid_visual_01_hero.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "My Zini Digital ERP mein Assigned RFID Cards aur Smart Attendance Kaise Use Karein? (Complete Hinglish Guide)",
+          "description": "My Zini Digital ERP ke Assigned RFID Cards (/assigned-rfid-cards) module ka complete Hinglish tutorial.",
+          "image": [
+            "https://digitalerp.shop/blogs/images/rfid_visual_01_hero.png",
+            "https://digitalerp.shop/blogs/images/rfid_01_overview.png",
+            "https://digitalerp.shop/blogs/images/rfid_07_nursery_selected.png"
+          ],
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "inLanguage": "hi-Latn",
+          "author": { "@type": "Organization", "name": "My Zini Digital ERP", "url": "https://digitalerp.shop" },
+          "publisher": { "@type": "Organization", "name": "Digital Education System", "logo": { "@type": "ImageObject", "url": "https://digitalerp.shop/icon.png" } },
+          "mainEntityOfPage": "https://digitalerp.shop/blogs/how-to-use-rfid-cards-for-students-myzini-erp.html"
+        },
+        {
+          "@type": "HowTo",
+          "name": "My Zini Digital ERP mein RFID Cards Setup aur Assign Karne ke Steps",
+          "description": "Live verified workflow on myzini.digitalerp.shop/assigned-rfid-cards.",
+          "step": [
+            { "@type": "HowToStep", "name": "Device Setup Connect Karein", "text": "Assigned RFID Cards (/assigned-rfid-cards) kholein, MACHINE SS TOKEN mein 'Enter SS Attendance Token' daalein aur 'Fetch IP' dabakar MACHINE CONNECTION aur SCANNER POLLING active karein." },
+            { "@type": "HowToStep", "name": "Class aur Student Select Karein", "text": "SELECT CLASS dropdown se class chunein, phir SELECT STUDENT (Roll Order) dropdown se student select karein." },
+            { "@type": "HowToStep", "name": "RFID Card Scan & Assign Karein", "text": "'RFID CARD NUMBER (AUTO SCANNED)' box mein card swipe karein ('Waiting for card swipe...') aur 'Assign Card to Student' dabaein." },
+            { "@type": "HowToStep", "name": "Class Assignment List Manage Karein", "text": "Right panel mein ROLL, STUDENT NAME, RFID CARD UID aur 'Assign RFID' / 'Unassign' actions se cards manage karein." }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Assigned RFID Cards (/assigned-rfid-cards) mein Device Setup kaise hota hai?", "acceptedAnswer": { "@type": "Answer", "text": "Device Setup panel mein MACHINE SS TOKEN box mein apna SS Attendance Token enter karke 'Fetch IP' button dabana hota hai, jisse MACHINE CONNECTION aur SCANNER POLLING Active ho jate hain." } },
+            { "@type": "Question", "name": "Agar kisi student ka RFID card kho jaye toh kya karein?", "acceptedAnswer": { "@type": "Answer", "text": "Class Assignment List mein us student ke saamne 'Unassign' button par click karke purana UID (jaise 36F7D206) hata dein aur 'Assign RFID' se naya card swipe karke link kar dein." } },
+            { "@type": "Question", "name": "Kya RFID Card Number manually type karna padta hai ya auto scan hota hai?", "acceptedAnswer": { "@type": "Answer", "text": "'RFID CARD NUMBER (AUTO SCANNED)' field mein 'Waiting for card swipe...' rehta hai — jaise hi aap RFID reader par card tap karte hain, 8-character UID automatic fill ho jata hai." } }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; } code { overflow-wrap: anywhere; word-break: break-word; }</style>
+</head>
+<body class="overflow-x-hidden">
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-xl sm:text-2xl font-bold text-slate-800">My Zini <span class="text-blue-600">ERP</span></a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="../index.html" class="text-slate-600 hover:text-blue-600">Home</a>
+                    <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold">Blogs</a>
+                    <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
+                </nav>
+                <button id="blog-mobile-toggle" aria-label="Toggle Menu" class="md:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100" onclick="document.getElementById('blog-mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <div id="blog-mobile-menu" class="hidden md:hidden mt-3 pb-2 border-t border-slate-100 pt-3 flex flex-col space-y-2 text-sm font-medium">
+                <a href="../index.html" class="text-slate-700 hover:text-blue-600 py-1.5">Home</a>
+                <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold py-1.5">Blogs</a>
+                <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center hover:bg-blue-700">Register (₹100 Fee)</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-3 sm:px-6 py-6 sm:py-10 lg:py-12 max-w-4xl">
+        <nav aria-label="Breadcrumb" class="text-xs sm:text-sm text-slate-500 mb-4 sm:mb-6 flex flex-wrap items-center gap-1">
+            <a href="../index.html" class="hover:text-blue-600">Home</a> &rsaquo;
+            <a href="../index.html#blogs-preview" class="hover:text-blue-600">Blogs</a> &rsaquo;
+            <span class="text-slate-700 font-medium">Assigned RFID Cards</span>
+        </nav>
+
+        <article class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-8 lg:p-12 break-words">
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-slate-500 mb-4">
+                <span class="bg-cyan-100 text-cyan-800 font-bold px-3 py-1 rounded-full">Smart RFID Attendance</span>
+                <time datetime="2026-11-27">November 27, 2026</time>
+                <span>&bull; 14 min read</span>
+                <span>&bull; Live Verified on myzini.digitalerp.shop</span>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+                My Zini Digital ERP mein Assigned RFID Cards aur Smart Attendance Kaise Use Karein? (Complete Hinglish Guide)
+            </h1>
+
+            <section class="bg-blue-50 border-l-4 border-blue-600 p-4 sm:p-6 rounded-r-xl mb-8">
+                <h2 class="text-sm font-bold text-blue-900 uppercase tracking-wide mb-2">Quick Summary (TL;DR — AI &amp; Reader Overview)</h2>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                    <strong>My Zini Digital ERP</strong> (<code>https://myzini.digitalerp.shop/assigned-rfid-cards</code>) ka <strong>Assigned RFID Cards</strong> module aapke school ko physical RFID smart cards ke saath 1-second automated gate attendance aur exit tracking se jodne ke liye banaya gaya hai. Isme aapko <strong>🔌 Device Setup</strong> (<em>MACHINE SS TOKEN, Fetch IP, MACHINE CONNECTION, SCANNER POLLING</em>), <strong>📝 Assign RFID Card</strong> form (<em>SELECT CLASS, SELECT STUDENT Roll Order, RFID CARD NUMBER AUTO SCANNED</em>), aur <strong>📋 Class Assignment List</strong> (<em>ROLL, STUDENT NAME, RFID CARD UID, Unassign / Assign RFID</em>) ek hi screen par milte hain.
+                </p>
+            </section>
+
+            <figure class="mb-10">
+                <img src="images/rfid_visual_01_hero.png" alt="My Zini Digital ERP Assigned RFID Cards and Smart Attendance Overview" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                <figcaption class="text-xs text-slate-500 mt-2 text-center">My Zini Digital ERP Smart RFID Hub: 1-tap card mapping, gate entry/exit sync aur parent alerts.</figcaption>
+            </figure>
+
+            <section class="space-y-10 text-slate-700 leading-relaxed">
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">1. Assigned RFID Cards (/assigned-rfid-cards) Workspace &amp; Device Setup</h2>
+                    <p class="mb-4">
+                        Smart card attendance setup karne ke liye left sidebar mein <strong>Assigned RFID Cards</strong> (<code>/assigned-rfid-cards</code>) par click karein. Top par subtitle likha hota hai: <em>"Register, query, and assign physical RFID smart cards to students in real-time."</em>
+                    </p>
+                    <figure class="mb-6">
+                        <img src="images/rfid_01_overview.png" alt="Assigned RFID Cards page showing Device Setup, Assign RFID Card form and Class Assignment List" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">Live /assigned-rfid-cards screen: Device Setup, Assign RFID Card form aur Class Assignment List.</figcaption>
+                    </figure>
+                    <p class="mb-3">Sabse upar <strong>🔌 Device Setup</strong> card milta hai jisme 3 live status aur configuration controls hote hain:</p>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>MACHINE SS TOKEN &amp; Fetch IP Button:</strong> Yahan input placeholder hota hai <code>Enter SS Attendance Token</code>. Apne RFID hardware machine ka token daalkar <strong>Fetch IP</strong> button dabate hi ERP aapki biometric/RFID device ka local ya cloud IP fetch karke connect kar leta hai.</li>
+                        <li><strong>MACHINE CONNECTION:</strong> Device connect hone se pehle yahan <code>Not Setup</code> dikhta hai, aur token verify hote hi Connected status show hota hai.</li>
+                        <li><strong>SCANNER POLLING:</strong> Jab scanner live card swipe sunne ke liye ready hota hai, tab yeh <code>Inactive</code> se <code>Active</code> mein badal jata hai — jisse aap bina haath se UID type kiye seedha card tap karke students ko assign kar sakte hain!</li>
+                    </ul>
+
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-6 mb-3">RFID Hardware &amp; Scanner Polling Kaise Kaam Karta Hai?</h3>
+                    <p class="mb-3 text-sm">
+                        Bahut se school principals sochte hain ki RFID system lagane ke liye kisi bade server room ya mehenge software engineer ki zaroorat hoti hai. My Zini Digital ERP ne ise bilkul plug-and-play bana diya hai. Jab aapke school gate par ya reception desk par RFID scanner lagaya jata hai, toh woh aapke Wi-Fi ya LAN network ke zariye ek <strong>SS Attendance Token</strong> se judta hai. Jaise hi aap <code>Enter SS Attendance Token</code> daalkar <strong>Fetch IP</strong> dabate hain, My Zini cloud server aur aapka scanner aapas mein handshake karte hain. Iske baad jaise hi koi card reader ke paas laya jata hai, <strong>SCANNER POLLING</strong> us 8-character hexadecimal UID (jaise <code>36F7D206</code> ya <code>9F01BA1F</code>) ko milliseconds mein browser ke <em>RFID CARD NUMBER (AUTO SCANNED)</em> box mein bhej deta hai — jisse typing mistakes ka chance zero ho jata hai!
+                    </p>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">2. 📝 Assign RFID Card Form: Step-by-Step Card Mapping</h2>
+                    <p class="mb-4">
+                        Device Setup ke niche left panel mein <strong>📝 Assign RFID Card</strong> form diya gaya hai jisme 4 simple steps hote hain:
+                    </p>
+                    <figure class="mb-6">
+                        <img src="images/rfid_visual_02_workflow.png" alt="4-Step RFID Card Assignment and Gate Attendance Workflow" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">4-Step Smart RFID Workflow: Card Link &rarr; Gate Tap Entry &rarr; Parent Alert &rarr; Live Attendance Report.</figcaption>
+                    </figure>
+                    <ol class="list-decimal pl-6 space-y-2 mb-6">
+                        <li><strong>SELECT CLASS:</strong> Dropdown (<code>-- Select a Class --</code>) se Play, Nursery, LKG, UKG, Class 1 se Class 12 ya Graduation koi bhi class chunein.</li>
+                        <li><strong>SELECT STUDENT:</strong> Class select karte hi yeh dropdown <code>-- Select a Student (Roll Order) --</code> load karta hai. Khaas baat yeh hai ki agar kisi student ko pehle se card mila hua hai, toh dropdown mein hi uska card number dikhta hai — jaise live test mein <code>Roll: 1 - mdrahmat ali (Has Card: 36F7D206)</code>!</li>
+                        <li><strong>RFID CARD NUMBER (AUTO SCANNED):</strong> Is box mein placeholder likha rehta hai <code>Waiting for card swipe...</code>. Jaise hi aap reader par card swipe karte hain, card ka UID (jaise <code>36F7D206</code>) apne aap fill ho jata hai (ya aap manual UID bhi likh sakte hain).</li>
+                        <li><strong>Assign Card to Student Button:</strong> Card number aate hi <strong>Assign Card to Student</strong> button dabaein aur turant card student profile se link ho jata hai.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">3. 📋 Class Assignment List: Nursery Live Test (Assign &amp; Unassign)</h2>
+                    <p class="mb-4">
+                        Humne live portal par <strong>Nursery</strong> class select karke right-side <strong>📋 Class Assignment List</strong> ko check kiya. Class chunte hi table turant <em>"Current RFID assignments for class Nursery"</em> load karta hai:
+                    </p>
+                    <figure class="mb-6">
+                        <img src="images/rfid_07_nursery_selected.png" alt="Class Assignment List for Nursery showing Assigned card 36F7D206 with Unassign and Unassigned with Assign RFID" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">Live Test: Roll 1 mdrahmat ali ke paas 💳 36F7D206 (Unassign) aur baaki students ke saamne Assign RFID buttons.</figcaption>
+                    </figure>
+                    <figure class="mb-6">
+                        <img src="images/rfid_08_student_selected.png" alt="Student selected in Assign RFID Card dropdown ready for card swipe" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">Live Test: Dropdown mein student select karne ke baad card swipe ka wait karta hua form.</figcaption>
+                    </figure>
+                    <ul class="list-disc pl-6 space-y-2 mb-6">
+                        <li><strong>4 Clean Columns:</strong> <code>ROLL</code>, <code>STUDENT NAME</code>, <code>RFID CARD UID</code>, aur <code>ACTIONS</code>.</li>
+                        <li><strong>Assigned Student Row:</strong> Jinke paas card hai (e.g. <em>1 — mdrahmat ali</em>), unke UID column mein <code>💳 36F7D206</code> badge aur Actions mein <strong>Unassign</strong> button dikhta hai.</li>
+                        <li><strong>Unassigned Student Row:</strong> Jin students ko abhi card nahi mila (e.g. <em>4 — raj, 101 — Rahul Kumar Sharma</em>), unke saamne <code>Unassigned</code> aur quick <strong>Assign RFID</strong> button hota hai — jise click karne par left form mein woh student seedha select ho jata hai!</li>
+                    </ul>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <figure>
+                            <img src="images/rfid_02_middle.png" alt="Assigned RFID Cards middle section view" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Assign RFID Card aur Class Assignment List side-by-side layout.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/rfid_05_student.png" alt="Assign RFID Card student selector interface" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Real-time card assignment workflow.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">4. Smart RFID Cards ke 6 Bade Fayde aur Staff RFID Sync</h2>
+                    <figure class="mb-6">
+                        <img src="images/rfid_visual_03_benefits.png" alt="6 Benefits of Smart RFID Cards in My Zini Digital ERP" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">1-Second Attendance, Zero Proxy, Safe Exit Logs, Staff Late Tracking aur Card Reassignment.</figcaption>
+                    </figure>
+                    <p class="mb-4">
+                        Sirf students hi nahi, balki <strong>Staff Management</strong> (<code>/staff</code>) mein bhi har teacher aur staff member ke liye <strong>RFID Card Number</strong> assign hota hai (jaise <code>93732E1D</code>, <code>9F01BA1F</code>, <code>17B381B5</code>). Jab school gate par RFID scanner laga hota hai:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 mb-6">
+                        <li><strong>Zero Morning Roll Call Time Waste:</strong> Bacche gate par card tap karte hi <em>Take Attendance</em> aur Dashboard ke <em>STUDENTS PRESENT TODAY</em> mein present mark ho jaate hain.</li>
+                        <li><strong>Safe Exit Attendance Tracking:</strong> Chhutti ke samay dobara tap karne par <em>Exit Attendance</em> aur <em>Exit Attendance Report</em> mein check-out time record hota hai.</li>
+                        <li><strong>Staff Late Fine Automation:</strong> Teachers ke RFID tap time se unka late arrival track hota hai, jo <em>1-Hour Late Fine (₹)</em> aur salary calculation mein kaam aata hai.</li>
+                        <li><strong>Generator Tools se Smart ID Card Printing:</strong> Aap <em>Generator Tools</em> module se students ke photo ID cards print karke unhi RFID cards par chipka sakte hain.</li>
+                    </ul>
+
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-6 mb-3">Modern Schools mein RFID Smart Cards kyun Zaroori Hain? (Security &amp; Speed)</h3>
+                    <p class="mb-3 text-sm">
+                        Aaj ke samay mein parents apne bacchon ki safety ko lekar sabse zyada chintit rehte hain. Jab ek school <strong>My Zini Digital ERP</strong> ke saath RFID Smart Card system apnata hai, toh subah school gate par bheed lagne ke bajaye har baccha 1 second mein card tap karke andar aa jata hai. Isse na sirf teacher ke classroom ke 15 minute bachte hain, balki parents ko bhi turant bharosa milta hai ki unka baccha safely school pahunch gaya hai. Coaching centers aur hostels ke liye bhi yeh feature utna hi upyogi hai — kyunki har entry aur exit ka timestamped log cloud par hamesha ke liye save rehta hai!
+                    </p>
+                    <p class="mb-6 text-sm">
+                        <strong>Card Maintenance &amp; Annual Audit Tips:</strong> Hamesha PVC waterproof RFID cards aur strong ID card lanyard holders use karein taaki barish ya khel-kood mein card kharab na ho. Har naye academic session ki shuruat mein ek baar har class ki <em>Class Assignment List</em> check karein — jo students school chhod chuke hain unke cards ko <strong>Unassign</strong> karke unhe reset aur recycle kar lein, aur naye admissions ko turant <strong>Assign RFID</strong> button se card link kar dein. Isse aapke school ka hardware kharch bhi bachta hai aur attendance system saal-dar-saal 100% accurate chalta hai.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <figure>
+                            <img src="images/rfid_03_lower.png" alt="Assigned RFID Cards lower view" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Class Assignment List clean responsive container.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/rfid_06_assign.png" alt="Assign Card to Student action button" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">1-click Assign Card to Student action.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">5. Mobile, Tablet aur Laptop Live Sync + Card Management Best Practices</h2>
+                    <figure class="mb-6">
+                        <img src="images/rfid_visual_04_sync.png" alt="Mobile, Tablet and Laptop Live Sync from RFID Gate Reader to Parent Phone" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">RFID Gate Reader se Admin Dashboard aur Parent Phone tak instant notification sync.</figcaption>
+                    </figure>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <figure>
+                            <img src="images/rfid_04_search.png" alt="Device Setup token and class selection view" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Device Setup token aur scanner polling panel.</figcaption>
+                        </figure>
+                    </div>
+                    <ul class="list-disc pl-6 space-y-2 mb-6">
+                        <li><strong>Card Khone par Turant Unassign Karein:</strong> Agar kisi student ka ID card gum ho jaye, toh turant <em>Class Assignment List</em> mein jaakar <strong>Unassign</strong> dabaein taaki us purane card ka koi galat istemal na kar sake, aur naya card issue karke <strong>Assign RFID</strong> se link kar dein.</li>
+                        <li><strong>Session Shuruat mein Class-wise Batch Assignment:</strong> Reception desk par RFID reader ko laptop se connect karein, <code>SCANNER POLLING: Active</code> karein, aur har class ki list kholkar 10 minute mein 50 students ke cards swipe karke assign kar dein.</li>
+                        <li><strong>Token Secure Rakhein:</strong> Apna <code>MACHINE SS TOKEN</code> sirf authorized admin aur IT staff ke saath hi share karein taaki unauthorized device connect na ho sake.</li>
+                        <li><strong>Offline Backup Check:</strong> Agar kabhi school ka Wi-Fi band ho jaye toh manual <code>/attendance</code> fallback hamesha ready rehta hai, aur network aate hi cloud sync ho jata hai.</li>
+                    </ul>
+
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-6 mb-3">School mein Smart RFID System Launch Karne ka 5-Step Checklist</h3>
+                    <ol class="list-decimal pl-6 space-y-2 mb-6 text-sm">
+                        <li><strong>Step 1 — Students &amp; Staff Directory Ready Karein:</strong> Sabse pehle <em>Students</em> (<code>/students</code>) aur <em>Staff</em> (<code>/staff</code>) mein sabhi active members aur unke parents ke WhatsApp mobile numbers update karein taaki attendance alerts sahi number par jayein.</li>
+                        <li><strong>Step 2 — Generator Tools se Smart ID Cards Design Karein:</strong> <em>Generator Tools</em> module se sabhi students ke photo, class, roll number aur school logo wale ID cards print karwayein aur RFID smart cards par apply karein.</li>
+                        <li><strong>Step 3 — Roll Order mein Card Mapping Karein:</strong> <code>/assigned-rfid-cards</code> par ek-ek class select karein. Kyunki <strong>SELECT STUDENT</strong> list Roll Order mein aati hai, aap class ke bundle ko roll number 1 se lekar aakhiri roll number tak bina rukawat ke 5 minute mein scan aur assign kar sakte hain.</li>
+                        <li><strong>Step 4 — Live Gate Test Karein:</strong> Sabhi cards distribute karne se pehle 2–3 students ke cards gate reader par tap karke verify karein ki <em>Today's Attendance Overview</em> aur <em>Take Attendance</em> par Present mark ho raha hai ya nahi.</li>
+                        <li><strong>Step 5 — Exit Attendance &amp; Notice Templates ON Karein:</strong> Attendance screen par <strong>Customize Notice Templates</strong> set karein aur chhutti ke samay <em>Exit Attendance</em> chalu karein taaki parents ko subah entry aur shaam exit dono ki suraksha confirmation milti rahe.</li>
+                    </ol>
+
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-6 mb-3">Common Troubleshooting Tips (Agar Scanner Poll Na Kare Toh Kya Karein?)</h3>
+                    <ul class="list-disc pl-6 space-y-2 mb-6 text-sm">
+                        <li><strong>MACHINE CONNECTION "Not Setup" Dikh Raha Hai:</strong> Check karein ki aapne sahi <em>MACHINE SS TOKEN</em> enter kiya hai aur <strong>Fetch IP</strong> button click kiya hai. Saath hi ensure karein ki RFID device power ON aur internet se connected hai.</li>
+                        <li><strong>SCANNER POLLING "Inactive" Hai:</strong> Browser tab ko refresh karein ya token dobara fetch karein; agar phir bhi swipe capture na ho toh aap printed card UID ko <em>RFID CARD NUMBER</em> box mein manually type karke bhi <strong>Assign Card to Student</strong> kar sakte hain.</li>
+                        <li><strong>Galat Student ko Card Assign Ho Gaya:</strong> Koi tension nahi! Right-side <em>Class Assignment List</em> mein us student ke saamne <strong>Unassign</strong> button click karein aur sahi student ke aage <strong>Assign RFID</strong> dabakar dobara link kar dein.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">6. Quick Reference Table (Assigned RFID Cards Options)</h2>
+                    <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                        <table class="w-full text-left text-xs sm:text-sm">
+                            <thead class="bg-slate-100 text-slate-800 font-semibold">
+                                <tr>
+                                    <th class="px-3 py-2.5 sm:px-4 sm:py-3">Option / Field</th>
+                                    <th class="px-3 py-2.5 sm:px-4 sm:py-3">Section</th>
+                                    <th class="px-3 py-2.5 sm:px-4 sm:py-3">Exact Kaam</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">MACHINE SS TOKEN &amp; Fetch IP</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Device Setup</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">RFID hardware machine ko ERP se connect karna</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">MACHINE CONNECTION &amp; POLLING</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Device Setup</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Live device aur auto-scan listener status dekhna</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">SELECT CLASS &amp; STUDENT</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Assign RFID Card</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Roll Order mein student chunn-na (existing card badge ke saath)</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">RFID CARD NUMBER (AUTO SCANNED)</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Assign RFID Card</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Card swipe par 8-char UID automatic capture karna</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">Assign RFID / Unassign</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Class Assignment List</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Row se seedha card link ya unlink karna</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-200 pt-8">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Frequently Asked Questions (FAQs)</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-slate-800">1. Kya RFID card assign karne ke liye hardware machine zaroori hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Auto-scanning (<code>Waiting for card swipe...</code>) ke liye USB/Network RFID reader use hota hai, lekin agar aapke paas card par printed UID number hai toh aap use manually enter karke bhi <strong>Assign Card to Student</strong> kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">2. MACHINE SS TOKEN kahan se milta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Jab aap My Zini compatible RFID/biometric attendance device setup karate hain, toh aapko ek unique SS Attendance Token diya jata hai jise <strong>Enter SS Attendance Token</strong> mein daalkar <strong>Fetch IP</strong> dabana hota hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">3. Ek hi class ke sabhi students mein kisko card mila hai aur kisko nahi, yeh kaise dekhein?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>SELECT CLASS</strong> dropdown se class chunte hi right-side <strong>Class Assignment List</strong> mein sabhi students ki Roll Order table khul jati hai — jahan assigned students ke aage <code>💳 UID</code> aur baaki ke aage <code>Unassigned</code> likha hota hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">4. Kya Staff members ke liye bhi RFID cards use hote hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Ji haan! <code>/staff</code> module mein har teacher/staff ke liye <strong>RFID Card Number</strong> field hota hai (jaise <code>9F01BA1F</code>), jisse teachers ki daily attendance bhi RFID tap se lag sakti hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">5. Agar student class promote hokar agli class mein jaye toh kya naya RFID card dena padega?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nahi! Student ka RFID UID unke permanent Student Profile se juda rehta hai, isliye class promote hone par bhi wahi smart card aage ke saalon mein kaam karta rehta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">6. Unassign button dabane se kya student delete ho jata hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Bilkul nahi! <strong>Unassign</strong> sirf us physical RFID card ka UID student se unlink karta hai — student ka poora academic aur fee record 100% safe rehta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">7. Kya RFID card tap karne par parents ko alert jata hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan, jab attendance notifications aur Exit Attendance enabled hote hain, toh card tap hote hi parents ko bacche ke school pahunchne aur nikalne ki live update milti hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">8. Kya Assigned RFID Cards page mobile aur tablet par bhi kaam karta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan, poora page responsive hai — aap laptop, tablet ya phone kisi bhi device par class assignment list aur device status check kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">9. Apne school ke liye My Zini Digital ERP kaise shuru karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Aap <a href="../index.html#contact" class="text-blue-600 hover:underline">Digital ERP Registration Form</a> par jaakar sirf <strong>₹100 Registration Fee</strong> ke saath apna school register kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">10. Kya ek hi RFID card do students ko assign ho sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nahi! Har RFID card ka UID unique hota hai. Agar koi purana card kisi naye student ko dena ho, toh pehle purane student ke saamne <strong>Unassign</strong> button dabakar card free karna hota hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">11. SELECT STUDENT dropdown mein "Has Card: 36F7D206" kyun dikhta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Yeh smart indicator admin ko turant batata hai ki is student ke paas pehle se RFID card linked hai, taaki galti se duplicate card assign na ho jaye aur roll order mein sabhi students ka status clear rahe.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">12. Kya RFID attendance ka record Attendance Report (/attendance-report) mein bhi dikhta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Ji haan! RFID tap se lagne wali har attendance seedha cloud database mein save hoti hai, isliye <code>/attendance-report</code> aur Dashboard ke <em>Today's Attendance Overview</em> mein bilkul wahi live data dikhta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">13. Kya Class Assignment List mein roll number ke hisab se students sort hokar dikhte hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Dono jagah — <strong>SELECT STUDENT</strong> dropdown aur right-side <strong>Class Assignment List</strong> — students hamesha Roll Order (Roll 1, 4, 8, 22, 101...) mein hi dikhte hain taaki card distribution super fast ho sake.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">14. Kya main ek saath Nursery aur baaki sabhi classes ke RFID cards manage kar sakta hoon?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Bilkul! Aapko sirf <strong>SELECT CLASS</strong> dropdown se class badalni hai aur 2 second mein us class ki poori assignment list aur Assign/Unassign buttons screen par load ho jaate hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">15. Kya Student Management (/students) mein bhi student ka RFID UID update kiya ja sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan, <code>/assigned-rfid-cards</code> sabse fast dedicated hub hai jahan auto-scan aur Roll Order list ek saath milti hai, aur saara data poore ERP mein real-time sync rehta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">16. School mein RFID hardware setup karne ke liye support kahan se milega?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Aap My Zini support team se <code>teamdigitalerp@gmail.com</code> ya <code>+91 92419 81083</code> par contact karke compatible RFID readers aur SS Attendance Token setup ki poori madad le sakte hain.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mt-10 bg-slate-900 text-white rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-xl font-bold">Smart RFID Attendance Aaj Hi Shuru Karein!</h3>
+                    <p class="text-slate-300 text-sm mt-1">My Zini Digital ERP par register karein (₹100 Registration Fee) aur 50+ smart tools use karein.</p>
+                </div>
+                <a href="../index.html#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg whitespace-nowrap">Register Now</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 text-center py-6 text-sm mt-12">
+        <p>&copy; 2026 My Zini Digital ERP. A Product by Digital Education System.</p>
+    </footer>
+</body>
+</html>
