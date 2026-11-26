@@ -80,6 +80,10 @@ def main():
         errors.append(f"Character count {char_count} < 15000")
     if not (10 <= img_count <= 12):
         errors.append(f"Image count {img_count} not between 10 and 12")
+    if 'name="viewport"' not in html:
+        errors.append("Missing responsive viewport meta tag")
+    if not any(bp in html for bp in ("sm:", "md:", "lg:")):
+        errors.append("Missing responsive Tailwind breakpoints (sm:/md:/lg:)")
 
     for src in parser.images:
         img_abs = os.path.normpath(os.path.join(blog_dir, src))

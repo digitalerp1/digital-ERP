@@ -71,36 +71,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; }</style>
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; } code { overflow-wrap: anywhere; word-break: break-word; }</style>
 </head>
-<body>
+<body class="overflow-x-hidden">
     <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-2xl font-bold text-slate-800">My Zini <span class="text-blue-600">ERP</span></a>
-            <nav class="flex items-center space-x-6 text-sm font-medium">
-                <a href="../index.html" class="text-slate-600 hover:text-blue-600">Home</a>
-                <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold">Blogs</a>
-                <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
-            </nav>
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-xl sm:text-2xl font-bold text-slate-800">My Zini <span class="text-blue-600">ERP</span></a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="../index.html" class="text-slate-600 hover:text-blue-600">Home</a>
+                    <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold">Blogs</a>
+                    <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
+                </nav>
+                <button id="blog-mobile-toggle" aria-label="Toggle Menu" class="md:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100" onclick="document.getElementById('blog-mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <div id="blog-mobile-menu" class="hidden md:hidden mt-3 pb-2 border-t border-slate-100 pt-3 flex flex-col space-y-2 text-sm font-medium">
+                <a href="../index.html" class="text-slate-700 hover:text-blue-600 py-1.5">Home</a>
+                <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold py-1.5">Blogs</a>
+                <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center hover:bg-blue-700">Register (₹100 Fee)</a>
+            </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-12 max-w-4xl">
-        <nav aria-label="Breadcrumb" class="text-sm text-slate-500 mb-6">
+    <main class="container mx-auto px-3 sm:px-6 py-6 sm:py-10 lg:py-12 max-w-4xl">
+        <nav aria-label="Breadcrumb" class="text-xs sm:text-sm text-slate-500 mb-4 sm:mb-6 flex flex-wrap items-center gap-1">
             <a href="../index.html" class="hover:text-blue-600">Home</a> &rsaquo;
             <a href="../index.html#blogs-preview" class="hover:text-blue-600">Blogs</a> &rsaquo;
             <span class="text-slate-700 font-medium">Student Management (Hinglish Guide)</span>
         </nav>
 
-        <article class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 md:p-12">
-            <div class="flex flex-wrap items-center gap-3 text-xs text-slate-500 mb-4">
+        <article class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-8 lg:p-12 break-words">
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-slate-500 mb-4">
                 <span class="bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded-full">Student Management</span>
                 <time datetime="2026-11-26">November 26, 2026</time>
                 <span>&bull; 12 min read</span>
                 <span>&bull; Live Verified on myzini.digitalerp.shop</span>
             </div>
 
-            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
                 My Zini Digital ERP mein Student Management Kaise Use Karein? (Har Ek Chhote Option ka Complete Hinglish Guide)
             </h1>
 
