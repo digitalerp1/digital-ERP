@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Zini Digital ERP mein Staff Management aur Salary Tracking Kaise Use Karein? | Hinglish Guide</title>
+    <meta name="description" content="My Zini Digital ERP (/staff) ka complete Hinglish guide: Add Staff (Monthly Salary, Daily Absent Fine, 1-Hour Late Fine, RFID Card, Portal Login), Search, Active/Inactive Filter, Previous Dues, Export (JSON/CSV/XLSX) aur Staff Salary Payouts.">
+    <meta name="keywords" content="school staff management payroll software, myzini digital erp staff module, teacher salary tracking erp, absent fine late fine school payroll, rfid card staff attendance">
+    <meta name="author" content="Digital Education System">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://digitalerp.shop/blogs/how-to-manage-staff-and-salaries-myzini-erp.html">
+    <link rel="icon" type="image/png" href="/icon.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://digitalerp.shop/blogs/how-to-manage-staff-and-salaries-myzini-erp.html">
+    <meta property="og:title" content="My Zini Digital ERP mein Staff Management aur Salary Tracking Kaise Use Karein?">
+    <meta property="og:description" content="Staff Management (/staff) aur Salary Payouts ke har ek chhote option ka live verified Hinglish step-by-step guide.">
+    <meta property="og:image" content="https://digitalerp.shop/blogs/images/staff_visual_01_hero.png">
+    <meta property="article:published_time" content="2026-11-27T00:20:00+05:30">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Zini Digital ERP Staff Management & Salary Tracking (Hinglish Guide)">
+    <meta name="twitter:description" content="12 real screenshots & visual diagrams ke saath Staff Management aur Payroll ka poora Hinglish guide.">
+    <meta name="twitter:image" content="https://digitalerp.shop/blogs/images/staff_visual_01_hero.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "My Zini Digital ERP mein Staff Management aur Salary Tracking Kaise Use Karein? (Complete Hinglish Guide)",
+          "description": "My Zini Digital ERP ke Staff Management (/staff) module ka complete Hinglish step-by-step tutorial.",
+          "image": [
+            "https://digitalerp.shop/blogs/images/staff_visual_01_hero.png",
+            "https://digitalerp.shop/blogs/images/staff_01_overview.png",
+            "https://digitalerp.shop/blogs/images/staff_03_add_modal_top.png"
+          ],
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "inLanguage": "hi-Latn",
+          "author": { "@type": "Organization", "name": "My Zini Digital ERP", "url": "https://digitalerp.shop" },
+          "publisher": { "@type": "Organization", "name": "Digital Education System", "logo": { "@type": "ImageObject", "url": "https://digitalerp.shop/icon.png" } },
+          "mainEntityOfPage": "https://digitalerp.shop/blogs/how-to-manage-staff-and-salaries-myzini-erp.html"
+        },
+        {
+          "@type": "HowTo",
+          "name": "My Zini Digital ERP mein Staff Management aur Salary Manage Karne ke Steps",
+          "description": "Live verified workflow on myzini.digitalerp.shop/staff.",
+          "step": [
+            { "@type": "HowToStep", "name": "Staff Management (/staff) Open Karein", "text": "Sidebar se Staff (/staff) ya Dashboard par Add Staff Quick Action kholein aur 19+ listed staff members ka roster dekhein." },
+            { "@type": "HowToStep", "name": "Search, Status Filter & Export Use Karein", "text": "'Search by name, ID, mobile, designation...' box aur 'All Status / Active Staff Only / Inactive Staff Only' dropdown use karein, aur JSON/CSV/Excel mein export karein." },
+            { "@type": "HowToStep", "name": "Add Staff Form Bharein", "text": "Full Name, Designation, Mobile, Gmail, Password, Qualification, RFID Card Number, Joining Date, Monthly Salary, Daily Absent Fine (₹), 1-Hour Late Fine (₹), Photo aur Staff is Active set karein." },
+            { "@type": "HowToStep", "name": "Previous Dues, Profile, Edit & Staff Salary Track Karein", "text": "Previous Dues button, row Profile/Edit actions aur Payments -> Staff Salary se monthly payouts manage karein." }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Add Staff form mein salary aur fine ke kaun-kaun se options milte hain?", "acceptedAnswer": { "@type": "Answer", "text": "Add Staff modal mein aapko Monthly Salary, Daily Absent Fine (₹), aur 1-Hour Late Fine (₹) ke dedicated fields milte hain jisse attendance ke hisab se exact salary calculate ho sake." } },
+            { "@type": "Question", "name": "Kya Staff roster ko Excel ya CSV mein export kiya ja sakta hai?", "acceptedAnswer": { "@type": "Answer", "text": "Haan! /staff page par Export dropdown mein JSON Format, CSV Format, aur Excel (.xlsx) teenon options milte hain." } },
+            { "@type": "Question", "name": "Staff ko RFID Card kaise assign karte hain?", "acceptedAnswer": { "@type": "Answer", "text": "Add Staff ya Edit modal mein 'RFID Card Number' field mein card ID (jaise 9F01BA1F) enter karke save karein, jo roster table ke RFID CARD column mein dikhta hai." } }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; } code { overflow-wrap: anywhere; word-break: break-word; }</style>
+</head>
+<body class="overflow-x-hidden">
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-xl sm:text-2xl font-bold text-slate-800">My Zini <span class="text-blue-600">ERP</span></a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="../index.html" class="text-slate-600 hover:text-blue-600">Home</a>
+                    <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold">Blogs</a>
+                    <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
+                </nav>
+                <button id="blog-mobile-toggle" aria-label="Toggle Menu" class="md:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100" onclick="document.getElementById('blog-mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <div id="blog-mobile-menu" class="hidden md:hidden mt-3 pb-2 border-t border-slate-100 pt-3 flex flex-col space-y-2 text-sm font-medium">
+                <a href="../index.html" class="text-slate-700 hover:text-blue-600 py-1.5">Home</a>
+                <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold py-1.5">Blogs</a>
+                <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-center hover:bg-blue-700">Register (₹100 Fee)</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-3 sm:px-6 py-6 sm:py-10 lg:py-12 max-w-4xl">
+        <nav aria-label="Breadcrumb" class="text-xs sm:text-sm text-slate-500 mb-4 sm:mb-6 flex flex-wrap items-center gap-1">
+            <a href="../index.html" class="hover:text-blue-600">Home</a> &rsaquo;
+            <a href="../index.html#blogs-preview" class="hover:text-blue-600">Blogs</a> &rsaquo;
+            <span class="text-slate-700 font-medium">Staff Management &amp; Salary</span>
+        </nav>
+
+        <article class="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-8 lg:p-12 break-words">
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-slate-500 mb-4">
+                <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-full">Staff &amp; Payroll</span>
+                <time datetime="2026-11-27">November 27, 2026</time>
+                <span>&bull; 14 min read</span>
+                <span>&bull; Live Verified on myzini.digitalerp.shop</span>
+            </div>
+
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+                My Zini Digital ERP mein Staff Management aur Salary Tracking Kaise Use Karein? (Complete HR &amp; Payroll Hinglish Guide)
+            </h1>
+
+            <section class="bg-blue-50 border-l-4 border-blue-600 p-4 sm:p-6 rounded-r-xl mb-8">
+                <h2 class="text-sm font-bold text-blue-900 uppercase tracking-wide mb-2">Quick Summary (TL;DR — AI &amp; Reader Overview)</h2>
+                <p class="text-slate-700 text-sm leading-relaxed">
+                    <strong>My Zini Digital ERP</strong> (<code>https://myzini.digitalerp.shop/staff</code>) ka <strong>Staff Management</strong> module school ke sabhi teachers aur non-teaching employees ke records, portal logins, RFID cards aur salary rules ko ek jagah manage karta hai. Isme aapko smart <strong>Search</strong>, <strong>Active/Inactive Status Filter</strong>, <strong>Previous Dues</strong>, <strong>Add Staff</strong> form (jisme <em>Monthly Salary, Daily Absent Fine (₹), 1-Hour Late Fine (₹), Qualification, Joining Date, RFID Card Number, Photo</em> aur <em>Staff is Active</em> shamil hain), <strong>Export</strong> (JSON, CSV, Excel .xlsx), row-level <strong>Profile</strong> &amp; <strong>Edit</strong> actions, aur <strong>Payments &rarr; Staff Salary</strong> payout tracking sab kuch milta hai.
+                </p>
+            </section>
+
+            <figure class="mb-10">
+                <img src="images/staff_visual_01_hero.png" alt="My Zini Digital ERP Staff Management and Salary Tracking Overview" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                <figcaption class="text-xs text-slate-500 mt-2 text-center">My Zini Digital ERP Staff &amp; Payroll Suite: Teacher onboarding, RFID cards aur salary tracking ek saath.</figcaption>
+            </figure>
+
+            <section class="space-y-10 text-slate-700 leading-relaxed">
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">1. Staff Management (/staff) Workspace Overview</h2>
+                    <p class="mb-4">
+                        School ke sabhi teachers, clerks, drivers aur helpers ka directory dekhne ke liye left sidebar mein <strong>Staff</strong> (<code>/staff</code>) par click karein ya Dashboard ke Quick Actions mein <strong>Add Staff</strong> dabaein. Open hote hi top par aapko live staff count dikhta hai — jaise <em>"19 Staff Members listed"</em>.
+                    </p>
+                    <figure class="mb-6">
+                        <img src="images/staff_01_overview.png" alt="Staff Management page showing 19 Staff Members, Previous Dues, Add Staff, Export and Roster Table" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">Live /staff screen: Previous Dues, Add Staff, Export, Status Filter aur 9-column Staff Directory table.</figcaption>
+                    </figure>
+                    <p class="mb-3">Main roster table mein aapko 9 detailed columns dikhte hain:</p>
+                    <ul class="list-disc pl-6 space-y-1.5">
+                        <li><strong>STAFF ID:</strong> Har employee ka unique ID (jaise <code>#STF-1001</code>, <code>#STF-1002</code>, ya <code>#STAFF-QW3FH97D9IWFMF</code>).</li>
+                        <li><strong>NAME:</strong> Photo/Initials avatar badge (e.g. <code>RA</code>, <code>PR</code>, <code>AN</code>) ke saath staff ka poora naam.</li>
+                        <li><strong>DESIGNATION:</strong> Role jaise <em>Teacher</em>, Principal, Accountant, etc.</li>
+                        <li><strong>MOBILE:</strong> Direct clickable mobile number buttons (<code>6203513546</code>, <code>9876543213</code>, etc.).</li>
+                        <li><strong>QUALIFICATION:</strong> Degree jaise <em>M.Sc Mathematics, B.Ed English, Ph.D History, B.Tech CS, Diploma IT, B.Com Accounts</em>.</li>
+                        <li><strong>JOINING DATE:</strong> Exact joining date (e.g. <code>4/1/2023</code>, <code>9/5/2026</code>) jisse seniority aur tenure track hota hai.</li>
+                        <li><strong>RFID CARD:</strong> Assigned smart card UID (jaise <code>93732E1D</code>, <code>9F01BA1F</code>, <code>17B381B5</code>, <code>7BDEE819</code>).</li>
+                        <li><strong>STATUS:</strong> Green <strong>Active</strong> ya gray <strong>Inactive</strong> badge.</li>
+                        <li><strong>ACTIONS:</strong> Har row ke liye <strong>Profile</strong> aur <strong>Edit</strong> buttons.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">2. Smart Search, Status Filter aur Multi-Format Export</h2>
+                    <p class="mb-4">
+                        Bade schools mein 50–100+ staff members hone par kisi bhi teacher ko turant dhoondhne aur filter karne ke liye top toolbar par behad tez tools milte hain:
+                    </p>
+                    <figure class="mb-6">
+                        <img src="images/staff_02_search.png" alt="Staff Management live search filtering Rajesh Kumar" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">Live Test: Search box mein "Rajesh" type karte hi #STF-1001 Rajesh Kumar turant filter hokar aa gaya.</figcaption>
+                    </figure>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Search Box:</strong> Placeholder kehta hai <code>Search by name, ID, mobile, designation...</code> — yani aap naam, Staff ID, mobile number ya designation kisi se bhi search kar sakte hain.</li>
+                        <li><strong>Status Dropdown:</strong> Teen clear filter options milte hain — <strong>All Status (Active &amp; Inactive)</strong>, <strong>Active Staff Only</strong>, aur <strong>Inactive Staff Only</strong>. Example ke liye, live table mein <em>Nisha Rani (#STF-1011)</em> Inactive mark hain, jinhe aap sirf Active filter lagakar hide kar sakte hain.</li>
+                        <li><strong>Export Button:</strong> Student Management ki tarah yahan bhi <strong>Export</strong> dropdown mein 3 formats milte hain: <strong>JSON Format</strong>, <strong>CSV Format</strong>, aur <strong>Excel (.xlsx)</strong>.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">3. Add Staff Modal: Har Ek Chhote Field (Salary, Fines, RFID &amp; Login) ki Detail</h2>
+                    <p class="mb-4">
+                        Naye teacher ya staff ko add karne ke liye <strong>Add Staff</strong> button par click karein. Chaliye iske andar ke har ek field ko detail mein samajhte hain:
+                    </p>
+                    <figure class="mb-6">
+                        <img src="images/staff_visual_02_workflow.png" alt="4-Step Staff Onboarding and Salary Workflow" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">4-Step Staff &amp; Payroll Workflow: Add Staff &rarr; Assign Classes &rarr; Daily Attendance &rarr; Salary Payout.</figcaption>
+                    </figure>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <figure>
+                            <img src="images/staff_03_add_modal_top.png" alt="Add Staff modal top section with Name, Designation, Mobile, Gmail, Password, Parents and Address" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Add Staff Modal (Top): Personal, Login &amp; Guardian info.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/staff_04_add_modal_bottom.png" alt="Add Staff modal bottom section with Qualification, RFID, Joining Date, Monthly Salary, Absent Fine, Late Fine and Photo" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Add Staff Modal (Bottom): Salary, Absent/Late Fines, RFID &amp; Status.</figcaption>
+                        </figure>
+                    </div>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Identity &amp; Teacher Portal Login:</strong> <strong>Full Name</strong>, <strong>Designation</strong> (e.g. Teacher, Principal), <strong>Mobile Number *</strong> (mandatory), <strong>Gmail</strong>, aur <strong>Password</strong>. Isi Gmail/Mobile aur Password se teacher <code>teacher.digitalerp.shop</code> par login karke apni class ki attendance aur exam marks enter kar sakte hain!</li>
+                        <li><strong>Family &amp; Address Details:</strong> <strong>Father's Name</strong>, <strong>Mother's Name</strong>, aur <strong>Address</strong> background verification aur official HR records ke liye.</li>
+                        <li><strong>Highest Qualification &amp; Joining Date:</strong> Educational degree (e.g. B.Ed, M.Sc, B.Tech) aur Joining Date calendar picker.</li>
+                        <li><strong>RFID Card Number:</strong> Agar school mein smart RFID punch machine ya card attendance use hoti hai, toh staff ke RFID card ka number yahan link karein.</li>
+                        <li><strong>Salary &amp; Attendance Fine Rules (Most Important!):</strong> Yahan teen financial fields milte hain:
+                            <ul class="list-circle pl-6 mt-1 space-y-1 text-sm">
+                                <li><strong>Monthly Salary:</strong> Employee ki fixed mahine ki tankhwah (₹).</li>
+                                <li><strong>Daily Absent Fine (₹):</strong> Agar bina approved leave ke teacher absent rehte hain toh ek din ka kitna deduction hoga.</li>
+                                <li><strong>1-Hour Late Fine (₹):</strong> Late aane par prati ghanta kitna fine (e.g. <code>50</code>) katega.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Photo &amp; Staff is Active Toggle:</strong> Image URL paste karein ya <strong>Upload</strong> button se photo lagayein, aur <strong>Staff is Active</strong> checkbox tick rakhkar save kar dein.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">4. Profile, Edit, Previous Dues aur Staff Salary Payouts</h2>
+                    <figure class="mb-6">
+                        <img src="images/staff_visual_03_features.png" alt="6 Core Pillars of Staff Management in My Zini ERP" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">Unique IDs, Roles, Salary Rules, Active Status, Vouchers aur Teacher Portal Login ka poora ecosystem.</figcaption>
+                    </figure>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <figure>
+                            <img src="images/staff_05_row_profile.png" alt="Staff row Profile action view" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Table Actions: Har staff ke aage Profile aur Edit buttons.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/staff_06_row_edit.png" alt="Staff Edit action view" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Edit option se kisi bhi staff ki salary, mobile ya status update karein.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <figure>
+                            <img src="images/staff_07_previous_dues.png" alt="Previous Dues button and Staff directory" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Previous Dues button: Purane baki salary balances track karne ke liye.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="images/staff_08_salary_payout.png" alt="Payments and Shortcuts Hub showing Staff Salary (18) voucher shortcut" class="w-full h-auto rounded-lg border border-slate-200 shadow-sm">
+                            <figcaption class="text-xs text-slate-500 mt-1.5 text-center">Cashier Terminal (/shortcut) &amp; Payments Sidebar: 👔 Staff Salary (18) payout hub.</figcaption>
+                        </figure>
+                    </div>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li><strong>Previous Dues Button:</strong> Top toolbar mein <strong>Previous Dues</strong> button milta hai jisse aap pichhle mahino ya pichhle session ki baki staff salary balances ko manage aur adjust kar sakte hain.</li>
+                        <li><strong>Profile &amp; Edit Buttons:</strong> Kisi bhi row mein <strong>Profile</strong> dabakar staff ka poora biodata, qualification aur contact info dekhein, aur <strong>Edit</strong> se increment hone par Monthly Salary, Absent/Late Fine, RFID Card ya Active/Inactive status turant update karein.</li>
+                        <li><strong>Staff Salary Payouts (<code>Payments &rarr; Staff Salary</code>):</strong> Mahine ke end mein Cashier Terminal (<code>/shortcut</code>) par <strong>👔 Staff Salary (18)</strong> tile ya left sidebar mein <strong>Payments &rarr; • Staff Salary</strong> kholein. Yahan se aap har teacher ko di gayi salary ka voucher record kar sakte hain — jo seedha Dashboard par <em>STAFF SALARY DISBURSED (₹3,88,054)</em> aur <em>STAFF MEMBERS WITH PENDING BALANCES (16)</em> mein sync hota hai!</li>
+                    </ul>
+
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-6 mb-3">Staff Salary Voucher Banane ka 5-Step Process</h3>
+                    <p class="mb-3 text-sm">
+                        Jab mahine ki salary distribute karni ho, toh Accountant ya Principal ko sirf yeh 5 steps follow karne hote hain:
+                    </p>
+                    <ol class="list-decimal pl-6 space-y-2 mb-4 text-sm">
+                        <li><strong>Staff Salary Module Kholein:</strong> Sidebar mein <em>Payments &rarr; • Staff Salary</em> ya <code>/shortcut</code> par <strong>👔 Staff Salary (18)</strong> card par click karein.</li>
+                        <li><strong>Employee &amp; Month Select Karein:</strong> Jis teacher ya staff member ko payment deni hai unhe select karein (e.g. <em>#STF-1001 Rajesh Kumar</em> ya <em>#STF-1002 Priya Singh</em>) aur salary month chunein.</li>
+                        <li><strong>Attendance &amp; Fine Review Karein:</strong> System us mahine ki present/absent days aur late hours ke hisab se gross salary aur deductions dikhata hai, saath hi pichhla pending balance bhi show hota hai.</li>
+                        <li><strong>Paid Amount &amp; Mode Enter Karein:</strong> Aap full salary ya partial salary (advance/installment) enter karke Cash, Bank Transfer ya UPI mode select kar sakte hain.</li>
+                        <li><strong>Save &amp; Live Sync Verify Karein:</strong> Save karte hi salary voucher record ho jata hai, aur usi second Dashboard par <em>Staff Pending Dues</em> kam hokar <em>Staff Salary Disbursed</em> badh jata hai — isse school ke cashbook aur balance sheet mein kabhi galti nahi hoti.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">5. Mobile, Tablet aur Laptop Sync + HR Best Practices</h2>
+                    <figure class="mb-6">
+                        <img src="images/staff_visual_04_sync.png" alt="Mobile, Tablet and Laptop Live Sync between HR Panel, Teacher Portal and Salary Ledger" class="w-full h-auto rounded-lg sm:rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 mt-2 text-center">Principal HR Panel, Teacher Mobile Portal aur Salary Ledger ke beech real-time cloud sync.</figcaption>
+                    </figure>
+                    <ul class="list-disc pl-6 space-y-2 mb-6">
+                        <li><strong>Salary Rules Shuru Mein Hi Set Karein:</strong> Naye teacher ko add karte waqt hi <em>Monthly Salary</em>, <em>Daily Absent Fine (₹)</em>, aur <em>1-Hour Late Fine (₹)</em> bhar dein taaki mahine ke aakhir mein koi dispute na ho.</li>
+                        <li><strong>Class Teacher Mapping Zaroor Karein:</strong> Staff add karne ke baad <em>Classes</em> module mein unhe unki assigned class se link karein, taaki <code>/attendance</code> par unka naam dikhe.</li>
+                        <li><strong>Purane Teachers ko Inactive Karein:</strong> Agar koi teacher job chhod kar chale jayein (jaise <em>#STF-1011 Nisha Rani</em>), toh unhe delete karne ke bajaye <strong>Staff is Active</strong> uncheck karke <em>Inactive</em> kar dein — isse purani salary vouchers aur attendance history 100% safe rehti hai.</li>
+                        <li><strong>RFID Cards Link Karein:</strong> Smart attendance machines use karne wale schools mein har employee ka RFID Card UID darj karne se morning check-in aur payroll automation aur bhi fast ho jata hai.</li>
+                    </ul>
+
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-6 mb-3">Monthly Salary Calculation &amp; Teacher Onboarding Checklist</h3>
+                    <p class="mb-3 text-sm">
+                        School accounts team ke liye sabse badi pareshani hoti hai har mahine ki 1 se 5 tarikh ke beech sabhi teachers ki salary calculate karna. My Zini Digital ERP mein yeh poora process 100% transparent aur automatic formula par kaam karta hai:
+                    </p>
+                    <ol class="list-decimal pl-6 space-y-2 mb-6 text-sm">
+                        <li><strong>Base Monthly Salary &amp; Attendance Sync:</strong> Sabse pehle employee ki fixed <em>Monthly Salary</em> li jati hai. Uske baad <strong>Staff Attendance Report</strong> se check hota hai ki employee mahine mein kitne din present raha, kitne din absent raha, aur kitne ghante late aaya.</li>
+                        <li><strong>Automatic Absent &amp; Late Fine Calculation:</strong> Jo <em>Daily Absent Fine (₹)</em> aur <em>1-Hour Late Fine (₹)</em> aapne Add Staff ya Edit modal mein set kiya tha, uske hisab se deduction calculate hota hai — isse teachers aur management ke beech koi confusion ya manual galti nahi hoti.</li>
+                        <li><strong>Previous Dues &amp; Advance Adjustment:</strong> Agar kisi staff member ko pichhle mahine koi salary balance baki tha (<em>Previous Dues</em>) ya unhone koi advance liya tha, toh woh bhi final voucher mein adjust ho jata hai.</li>
+                        <li><strong>Teacher Portal Onboarding (5-Minute Setup):</strong> Naye teacher ko <strong>Add Staff</strong> se add karne ke baad, unhe unka registered Gmail/Mobile aur Password dein taaki woh <code>teacher.digitalerp.shop</code> par login karke apna password verify kar sakein aur classroom se hi attendance lena shuru kar dein.</li>
+                    </ol>
+
+                    <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-6 mb-3">4 Real-World HR Scenarios jahan Staff Management Sabse Zyada Kaam Aata Hai</h3>
+                    <ul class="list-disc pl-6 space-y-2 mb-6 text-sm">
+                        <li><strong>Annual Salary Increment Update:</strong> Naye academic session mein jab kisi teacher ki salary badhti hai, toh aapko naya record banane ki zaroorat nahi hai — bas <strong>Edit</strong> par click karke naya <em>Monthly Salary</em> amount save kar dein.</li>
+                        <li><strong>Qualification &amp; Board Audit Ready:</strong> School affiliation ya CBSE/State Board inspection ke waqt jab sabhi teachers ki degrees aur joining dates ki list maangi jati hai, tab <strong>Export &rarr; Excel (.xlsx)</strong> dabakar 2 second mein poori verified directory print ki ja sakti hai.</li>
+                        <li><strong>Duplicate Naam Hone par Easy Identification:</strong> Agar aapke school mein ek hi naam ke do teachers hon (jaise live portal par <em>Sameer</em> — <code>#STAFF-PU54Q39EJVGB3D</code> aur <code>#STAFF-9YL1RG62L83SX3</code>), toh unique Staff ID aur mobile number se bilkul sahi teacher ki pehchan hoti hai.</li>
+                        <li><strong>Multi-Branch / Large Staff Search:</strong> Jab 50+ teaching aur non-teaching staff ho, toh <code>Search by name, ID, mobile, designation...</code> box mein sirf designation (jaise <em>Teacher</em>) likhkar turant sabhi teachers ko filter kar sakte hain.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-3">6. Quick Reference Table (Staff Management Options)</h2>
+                    <div class="overflow-x-auto border border-slate-200 rounded-xl">
+                        <table class="w-full text-left text-xs sm:text-sm">
+                            <thead class="bg-slate-100 text-slate-800 font-semibold">
+                                <tr>
+                                    <th class="px-3 py-2.5 sm:px-4 sm:py-3">Option / Field</th>
+                                    <th class="px-3 py-2.5 sm:px-4 sm:py-3">Kahan Milta Hai</th>
+                                    <th class="px-3 py-2.5 sm:px-4 sm:py-3">Exact Kaam</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200">
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">Search &amp; Status Filter</td><td class="px-3 py-2 sm:px-4 sm:py-2.5"><code>/staff</code> Toolbar</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Name/ID/Mobile/Designation search + Active/Inactive filter</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">Add Staff</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Top Right</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Teacher onboarding, portal login, RFID, Salary &amp; Fine rules</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">Previous Dues</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Top Right</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Purane pending salary dues track aur adjust karna</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">Export</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Top Right</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">JSON Format, CSV Format, Excel (.xlsx) download</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">Daily Absent &amp; Late Fine</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Add/Edit Modal</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Attendance ke hisab se automatic salary deduction rules</td></tr>
+                                <tr><td class="px-3 py-2 sm:px-4 sm:py-2.5 font-medium">Staff Salary (18)</td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Payments / <code>/shortcut</code></td><td class="px-3 py-2 sm:px-4 sm:py-2.5">Monthly salary payouts aur vouchers generate karna</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-200 pt-8">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Frequently Asked Questions (FAQs)</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-bold text-slate-800">1. Kya teacher ko Staff Management mein add karne ke baad woh alag se login kar sakte hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Add Staff form mein jo <strong>Gmail</strong> aur <strong>Password</strong> aap set karte hain, usse teacher <code>teacher.digitalerp.shop</code> portal par login karke attendance aur marks manage kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">2. Daily Absent Fine (₹) aur 1-Hour Late Fine (₹) kaise kaam karta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Staff add ya edit karte waqt aap prati din absent aur prati ghanta late aane ka fine amount (jaise <code>50</code>) set kar sakte hain, jo monthly payroll aur pending balance calculate karte waqt madad karta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">3. Staff ke pending salary balances kahan dikhte hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Dashboard ke <strong>Financial Overview</strong> mein <em>STAFF MEMBERS WITH PENDING BALANCES</em> list dikhti hai, aur <strong>Finance &rarr; Staff</strong> tab aur <strong>Payments &rarr; Staff Salary</strong> mein poora voucher hisaab milta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">4. Kya Staff Management table ko Excel mein download kiya ja sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Bilkul! Top toolbar mein <strong>Export</strong> button par click karke aap <strong>JSON Format</strong>, <strong>CSV Format</strong>, ya <strong>Excel (.xlsx)</strong> format mein poori staff directory download kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">5. RFID Card Number field kis kaam aata hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Agar aapke school mein RFID biometric/card attendance chalti hai, toh yahan card ID (jaise <code>9F01BA1F</code>) save karne se <em>Assigned RFID Cards</em> aur <em>Staff Attendance</em> automatic link ho jate hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">6. Inactive Staff ko wapas Active kaise karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Filter dropdown se <strong>Inactive Staff Only</strong> chunein, staff row par <strong>Edit</strong> click karein, <strong>Staff is Active</strong> checkbox tick karein aur save kar dein.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">7. Kya sirf teachers hi nahi, drivers aur peons ko bhi add kar sakte hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Ji haan! <strong>Designation</strong> field mein aap Teacher, Principal, Accountant, Driver, Guard, ya Helper kuch bhi likhkar sabhi employees ki salary aur attendance ek hi system mein manage kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">8. Apne school ke liye My Zini Digital ERP kaise shuru karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Aap <a href="../index.html#contact" class="text-blue-600 hover:underline">Digital ERP Registration Form</a> par jaakar sirf <strong>₹100 Registration Fee</strong> ke saath apna school register kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">9. Kya Staff Management mein Joining Date ke hisab se purane aur naye teachers dikhte hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Roster table mein <strong>JOINING DATE</strong> ka alag column hota hai jahan har employee ki exact joining date (jaise <code>4/1/2023</code>, <code>9/5/2026</code>) dikhti hai, aur latest added staff upar dikhte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">10. Agar kisi staff member ka mobile number ya photo update karna ho toh kaise karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Roster table mein us staff member ke saamne <strong>Edit</strong> button par click karein, naya mobile number ya photo (URL ya Upload button) update karein aur save kar dein.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">11. Previous Dues button aur Dashboard ke Staff Pending Balances mein kya connection hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Dono ek hi cloud payroll ledger se jude hain. Jab aap <strong>Previous Dues</strong> ya <strong>Payments &rarr; Staff Salary</strong> se kisi teacher ki pending salary clear karte hain, toh Dashboard par <em>STAFF SALARY DISBURSED</em> aur <em>Staff Pending Dues</em> turant update ho jate hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">12. Kya Staff Management table se hi kisi teacher ko direct phone call kiya ja sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Table ke <strong>MOBILE</strong> column mein har employee ka mobile number ek clickable button ke roop mein hota hai, jisse mobile browser par ek tap mein call lag sakti hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">13. Agar koi teacher apna Teacher Portal password bhool jaye toh admin kaise reset karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Admin ko sirf <code>/staff</code> par us teacher ke saamne <strong>Edit</strong> button dabana hai, <strong>Password</strong> field mein naya password enter karke save karna hai — turant naya login activate ho jata hai aur teacher dobara portal access kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">14. Export Excel (.xlsx) aur CSV mein kaun-kaun se columns download hote hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Download ki gayi file mein Staff ID, Full Name, Designation, Mobile, Qualification, Joining Date, RFID Card Number, Status aur Salary/Contact details saaf columns mein milte hain, jo school audit, affiliation renewal, UDISE+ aur offline backup ke liye best hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">15. Kya Staff Management module mobile, tablet aur laptop teeno par chalta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Ji haan! Chahe aap school office ke laptop par payroll bana rahe hon ya principal ke phone par staff profile check kar rahe hon, poora interface har screen size par cleanly adjust ho jata hai aur real-time Live Sync ke saath kaam karta hai.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="mt-10 bg-slate-900 text-white rounded-xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h3 class="text-xl font-bold">School HR &amp; Payroll ko Digital Banayein!</h3>
+                    <p class="text-slate-300 text-sm mt-1">My Zini Digital ERP par register karein (₹100 Registration Fee) aur 50+ smart tools use karein.</p>
+                </div>
+                <a href="../index.html#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg whitespace-nowrap">Register Now</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 text-center py-6 text-sm mt-12">
+        <p>&copy; 2026 My Zini Digital ERP. A Product by Digital Education System.</p>
+    </footer>
+</body>
+</html>

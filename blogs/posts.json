@@ -1,5 +1,16 @@
 [
   {
+    "slug": "how-to-manage-staff-and-salaries-myzini-erp",
+    "title": "My Zini Digital ERP mein Staff Management aur Salary Tracking Kaise Use Karein? (Complete Hinglish Guide)",
+    "description": "Staff Management (/staff) ke sabhi options: Add Staff (Monthly Salary, Daily Absent Fine, 1-Hour Late Fine, RFID Card, Portal Login), Search, Status Filter, Previous Dues, Export (JSON/CSV/XLSX) aur Staff Salary Vouchers ka poora Hinglish guide 12 images ke saath.",
+    "category": "Staff & Payroll",
+    "image": "blogs/images/staff_visual_01_hero.png",
+    "imageAlt": "My Zini Digital ERP Staff Management & Salary Tracking Banner",
+    "publishedAt": "2026-11-27",
+    "readTime": "14 min read",
+    "url": "blogs/how-to-manage-staff-and-salaries-myzini-erp.html"
+  },
+  {
     "slug": "how-to-track-student-dues-list-myzini-erp",
     "title": "My Zini Digital ERP mein Pending Dues List (Fee Dues Radar) aur WhatsApp Reminders Kaise Use Karein? (Hinglish Guide)",
     "description": "Fee Dues Radar (/dues-list) ke sabhi options: All Classes Defaulters, Search Student, Exclude Family Sibling Concession, Pending Dues Only, Advance Surplus, All Profiles, Automation Setup, aur Export CSV ka poora Hinglish guide 12 images ke saath.",
