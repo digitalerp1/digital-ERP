@@ -21,7 +21,7 @@
 | 14 | Leave Forms & Leave Management | `/leave-management` | `how-to-manage-student-staff-leave-forms-myzini-erp` | school leave management system online | published | `blogs/images/leave_visual_01_hero.png` | 2026-11-27 |
 | 15 | Hostel Management | `/hostel` | `how-to-manage-school-hostel-myzini-erp` | school hostel management software myzini | published | `blogs/images/hostel_visual_01_hero.png` | 2026-11-27 |
 | 16 | School Transport & Route Management | `/transport` | `how-to-manage-school-transport-routes-myzini-erp` | school bus transport management erp | published | `blogs/images/trans_visual_01_hero.png` | 2026-11-27 |
-| 17 | Online Payments & Fee Gateways | `Payments` | `how-to-accept-online-school-fee-payments-myzini-erp` | online school fee payment system india | pending | `blogs/images/how-to-accept-online-school-fee-payments-myzini-erp.png` | - |
+| 17 | Online Payments & Fee Gateways | `Payments` | `how-to-accept-online-school-fee-payments-myzini-erp` | online school fee payment system india | published | `blogs/images/pay_visual_01_hero.png` | 2026-11-27 |
 | 18 | Data Center (Import, Export & Backups) | `/data-center` | `how-to-use-data-center-backup-export-myzini-erp` | school erp data export backup center | pending | `blogs/images/how-to-use-data-center-backup-export-myzini-erp.png` | - |
 | 19 | My Profile & Institution Account | `/profile` | `how-to-manage-school-profile-myzini-erp` | school profile settings myzini digital erp | pending | `blogs/images/how-to-manage-school-profile-myzini-erp.png` | - |
 | 20 | System Settings & Configuration | `/settings` | `how-to-configure-school-settings-myzini-erp` | school erp system settings configuration | pending | `blogs/images/how-to-configure-school-settings-myzini-erp.png` | - |
