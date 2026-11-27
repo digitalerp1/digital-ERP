@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-11-27T16:34:30.668692",
+  "databases": {
+    "main.sqlite": {
+      "path": "/home/ubuntu/OpenWA/data/main.sqlite",
+      "sizeBytes": 135168,
+      "tables": {
+        "api_keys": {
+          "redacted": true
+        },
+        "audit_logs": {
+          "rows": 167
+        },
+        "migrations": {
+          "rows": 3
+        },
+        "sqlite_sequence": {
+          "rows": 1
+        }
+      }
+    },
+    "openwa.sqlite": {
+      "path": "/home/ubuntu/OpenWA/data/openwa.sqlite",
+      "sizeBytes": 120541184,
+      "tables": {
+        "ai_nightly_decisions": {
+          "rows": 11
+        },
+        "ai_owner_questions": {
+          "rows": 3
+        },
+        "automation_rules": {
+          "rows": 0
+        },
+        "baileys_stored_messages": {
+          "rows": 0
+        },
+        "call_records": {
+          "rows": 34
+        },
+        "chat_states": {
+          "rows": 0
+        },
+        "conversation_mappings": {
+          "rows": 0
+        },
+        "device_attendance_mode": {
+          "rows": 0
+        },
+        "device_attendance_reports": {
+          "rows": 264
+        },
+        "device_attendance_schedules": {
+          "rows": 2
+        },
+        "device_daily_attendance_sessions": {
+          "redacted": true
+        },
+        "device_school_auth": {
+          "redacted": true
+        },
+        "device_school_staff": {
+          "rows": 45
+        },
+        "device_school_students": {
+          "rows": 851
+        },
+        "device_staff_attendance_reports": {
+          "rows": 1
+        },
+        "ingress_events": {
+          "rows": 0
+        },
+        "integration_delivery_failures": {
+          "rows": 0
+        },
+        "lid_mappings": {
+          "rows": 949
+        },
+        "message_batches": {
+          "rows": 0
+        },
+        "messages": {
+          "rows": 1130
+        },
+        "messages_fts": {
+          "rows": 1130
+        },
+        "messages_fts_config": {
+          "rows": 1
+        },
+        "messages_fts_data": {
+          "rows": 30
+        },
+        "messages_fts_docsize": {
+          "rows": 1130
+        },
+        "messages_fts_idx": {
+          "rows": 28
+        },
+        "plugin_instances": {
+          "rows": 0
+        },
+        "scheduled_ai_calls": {
+          "rows": 13
+        },
+        "scheduled_followup_messages": {
+          "rows": 60
+        },
+        "school_firmware_builds": {
+          "rows": 1
+        },
+        "school_list": {
+          "rows": 15
+        },
+        "send_idempotency_keys": {
+          "redacted": true
+        },
+        "sessions": {
+          "redacted": true
+        },
+        "status_updates": {
+          "rows": 0
+        },
+        "system_instructions": {
+          "rows": 2
+        },
+        "templates": {
+          "rows": 0
+        },
+        "webhook_delivery_failures": {
+          "rows": 99
+        },
+        "webhook_outbox_events": {
+          "rows": 1964
+        },
+        "webhooks": {
+          "rows": 2
+        }
+      }
+    },
+    "schedule.db": {
+      "path": "/home/ubuntu/OpenWA/data/schedule.db",
+      "sizeBytes": 32768,
+      "tables": {
+        "scheduled_messages": {
+          "rows": 6
+        },
+        "sqlite_sequence": {
+          "rows": 2
+        },
+        "user_sessions": {
+          "redacted": true
+        }
+      }
+    }
+  }
+}
