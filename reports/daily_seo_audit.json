@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T15:01:18.387818",
-  "total_pages_audited": 28,
+  "generated_at": "2026-11-27T15:05:51.294936",
+  "total_pages_audited": 31,
   "critical_issues": 0,
-  "warnings": 48,
-  "sitemap_urls": 28,
+  "warnings": 51,
+  "sitemap_urls": 31,
   "pages": [
     {
       "file": "coaching-management-software.html",
@@ -384,6 +384,45 @@
       "issues": [],
       "warnings": [
         "Meta description length 202 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "tools/attendance-percentage-calculator.html",
+      "title": "Free School & College Attendance Percentage Calculator \u2014 My Zini ERP",
+      "title_len": 68,
+      "desc_len": 141,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/tools/attendance-percentage-calculator.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Incomplete Open Graph tags"
+      ]
+    },
+    {
+      "file": "tools/cbse-cgpa-percentage-calculator.html",
+      "title": "Free CBSE CGPA & Marks Percentage Calculator \u2014 My Zini Digital ERP",
+      "title_len": 66,
+      "desc_len": 148,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/tools/cbse-cgpa-percentage-calculator.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Incomplete Open Graph tags"
+      ]
+    },
+    {
+      "file": "tools/school-fee-receipt-generator.html",
+      "title": "Free School Fee Receipt Generator Online \u2014 My Zini Digital ERP",
+      "title_len": 62,
+      "desc_len": 156,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/tools/school-fee-receipt-generator.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Incomplete Open Graph tags"
       ]
     }
   ]

@@ -10,6 +10,9 @@
 - [School Fee Management Software](https://digitalerp.shop/school-fee-management-software.html): Automated fee collection, pending dues radar, sibling concessions, and WhatsApp fee reminders.
 - [RFID School Attendance System](https://digitalerp.shop/school-attendance-rfid-software.html): RFID smart card attendance polling, exit tracking, and daily/monthly reports.
 - [Coaching Management Software](https://digitalerp.shop/coaching-management-software.html): Batch timetables, fee dues, test results, and FCM announcements for coaching institutes.
+- [Free CBSE CGPA & Marks Percentage Calculator](https://digitalerp.shop/tools/cbse-cgpa-percentage-calculator.html): Free online CGPA to percentage and grade calculator.
+- [Free Attendance Percentage Calculator](https://digitalerp.shop/tools/attendance-percentage-calculator.html): Free 75% attendance target calculator for students and schools.
+- [Free School Fee Receipt Generator](https://digitalerp.shop/tools/school-fee-receipt-generator.html): Free printable school fee receipt maker online.
 
 ## Verified How-To Guides
 - [My Zini Digital ERP System Settings, RBAC Staff Permissions & Security (Hinglish Guide)](https://digitalerp.shop/blogs/how-to-configure-school-settings-myzini-erp.html): Complete Hinglish guide covering Settings (/settings) 4 tabs: Staff Permissions (6 Class-Wise + 5 General Switches), Display Mode (Desktop/Auto Responsive, Light/Dark Theme), App Specs (v3.9.0, PostgreSQL, Reset Local Cache), and Security (Update Password).

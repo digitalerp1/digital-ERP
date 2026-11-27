@@ -1,9 +1,9 @@
 # Daily SEO & Tag Audit Report — My Zini Digital ERP
-- **Generated:** 2026-11-27T15:01:18.387818
-- **Pages Audited:** 28
+- **Generated:** 2026-11-27T15:05:51.294936
+- **Pages Audited:** 31
 - **Critical Issues:** 0
-- **Warnings:** 48
-- **Sitemap URLs:** 28
+- **Warnings:** 51
+- **Sitemap URLs:** 31
 
 | Page | Title Len | Desc Len | H1 | JSON-LD | Issues | Warnings |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- |
@@ -35,3 +35,6 @@
 | `blogs/how-to-use-school-dashboard-quick-actions-myzini-erp.html` | 103 | 247 | 1 | 1 | OK | Title length 103 (ideal 30-65); Meta description length 247 (ideal 120-160) |
 | `blogs/how-to-use-student-management-myzini-erp.html` | 87 | 250 | 1 | 1 | OK | Title length 87 (ideal 30-65); Meta description length 250 (ideal 120-160) |
 | `blogs/index.html` | 73 | 202 | 1 | 1 | OK | Meta description length 202 (ideal 120-160) |
+| `tools/attendance-percentage-calculator.html` | 68 | 141 | 1 | 1 | OK | Incomplete Open Graph tags |
+| `tools/cbse-cgpa-percentage-calculator.html` | 66 | 148 | 1 | 1 | OK | Incomplete Open Graph tags |
+| `tools/school-fee-receipt-generator.html` | 62 | 156 | 1 | 1 | OK | Incomplete Open Graph tags |

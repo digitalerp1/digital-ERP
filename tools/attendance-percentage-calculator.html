@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free School &amp; College Attendance Percentage Calculator — My Zini ERP</title>
+  <meta name="description" content="Calculate your exact attendance percentage and find how many classes you need to reach 75% or 85% attendance with our free online calculator.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://digitalerp.shop/tools/attendance-percentage-calculator.html">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "School & College Attendance Percentage Calculator",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "url": "https://digitalerp.shop/tools/attendance-percentage-calculator.html",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold text-slate-900">My Zini <span class="text-blue-600">ERP</span></a>
+      <nav class="flex items-center gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/school-attendance-rfid-software.html" class="hover:text-blue-600">RFID Attendance</a>
+        <a href="https://myzini.digitalerp.shop" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Open School ERP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 py-10 max-w-3xl">
+    <div class="text-center mb-8">
+      <span class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase mb-3">Free Student &amp; Teacher Tool</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">Attendance Percentage Calculator (75% Target)</h1>
+      <p class="text-slate-600">Check your current attendance percentage and how many consecutive classes you must attend (or can miss) to stay above your target.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-8 space-y-4">
+      <div class="grid sm:grid-cols-3 gap-3">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Classes Attended</label>
+          <input id="att-present" type="number" min="0" placeholder="e.g., 68" class="w-full px-4 py-3 rounded-xl border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Total Classes Held</label>
+          <input id="att-total" type="number" min="1" placeholder="e.g., 100" class="w-full px-4 py-3 rounded-xl border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Target %</label>
+          <input id="att-target" type="number" min="1" max="100" value="75" class="w-full px-4 py-3 rounded-xl border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+      </div>
+      <button onclick="calcAtt()" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700">Calculate Attendance</button>
+      <div id="att-result" class="text-sm font-semibold text-slate-800 pt-2"></div>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 text-center">
+      <h2 class="text-xl font-bold text-slate-900 mb-2">Automate School Attendance with RFID &amp; WhatsApp Alerts</h2>
+      <p class="text-sm text-slate-600 mb-4">Track daily student &amp; staff attendance in 1 click or via RFID smart cards with My Zini Digital ERP.</p>
+      <a href="/blogs/how-to-take-attendance-and-view-reports-myzini-erp.html" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-blue-700 text-sm">See Attendance Automation Guide &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12">
+    <p>&copy; <span id="yr"></span> My Zini Digital ERP &bull; <a href="/" class="hover:text-white">Home</a> &bull; <a href="/blogs/" class="hover:text-white">Guides</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    function calcAtt() {
+      const p = parseInt(document.getElementById('att-present').value, 10);
+      const t = parseInt(document.getElementById('att-total').value, 10);
+      const target = parseFloat(document.getElementById('att-target').value) || 75;
+      const out = document.getElementById('att-result');
+      if (isNaN(p) || isNaN(t) || t <= 0 || p < 0 || p > t) {
+        out.textContent = 'Please enter valid present and total class counts.'; return;
+      }
+      const pct = ((p / t) * 100).toFixed(2);
+      const ratio = target / 100;
+      if (p / t >= ratio) {
+        const canMiss = Math.floor((p - ratio * t) / ratio);
+        out.innerHTML = `<span class="text-emerald-700">Current Attendance: ${pct}% (Above ${target}% target).</span> You can miss up to <strong>${canMiss}</strong> upcoming class(es) and still maintain ${target}%.`;
+      } else {
+        const need = Math.ceil((ratio * t - p) / (1 - ratio));
+        out.innerHTML = `<span class="text-amber-700">Current Attendance: ${pct}% (Below ${target}% target).</span> You need to attend <strong>${need}</strong> consecutive class(es) to reach ${target}%.`;
+      }
+    }
+  </script>
+</body>
+</html>

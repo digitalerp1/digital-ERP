@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free School Fee Receipt Generator Online — My Zini Digital ERP</title>
+  <meta name="description" content="Create and print professional school fee receipts online for free. Enter school name, student details, tuition &amp; transport fees, and print instant receipts.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://digitalerp.shop/tools/school-fee-receipt-generator.html">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Free School Fee Receipt Generator",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "url": "https://digitalerp.shop/tools/school-fee-receipt-generator.html",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 print:hidden">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold text-slate-900">My Zini <span class="text-blue-600">ERP</span></a>
+      <nav class="flex items-center gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/school-fee-management-software.html" class="hover:text-blue-600">Fee Software</a>
+        <a href="https://myzini.digitalerp.shop" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Open School ERP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 py-10 max-w-4xl">
+    <div class="text-center mb-8 print:hidden">
+      <span class="inline-block bg-emerald-100 text-emerald-700 text-xs font-bold px-3 py-1 rounded-full uppercase mb-3">Free School Cashier Tool</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">Free School Fee Receipt Generator</h1>
+      <p class="text-slate-600">Generate a clean, printable school fee receipt in seconds—zero signup required.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 items-start">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3 print:hidden">
+        <input id="r-school" type="text" value="My Zini Public School" placeholder="School Name" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        <input id="r-student" type="text" value="Aarav Kumar" placeholder="Student Name" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        <div class="grid grid-cols-2 gap-2">
+          <input id="r-class" type="text" value="Class 5-A" placeholder="Class / Section" class="px-3 py-2 rounded-lg border border-slate-300 text-sm">
+          <input id="r-roll" type="text" value="14" placeholder="Roll No." class="px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <input id="r-tuition" type="number" value="1500" placeholder="Tuition Fee (₹)" class="px-3 py-2 rounded-lg border border-slate-300 text-sm">
+          <input id="r-transport" type="number" value="500" placeholder="Transport/Other (₹)" class="px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        </div>
+        <div class="flex gap-2 pt-2">
+          <button onclick="updateReceipt()" class="flex-1 bg-blue-600 text-white font-semibold py-2.5 rounded-xl hover:bg-blue-700 text-sm">Update Preview</button>
+          <button onclick="window.print()" class="bg-slate-800 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-slate-900 text-sm">Print / PDF</button>
+        </div>
+      </div>
+
+      <div id="receipt-box" class="bg-white p-6 rounded-2xl border-2 border-slate-800 shadow-sm text-sm">
+        <div class="text-center border-b border-slate-300 pb-3 mb-4">
+          <div id="p-school" class="text-lg font-extrabold text-slate-900">My Zini Public School</div>
+          <div class="text-xs text-slate-500 uppercase tracking-wider">Official Fee Receipt</div>
+        </div>
+        <div class="space-y-1.5 mb-4">
+          <div class="flex justify-between"><span class="text-slate-500">Student Name:</span><strong id="p-student">Aarav Kumar</strong></div>
+          <div class="flex justify-between"><span class="text-slate-500">Class / Roll:</span><strong id="p-class">Class 5-A (Roll 14)</strong></div>
+          <div class="flex justify-between"><span class="text-slate-500">Date:</span><strong id="p-date"></strong></div>
+        </div>
+        <table class="w-full border-t border-b border-slate-300 my-3">
+          <tr class="border-b border-slate-200"><td class="py-2">Tuition Fee</td><td class="py-2 text-right font-semibold" id="p-tuition">₹1,500</td></tr>
+          <tr><td class="py-2">Transport / Other Fee</td><td class="py-2 text-right font-semibold" id="p-transport">₹500</td></tr>
+        </table>
+        <div class="flex justify-between text-base font-extrabold text-slate-900 pt-1">
+          <span>Total Paid</span><span id="p-total">₹2,000</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 text-center mt-8 print:hidden">
+      <h2 class="text-xl font-bold text-slate-900 mb-2">Want Automated Fee Receipts &amp; WhatsApp Reminders?</h2>
+      <p class="text-sm text-slate-600 mb-4">Manage 1,000+ students' monthly fees, pending dues, sibling concessions, and QR receipts automatically in My Zini Digital ERP.</p>
+      <a href="/school-fee-management-software.html" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-blue-700 text-sm">Explore Fee Management Software &rarr;</a>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('p-date').textContent = new Date().toLocaleDateString('en-IN');
+    function updateReceipt() {
+      const t = parseFloat(document.getElementById('r-tuition').value) || 0;
+      const tr = parseFloat(document.getElementById('r-transport').value) || 0;
+      document.getElementById('p-school').textContent = document.getElementById('r-school').value;
+      document.getElementById('p-student').textContent = document.getElementById('r-student').value;
+      document.getElementById('p-class').textContent = `${document.getElementById('r-class').value} (Roll ${document.getElementById('r-roll').value})`;
+      document.getElementById('p-tuition').textContent = `₹${t.toLocaleString('en-IN')}`;
+      document.getElementById('p-transport').textContent = `₹${tr.toLocaleString('en-IN')}`;
+      document.getElementById('p-total').textContent = `₹${(t + tr).toLocaleString('en-IN')}`;
+    }
+  </script>
+</body>
+</html>

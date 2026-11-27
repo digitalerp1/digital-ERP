@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free CBSE CGPA &amp; Marks Percentage Calculator — My Zini Digital ERP</title>
+  <meta name="description" content="Calculate CBSE CGPA to Percentage, subject-wise marks percentage, and grade instantly with our free online school calculator by My Zini Digital ERP.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://digitalerp.shop/tools/cbse-cgpa-percentage-calculator.html">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "CBSE CGPA & Marks Percentage Calculator",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "url": "https://digitalerp.shop/tools/cbse-cgpa-percentage-calculator.html",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold text-slate-900">My Zini <span class="text-blue-600">ERP</span></a>
+      <nav class="flex items-center gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/blogs/" class="hover:text-blue-600">Guides</a>
+        <a href="https://myzini.digitalerp.shop" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Open School ERP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 py-10 max-w-3xl">
+    <div class="text-center mb-8">
+      <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase mb-3">Free School Tool</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">CBSE CGPA &amp; Marks Percentage Calculator</h1>
+      <p class="text-slate-600">Convert CBSE CGPA to Percentage (CGPA &times; 9.5) or calculate total marks percentage &amp; grade for Class 10, Class 12, and school exams.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 mb-8 space-y-6">
+      <div>
+        <h2 class="text-lg font-bold mb-3">1. CGPA to Percentage (CBSE Formula)</h2>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <input id="cgpa-input" type="number" step="0.01" min="0" max="10" placeholder="Enter CGPA (e.g., 8.6)" class="flex-1 px-4 py-3 rounded-xl border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500">
+          <button onclick="calcCgpa()" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-blue-700">Convert</button>
+        </div>
+        <div id="cgpa-result" class="mt-3 text-sm font-semibold text-blue-700"></div>
+      </div>
+
+      <hr class="border-slate-200">
+
+      <div>
+        <h2 class="text-lg font-bold mb-3">2. Total Marks to Percentage &amp; Grade</h2>
+        <div class="grid sm:grid-cols-2 gap-3 mb-3">
+          <input id="obtained-input" type="number" min="0" placeholder="Obtained Marks (e.g., 435)" class="px-4 py-3 rounded-xl border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500">
+          <input id="max-input" type="number" min="1" placeholder="Total Maximum Marks (e.g., 500)" class="px-4 py-3 rounded-xl border border-slate-300 outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <button onclick="calcMarks()" class="bg-emerald-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-emerald-700">Calculate Percentage</button>
+        <div id="marks-result" class="mt-3 text-sm font-semibold text-emerald-700"></div>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 text-center">
+      <h2 class="text-xl font-bold text-slate-900 mb-2">Generate Bulk Marksheets &amp; Results for Your Entire School</h2>
+      <p class="text-sm text-slate-600 mb-4">Automate exam marks entry, grading rules, and printable marksheets for 1,000+ students in minutes with My Zini Digital ERP.</p>
+      <a href="/blogs/how-to-publish-exam-results-myzini-erp.html" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-blue-700 text-sm">See How School Results Work &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm mt-12">
+    <p>&copy; <span id="yr"></span> My Zini Digital ERP &bull; <a href="/" class="hover:text-white">Home</a> &bull; <a href="/blogs/" class="hover:text-white">Guides</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    function calcCgpa() {
+      const v = parseFloat(document.getElementById('cgpa-input').value);
+      const out = document.getElementById('cgpa-result');
+      if (isNaN(v) || v < 0 || v > 10) { out.textContent = 'Please enter a valid CGPA between 0 and 10.'; return; }
+      const pct = (v * 9.5).toFixed(2);
+      out.textContent = `Equivalent CBSE Percentage: ${pct}% (Formula: ${v} × 9.5)`;
+    }
+    function calcMarks() {
+      const obt = parseFloat(document.getElementById('obtained-input').value);
+      const max = parseFloat(document.getElementById('max-input').value);
+      const out = document.getElementById('marks-result');
+      if (isNaN(obt) || isNaN(max) || max <= 0 || obt < 0 || obt > max) {
+        out.textContent = 'Please enter valid obtained and maximum marks.'; return;
+      }
+      const pct = ((obt / max) * 100).toFixed(2);
+      const grade = pct >= 90 ? 'A1' : pct >= 80 ? 'A2' : pct >= 70 ? 'B1' : pct >= 60 ? 'B2' : pct >= 50 ? 'C1' : pct >= 33 ? 'D' : 'E (Needs Improvement)';
+      out.textContent = `Percentage: ${pct}% | Grade: ${grade}`;
+    }
+  </script>
+</body>
+</html>
