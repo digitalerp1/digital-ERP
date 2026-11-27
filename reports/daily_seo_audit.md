@@ -1,9 +1,9 @@
 # Daily SEO & Tag Audit Report — My Zini Digital ERP
-- **Generated:** 2026-11-27T15:12:13.885793
-- **Pages Audited:** 31
+- **Generated:** 2026-11-27T18:00:43.771937
+- **Pages Audited:** 34
 - **Critical Issues:** 0
-- **Warnings:** 51
-- **Sitemap URLs:** 31
+- **Warnings:** 57
+- **Sitemap URLs:** 34
 
 | Page | Title Len | Desc Len | H1 | JSON-LD | Issues | Warnings |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- |
@@ -14,7 +14,9 @@
 | `school-attendance-rfid-software.html` | 67 | 146 | 1 | 1 | OK | - |
 | `school-fee-management-software.html` | 67 | 145 | 1 | 1 | OK | - |
 | `school-management-software.html` | 62 | 172 | 1 | 1 | OK | Meta description length 172 (ideal 120-160) |
+| `blogs/best-free-school-management-software-india-myzini.html` | 118 | 264 | 1 | 1 | OK | Title length 118 (ideal 30-65); Meta description length 264 (ideal 120-160) |
 | `blogs/how-to-accept-online-school-fee-payments-myzini-erp.html` | 103 | 244 | 1 | 1 | OK | Title length 103 (ideal 30-65); Meta description length 244 (ideal 120-160) |
+| `blogs/how-to-access-help-and-support-myzini-erp.html` | 124 | 271 | 1 | 1 | OK | Title length 124 (ideal 30-65); Meta description length 271 (ideal 120-160) |
 | `blogs/how-to-configure-school-settings-myzini-erp.html` | 134 | 280 | 1 | 1 | OK | Title length 134 (ideal 30-65); Meta description length 280 (ideal 120-160) |
 | `blogs/how-to-create-and-manage-classes-myzini-erp.html` | 94 | 237 | 1 | 1 | OK | Title length 94 (ideal 30-65); Meta description length 237 (ideal 120-160) |
 | `blogs/how-to-create-school-announcements-notices-myzini-erp.html` | 101 | 222 | 1 | 1 | OK | Title length 101 (ideal 30-65); Meta description length 222 (ideal 120-160) |
@@ -23,6 +25,7 @@
 | `blogs/how-to-manage-school-profile-myzini-erp.html` | 106 | 286 | 1 | 1 | OK | Title length 106 (ideal 30-65); Meta description length 286 (ideal 120-160) |
 | `blogs/how-to-manage-school-transport-routes-myzini-erp.html` | 103 | 259 | 1 | 1 | OK | Title length 103 (ideal 30-65); Meta description length 259 (ideal 120-160) |
 | `blogs/how-to-manage-staff-and-salaries-myzini-erp.html` | 96 | 242 | 1 | 1 | OK | Title length 96 (ideal 30-65); Meta description length 242 (ideal 120-160) |
+| `blogs/how-to-manage-staff-attendance-myzini-erp.html` | 124 | 276 | 1 | 1 | OK | Title length 124 (ideal 30-65); Meta description length 276 (ideal 120-160) |
 | `blogs/how-to-manage-student-staff-leave-forms-myzini-erp.html` | 100 | 242 | 1 | 1 | OK | Title length 100 (ideal 30-65); Meta description length 242 (ideal 120-160) |
 | `blogs/how-to-publish-exam-results-myzini-erp.html` | 91 | 216 | 1 | 1 | OK | Title length 91 (ideal 30-65); Meta description length 216 (ideal 120-160) |
 | `blogs/how-to-record-and-track-school-expenses-myzini-erp.html` | 95 | 234 | 1 | 1 | OK | Title length 95 (ideal 30-65); Meta description length 234 (ideal 120-160) |

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T15:12:13.885793",
-  "total_pages_audited": 31,
+  "generated_at": "2026-11-27T18:00:43.771937",
+  "total_pages_audited": 34,
   "critical_issues": 0,
-  "warnings": 51,
-  "sitemap_urls": 31,
+  "warnings": 57,
+  "sitemap_urls": 34,
   "pages": [
     {
       "file": "coaching-management-software.html",
@@ -94,6 +94,20 @@
       ]
     },
     {
+      "file": "blogs/best-free-school-management-software-india-myzini.html",
+      "title": "Best Free & Low-Cost School Management Software in India (2026) \u2014 My Zini Digital ERP Complete Review | Hinglish Guide",
+      "title_len": 118,
+      "desc_len": 264,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/best-free-school-management-software-india-myzini.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 118 (ideal 30-65)",
+        "Meta description length 264 (ideal 120-160)"
+      ]
+    },
+    {
       "file": "blogs/how-to-accept-online-school-fee-payments-myzini-erp.html",
       "title": "My Zini Digital ERP mein Payments & Shortcuts Hub (Cashier Terminal) Kaise Use Karein? | Hinglish Guide",
       "title_len": 103,
@@ -105,6 +119,20 @@
       "warnings": [
         "Title length 103 (ideal 30-65)",
         "Meta description length 244 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-access-help-and-support-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Built-in How to Use Guide, 7-Step Setup Roadmap aur Live Support Kaise Use Karein? | Hinglish Guide",
+      "title_len": 124,
+      "desc_len": 271,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-access-help-and-support-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 124 (ideal 30-65)",
+        "Meta description length 271 (ideal 120-160)"
       ]
     },
     {
@@ -217,6 +245,20 @@
       "warnings": [
         "Title length 96 (ideal 30-65)",
         "Meta description length 242 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-manage-staff-attendance-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Staff Attendance, Late Fine Automation aur Duty Audit Reports Kaise Manage Karein? | Hinglish Guide",
+      "title_len": 124,
+      "desc_len": 276,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-manage-staff-attendance-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 124 (ideal 30-65)",
+        "Meta description length 276 (ideal 120-160)"
       ]
     },
     {
