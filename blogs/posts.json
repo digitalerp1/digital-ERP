@@ -1,5 +1,16 @@
 [
   {
+    "slug": "how-to-use-data-center-backup-export-myzini-erp",
+    "title": "My Zini Digital ERP mein Data Center VAULT (Bulk Import, JSON Schema & Full Backup) Kaise Use Karein? (Hinglish Guide)",
+    "description": "Data Center VAULT (/data-center) ke sabhi options: 4 Live KPIs (8 Modules, 816 Rows, 100% RLS Secure, JSON Format), Download Full School Backup, 8 Core Datasets (owner, students, staff, classes, subjects, fees_types, expenses, salary_records), Bulk Upload aur JSON Schema Guide ka Hinglish guide 12 images ke saath.",
+    "category": "Data Center & Backups",
+    "image": "blogs/images/dc_visual_01_hero.png",
+    "imageAlt": "My Zini Digital ERP Data Center VAULT Bulk Import & Backup Banner",
+    "publishedAt": "2026-11-27",
+    "readTime": "15 min read",
+    "url": "blogs/how-to-use-data-center-backup-export-myzini-erp.html"
+  },
+  {
     "slug": "how-to-accept-online-school-fee-payments-myzini-erp",
     "title": "My Zini Digital ERP mein Payments & Shortcuts Hub (Cashier Terminal) Kaise Use Karein? (Hinglish Guide)",
     "description": "Payments & Shortcuts Hub (/shortcut) ke sabhi 5 tabs: Fees Payments Records (1-Tap Fetch & 5 Categories), Staff Salary (18), Family Fees Manage, Apply Other Dues (+ New Fee Type), aur Apply Monthly Fees (Duplicate Prevention) ka Hinglish guide 12 images ke saath.",

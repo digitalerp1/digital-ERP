@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Zini Digital ERP mein Data Center VAULT (Bulk Import, JSON Schema &amp; Full Backup) Kaise Use Karein? | Hinglish Guide</title>
+    <meta name="description" content="My Zini Digital ERP (/data-center) ka complete Hinglish guide: Download Full School Backup, 4 Live KPIs (8 Modules, 816 Rows, 100% RLS Secure, JSON Format), 8 Core Datasets (owner, students, staff, classes, subjects, fees_types, expenses, salary_records), Bulk Upload aur JSON Schema Guide.">
+    <meta name="keywords" content="school erp data export backup center, myzini digital erp data center vault, school database json backup bulk upload, school erp rls security, students bulk json import template">
+    <meta name="author" content="Digital Education System">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://digitalerp.shop/blogs/how-to-use-data-center-backup-export-myzini-erp.html">
+    <link rel="icon" type="image/png" href="/icon.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://digitalerp.shop/blogs/how-to-use-data-center-backup-export-myzini-erp.html">
+    <meta property="og:title" content="My Zini Digital ERP mein Data Center VAULT (Bulk Import & Backups) Kaise Use Karein?">
+    <meta property="og:description" content="Data Center VAULT (/data-center) ke sabhi 8 datasets, Download Full School Backup, JSON Schema Guide (Copy & Sample Template) aur Bulk Upload ka Hinglish guide.">
+    <meta property="og:image" content="https://digitalerp.shop/blogs/images/dc_visual_01_hero.png">
+    <meta property="article:published_time" content="2026-11-27T12:22:00+05:30">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Zini Digital ERP Data Center VAULT & Backup Guide (Hinglish)">
+    <meta name="twitter:description" content="12 real screenshots & visual diagrams ke saath Data Center (/data-center) ka poora Hinglish guide.">
+    <meta name="twitter:image" content="https://digitalerp.shop/blogs/images/dc_visual_01_hero.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "My Zini Digital ERP mein Data Center VAULT (Bulk Import, JSON Schema & Full Backup) Kaise Use Karein? (Hinglish Guide)",
+          "description": "My Zini Digital ERP ke Data Center VAULT (/data-center) module ka complete Hinglish tutorial: 4 KPI cards, 8 Core Datasets, Download Full School Backup, Bulk Upload aur JSON Schema Guide.",
+          "image": [
+            "https://digitalerp.shop/blogs/images/dc_visual_01_hero.png",
+            "https://digitalerp.shop/blogs/images/dc_01_overview.png",
+            "https://digitalerp.shop/blogs/images/dc_03_schema_students.png"
+          ],
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "inLanguage": "hi-Latn",
+          "author": { "@type": "Organization", "name": "My Zini Digital ERP", "url": "https://digitalerp.shop" },
+          "publisher": { "@type": "Organization", "name": "Digital Education System", "logo": { "@type": "ImageObject", "url": "https://digitalerp.shop/icon.png" } },
+          "mainEntityOfPage": "https://digitalerp.shop/blogs/how-to-use-data-center-backup-export-myzini-erp.html"
+        },
+        {
+          "@type": "HowTo",
+          "name": "My Zini Digital ERP Data Center VAULT se School Backup aur Bulk JSON Upload Karne ke Steps",
+          "description": "Live verified workflow on myzini.digitalerp.shop/data-center.",
+          "step": [
+            { "@type": "HowToStep", "name": "Data Center VAULT (/data-center) Open Karein", "text": "Sidebar se Data Center kholein jahan 4 KPI cards (Total Datasets: 8 Modules, Total Live Records, RLS Compliance: 100% Secure, Backup Engine: JSON Format) dikhte hain." },
+            { "@type": "HowToStep", "name": "Download Full School Backup Karein", "text": "Top-right mein 'Download Full School Backup' button dabakar poore school ka universal JSON backup download karein." },
+            { "@type": "HowToStep", "name": "JSON Schema Guide & Sample Template Check Karein", "text": "Kisi bhi dataset card (jaise Students Registry) par 'Schema' click karke Required JSON Keys, Copy JSON aur Download Sample Template JSON dekhein." },
+            { "@type": "HowToStep", "name": "Bulk Upload & Refresh Counts Karein", "text": "Prepared JSON file ko 'Bulk Upload' se import karein aur 'Refresh Counts' dabakar live row counts verify karein." }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "Data Center VAULT (/data-center) mein kaunse 8 core datasets milte hain?", "acceptedAnswer": { "@type": "Answer", "text": "Isme 8 core tables milte hain: School Profile (owner), Students Registry (students), Staff Records (staff), Class Setup (classes), Subjects List (subjects), Other Fee Types (fees_types), Expense Ledger (expenses), aur Salary Payments (salary_records)." } },
+            { "@type": "Question", "name": "Students Registry Bulk Upload ke liye kaun-kaun se Required JSON Keys chahiye?", "acceptedAnswer": { "@type": "Answer", "text": "Students Registry (students) ke liye 6 required keys hain: name, class, roll_number, mobile, father_name, aur registration_date." } },
+            { "@type": "Question", "name": "RLS Compliance (100% Secure) ka kya matlab hai?", "acceptedAnswer": { "@type": "Answer", "text": "Row Level Security (RLS) ka matlab hai ki har school ka data tenant-isolated cloud storage mein surakshit rehta hai — koi bhi doosra school aapke records ko access nahi kar sakta." } }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; } code { overflow-wrap: anywhere; word-break: break-word; }</style>
+</head>
+<body class="overflow-x-hidden">
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-xl sm:text-2xl font-bold text-slate-800">My Zini <span class="text-blue-600">ERP</span></a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="../index.html" class="text-slate-600 hover:text-blue-600">Home</a>
+                    <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold">Blogs</a>
+                    <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
+                </nav>
+                <button id="blog-mobile-toggle" aria-label="Toggle Menu" class="md:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100" onclick="document.getElementById('blog-mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <div id="blog-mobile-menu" class="hidden md:hidden mt-3 pb-2 border-t border-slate-100 pt-3 flex flex-col space-y-2 text-sm font-medium">
+                <a href="../index.html" class="text-slate-700 hover:text-blue-600 py-1.5">Home</a>
+                <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold py-1.5">All Blogs</a>
+                <a href="../index.html#contact" class="bg-blue-600 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-8 sm:py-12 max-w-4xl">
+        <nav class="text-xs sm:text-sm text-slate-500 mb-6 flex flex-wrap items-center gap-2">
+            <a href="../index.html" class="hover:text-blue-600">Home</a>
+            <span>/</span>
+            <a href="../index.html#blogs-preview" class="hover:text-blue-600">Blogs</a>
+            <span>/</span>
+            <span class="text-slate-700 font-medium">Data Center VAULT (/data-center)</span>
+        </nav>
+
+        <article class="bg-white rounded-2xl sm:rounded-3xl shadow-sm border border-slate-200 p-5 sm:p-8 lg:p-12">
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
+                <span class="bg-sky-50 text-sky-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Data Center &amp; Backups</span>
+                <span class="text-xs sm:text-sm text-slate-500">Published: 27 Nov 2026</span>
+                <span class="text-xs sm:text-sm text-slate-500">• 15 min read</span>
+                <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">✓ Live Verified on myzini.digitalerp.shop</span>
+            </div>
+
+            <h1 class="text-2xl sm:text-4xl lg:text-[40px] font-extrabold text-slate-900 leading-tight mb-6 break-words">
+                My Zini Digital ERP mein Data Center VAULT (Bulk Import, JSON Schema &amp; Full Backup) Kaise Use Karein? (Complete Hinglish Guide)
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
+                Kisi bhi school ke liye uska data — jaise students ki registry, staff records, fee structures, expenses aur salary payments — sabse keemti asset hota hai. Naye school onboarding ke waqt purane software se hazaron students ko import karna ho, ya har hafte poore school database ka ek safe backup download karke rakhna ho, dono kaam ek hi jagah se hone chahiye. Isi liye <strong>My Zini Digital ERP</strong> mein <strong>Data Center VAULT</strong> (<code>/data-center</code>) diya gaya hai. Is Hinglish guide mein humne live portal par har dataset card, <em>Download Full School Backup</em>, <em>JSON Schema Guide</em>, <em>Sample Template Download</em> aur category filters ko test karke poora walkthrough तैयार kiya hai.
+            </p>
+
+            <!-- Hero Visual -->
+            <figure class="mb-10">
+                <img src="images/dc_visual_01_hero.png" alt="My Zini Digital ERP Data Center VAULT Bulk Import & Backup Banner" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                <figcaption class="text-xs sm:text-sm text-slate-500 text-center mt-2">My Zini Digital ERP ka Data Center VAULT — 8 Core Datasets, 100% RLS Security aur 1-Click JSON Backup.</figcaption>
+            </figure>
+
+            <!-- TL;DR Quick Summary -->
+            <div class="bg-gradient-to-br from-sky-50 to-slate-100 border border-sky-200 rounded-2xl p-5 sm:p-7 mb-10">
+                <h2 class="text-lg sm:text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span>⚡</span> TL;DR — Quick Summary (AI &amp; Reader Snapshot)
+                </h2>
+                <ul class="space-y-2 text-sm sm:text-base text-slate-700 list-disc pl-5">
+                    <li><strong>Route:</strong> Sidebar mein <code>Data Center</code> (<code>https://myzini.digitalerp.shop/data-center</code>).</li>
+                    <li><strong>4 Live KPI Cards:</strong> <em>Total Datasets</em> (<code>8 Modules</code>), <em>Total Live Records</em> (<code>816</code> verified rows), <em>RLS Compliance</em> (<code>100% Secure</code>), aur <em>Backup Engine</em> (<code>JSON Format</code>).</li>
+                    <li><strong>Top Actions:</strong> <code>Refresh Counts</code> aur <code>Download Full School Backup</code> (universal JSON snapshot).</li>
+                    <li><strong>8 Core Dataset Cards:</strong> <code>owner</code> (1), <code>students</code> (674), <code>staff</code> (19), <code>classes</code> (27), <code>subjects</code> (24), <code>fees_types</code> (9), <code>expenses</code> (8), aur <code>salary_records</code> (54) — har ek par <code>Bulk Upload</code> + <code>Schema</code> buttons.</li>
+                    <li><strong>JSON Schema Guide:</strong> Required keys list, <code>Copy JSON</code> aur <code>Download Sample Template JSON</code>.</li>
+                </ul>
+            </div>
+
+            <!-- Section 1: Overview & 4 KPI Cards -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">1. Data Center VAULT Overview aur 4 Live KPI Cards</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Jab aap sidebar se <strong>Data Center</strong> open karte hain, toh aapke saamne <strong>Data Center VAULT</strong> khulta hai jiska tagline hai: <em>"Bulk data operations, JSON schema formats &amp; full database backups"</em>. Top-right mein aapko <strong>Refresh Counts</strong> aur bright blue <strong>Download Full School Backup</strong> button dikhai deta hai.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                        <h3 class="font-bold text-slate-900 text-sm">📦 TOTAL DATASETS</h3>
+                        <p class="text-xs text-slate-600 mt-1"><code>8 Modules</code> — Core academic &amp; finance tables.</p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                        <h3 class="font-bold text-slate-900 text-sm">📊 TOTAL LIVE RECORDS</h3>
+                        <p class="text-xs text-slate-600 mt-1"><code>816</code> — Sabhi tables ki verified database rows ka live sum.</p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                        <h3 class="font-bold text-slate-900 text-sm">🔒 RLS COMPLIANCE</h3>
+                        <p class="text-xs text-slate-600 mt-1"><code>100% Secure</code> — Tenant-isolated Row Level Security storage.</p>
+                    </div>
+                    <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                        <h3 class="font-bold text-slate-900 text-sm">⚙️ BACKUP ENGINE</h3>
+                        <p class="text-xs text-slate-600 mt-1"><code>JSON Format</code> — Universal export &amp; migration standard.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <figure>
+                        <img src="images/dc_01_overview.png" alt="My Zini Digital ERP Data Center VAULT Overview Screenshot" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Live Screenshot: /data-center par 4 KPI Cards, Download Full School Backup aur Dataset Cards.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/dc_02_scroll.png" alt="Data Center 8 Core Datasets & JSON Schema Guide Panel" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">8 Core Academic &amp; Finance Datasets aur JSON Schema Guide panel.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Section 2: 8 Core Datasets & Workflow -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">2. 8 Core Datasets aur 4-Step Bulk Upload Workflow</h2>
+                <p class="text-slate-600 leading-relaxed mb-5">
+                    Data Center VAULT aapke poore school ERP ko 8 clean database tables mein organize karta hai. Har card par table ka naam, live row count, ek <strong>Bulk Upload</strong> file picker aur ek <strong>Schema</strong> button milta hai:
+                </p>
+
+                <figure class="mb-6">
+                    <img src="images/dc_visual_03_datasets.png" alt="8 Core Datasets in My Zini Digital ERP Data Center" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                    <figcaption class="text-xs sm:text-sm text-slate-500 text-center mt-2">8 Core Datasets: owner, students, staff, classes, subjects, fees_types, expenses, salary_records.</figcaption>
+                </figure>
+
+                <figure class="mb-6">
+                    <img src="images/dc_visual_02_workflow.png" alt="4-Step Bulk Import & Full Backup Workflow" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                    <figcaption class="text-xs sm:text-sm text-slate-500 text-center mt-2">4-Step Backup &amp; Bulk Upload Workflow: Backup lein, Schema dekhein, Upload karein, Counts verify karein.</figcaption>
+                </figure>
+            </section>
+
+            <!-- Section 3: JSON Schema Guide & Sample Template -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">3. JSON Schema Guide: Required Keys, Copy JSON &amp; Sample Template</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    Aksar bulk upload karte waqt column ya field name galat hone se import fail ho jaata hai. My Zini Digital ERP ne iske liye har dataset ke bagal mein <strong>Schema</strong> button diya hai. Jaise hi aap <strong>Students Registry</strong> par <strong>Schema</strong> click karte hain, right/bottom panel mein <strong>JSON Schema Guide</strong> open ho jaata hai jisme dikhta hai:
+                </p>
+                <ul class="space-y-2 text-slate-600 list-disc pl-5 mb-6">
+                    <li><strong>REQUIRED JSON KEYS:</strong> Exact mandatory fields — jaise Students Registry ke liye <code>name</code>, <code>class</code>, <code>roll_number</code>, <code>mobile</code>, <code>father_name</code>, aur <code>registration_date</code>.</li>
+                    <li><strong>SAMPLE JSON STRUCTURE + Copy JSON:</strong> Ready-to-use JSON array preview jise aap ek click mein copy kar sakte hain.</li>
+                    <li><strong>Download Sample Template JSON:</strong> Seedha apne computer par sample <code>.json</code> template file download karein aur Excel/Script se fill karke <strong>Bulk Upload</strong> kar dein!</li>
+                </ul>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <figure>
+                        <img src="images/dc_03_schema_students.png" alt="Students Registry JSON Schema Guide" class="w-full h-auto rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Students Registry (students) Schema.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/dc_04_schema_staff.png" alt="Staff Records JSON Schema Guide" class="w-full h-auto rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Staff Records (staff) Schema.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/dc_05_schema_expenses.png" alt="Expense Ledger JSON Schema Guide" class="w-full h-auto rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Expense Ledger (expenses) Schema.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Section 4: Category Filter, Mobile View & Security -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">4. Category Search Filter, Mobile View aur RLS Security Advantage</h2>
+                <p class="text-slate-600 leading-relaxed mb-5">
+                    Page par maujood search box (<code>Filter data categories (e.g. students, staff, classes, expenses)...</code>) se aap turant kisi specific table ko filter kar sakte hain. Saath hi mobile screen (390px) par bhi har KPI card, Backup button aur Dataset card cleanly stack hota hai.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <figure>
+                        <img src="images/dc_06_filter_students.png" alt="Filtering Data Center Categories by students" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Filter "students": Turant Students Registry card isolate ho gaya.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/dc_07_filter_salary.png" alt="Filtering Data Center Categories by salary" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Filter "salary": Salary Payments (salary_records • 54 Rows).</figcaption>
+                    </figure>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-center">
+                    <figure>
+                        <img src="images/dc_08_mobile_view.png" alt="Data Center VAULT Mobile Responsive View 390px" class="w-full max-w-xs mx-auto h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Live Mobile View (390x844): Phone se bhi Full School Backup download karein.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/dc_visual_04_benefits.png" alt="Offline Software vs My Zini Data Center VAULT" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Legacy Offline Software vs My Zini Data Center VAULT.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Quick Reference Table -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Quick Reference Table: 8 Datasets in /data-center</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse border border-slate-200 rounded-xl text-sm">
+                        <thead class="bg-slate-900 text-white">
+                            <tr>
+                                <th class="p-3">Dataset Card</th>
+                                <th class="p-3">DB Table Name</th>
+                                <th class="p-3">Kya Store Hota Hai?</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-slate-600">
+                            <tr><td class="p-3 font-semibold text-slate-800">🏫 School Profile</td><td class="p-3"><code>owner</code></td><td class="p-3">School identity, settings, contact &amp; admin details</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">🎓 Students Registry</td><td class="p-3"><code>students</code></td><td class="p-3">Student profiles, parent contacts, class &amp; roll numbers</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">👔 Staff Records</td><td class="p-3"><code>staff</code></td><td class="p-3">Teaching/non-teaching staff, designation &amp; payroll rules</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">📚 Class Setup</td><td class="p-3"><code>classes</code></td><td class="p-3">Class divisions &amp; monthly tuition fee structures</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">📝 Subjects List</td><td class="p-3"><code>subjects</code></td><td class="p-3">Curriculum &amp; examination subjects</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">💳 Other Fee Types</td><td class="p-3"><code>fees_types</code></td><td class="p-3">Bus, Exams, Hostel, Library jaise non-tuition fee heads</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">📉 Expense Ledger</td><td class="p-3"><code>expenses</code></td><td class="p-3">Daily operational bills, utilities &amp; vendor payouts</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">💵 Salary Payments</td><td class="p-3"><code>salary_records</code></td><td class="p-3">Staff salary disbursement history records</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- FAQs & Real Scenarios -->
+            <section class="mb-8">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions (FAQs)</h2>
+                    <div class="space-y-5">
+                        <div>
+                            <h3 class="font-bold text-slate-800">1. "Download Full School Backup" button dabane par kya download hota hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Is button par click karte hi aapke school ke sabhi 8 core modules (School Profile, Students, Staff, Classes, Subjects, Fee Types, Expenses aur Salary Records) ka ek complete, structured <strong>JSON backup file</strong> aapke computer ya phone mein download ho jaata hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">2. Kya Excel ya CSV file ko JSON mein badalkar Bulk Upload kiya ja sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan bilkul! Pehle us dataset ke card par <strong>Schema</strong> dabakar <em>Download Sample Template JSON</em> lein, aur kisi bhi free Excel-to-JSON converter se apni sheet ko usi required key format mein convert karke <strong>Bulk Upload</strong> kar dein.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">3. "RLS COMPLIANCE: 100% Secure (Tenant-isolated storage)" ka kya matlab hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">RLS (Row Level Security) database level ki sabse strong security hoti hai. Iska matlab hai ki har school ka data cryptographic tenant ID se alag rehta hai — koi bhi doosra school ya unauthorized user aapke school ke backups ya rows ko kabhi dekh ya access nahi kar sakta.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">4. "Refresh Counts" button ka kya kaam hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Jab aap Bulk Upload karte hain ya kisi doosre tab mein naye students/expenses add karte hain, toh <strong>Refresh Counts</strong> dabate hi Data Center sabhi 8 tables ki live rows dubara count karke exact number (e.g. <code>816</code> Total Live Records) dikha deta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">5. Kya Bulk Upload karne par purana data overwrite ho jaata hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nahi, bulk upload naye records ko insert/merge karta hai. Phir bhi best practice ke taur par kisi bhi bade bulk upload se pehle ek baar <strong>Download Full School Backup</strong> karke safe snapshot rakhna hamesha samajhdari hoti hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">6. "Students Registry (students)" ke alawa aur kin modules mein Bulk Upload kaam aata hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Naye session ya naye school setup ke waqt aap sirf students hi nahi, balki <strong>Classes (27 rows)</strong>, <strong>Subjects (24 rows)</strong>, <strong>Staff Records</strong>, aur <strong>Other Fee Types</strong> ko bhi ek saath Bulk Upload karke 5 minute mein poora school ERP ready kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">7. Agar JSON file mein koi required key (jaise mobile ya roll_number) missing ho toh kya hoga?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Har dataset ke <strong>JSON Schema Guide</strong> mein <em>REQUIRED JSON KEYS</em> saaf-saaf highlight hoti hain. Agar koi mandatory key missing hogi toh validation check aapko error bata dega taaki incomplete data database mein na jaaye.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">8. Kya hum /students page se bhi Excel/CSV export kar sakte hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Agar aapko sirf students ki list Excel (XLSX) ya CSV mein chahiye, toh aap <code>/students</code> aur <code>/staff</code> par maujood Export buttons use kar sakte hain, jabki poore school ka full multi-table database backup <code>/data-center</code> se milta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">9. Apne school ke liye My Zini Digital ERP kaise shuru karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Aap <a href="../index.html#contact" class="text-blue-600 hover:underline">Digital ERP Registration Form</a> par jaakar sirf <strong>₹100 Registration Fee</strong> ke saath apna school register kar sakte hain aur Data Center VAULT ke saath apna purana data migrate kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">10. School ka weekly backup lena kyun zaroori hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Waise toh My Zini Digital ERP 24x7 secure cloud par chalta hai, lekin har Friday ko <strong>Download Full School Backup</strong> karke apne Google Drive ya local PC par ek JSON copy rakhne se school management ko 100% peace of mind aur offline audit archive mil jaata hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">11. "Copy JSON" aur "Download Sample Template JSON" mein kya antar hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Copy JSON</strong> sample structure ko aapke clipboard par copy karta hai (developers ya scripts ke liye best), jabki <strong>Download Sample Template JSON</strong> aapke device par ek ready <code>.json</code> file save karta hai jise aap edit karke seedha upload kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">12. Kya Data Center mobile browser se bhi kaam karta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Live mobile view mein dekha gaya ki Principal apne smartphone par bhi <code>/data-center</code> kholkar live row counts check kar sakte hain aur Full School Backup download kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">13. "Expense Ledger (expenses)" aur "Salary Payments (salary_records)" ka backup CA audit mein kaise kaam aata hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Financial year closing par aap <code>expenses</code> aur <code>salary_records</code> ka poora data JSON backup mein export karke apne Chartered Accountant ya audit software ke saath easily share kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">14. Kya Data Center mein filter box case-sensitive hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Bilkul nahi! Aap small letters mein <code>students</code>, <code>staff</code>, <code>salary</code> ya <code>owner</code> kuch bhi type karein, matching dataset card turant screen par filter ho jaata hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">15. "School Profile (owner)" dataset mein kya-kya information save hoti hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><code>owner</code> table mein aapke school ki core identity store hoti hai — jaise School Name, Principal/Admin Email, Contact Mobile, Institution Address, Logo URL, aur academic configuration. Full School Backup mein yeh 1 row hamesha include rehti hai taaki school ki branding kabhi na khoye.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">16. "Class Setup (classes)" aur "Subjects List (subjects)" ko Bulk Upload karne ka kya fayda hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Naye school ke liye Playgroup se Class 12 tak ki 27 classes aur unki alag-alag monthly tuition fees (e.g. Nursery ₹500, Class 1 ₹800, Class 10 ₹1800) aur 24 academic subjects (Hindi, English, Maths, Science, Computer) ko manually ek-ek karke type karne ke bajaye aap ek JSON file se 2 seconds mein upload kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">17. "Other Fee Types (fees_types)" table ka use kahan-kahan hota hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><code>fees_types</code> table mein aapke school ke sabhi non-tuition fee heads store hote hain — jaise Bus Fee, Exam Fee, Admit Card Fee, Hostel Fee, Library Fee, ya Annual Sports Fee. Yahi 9 fee types aapko <strong>Payments &amp; Shortcuts Hub</strong> ke <em>Apply Other Dues</em> tab mein dikhte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">18. Bulk Upload ke dauran agar 500 students ki JSON file mein 2 rows mein error aa jaaye toh kya karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Sabse pehle JSON Schema Guide mein check karein ki un 2 rows mein <code>name</code>, <code>class</code>, <code>roll_number</code>, <code>mobile</code>, <code>father_name</code>, aur <code>registration_date</code> mein se koi key khali ya galat spelling mein toh nahi hai. Error fix karke dubara upload karne par saare records cleanly save ho jaate hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">19. Kya hum "Download Full School Backup" ki JSON file ko Excel mein khol sakte hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan bilkul! JSON ek universal standard format hai. Microsoft Excel ke <em>Data → Get Data → From File → From JSON</em> option se ya Google Sheets ke JSON importer se aap kisi bhi backup file ko table ke roop mein Excel mein kholkar dekh sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">20. Data Center VAULT mein "Total Live Records (816)" kaise calculate hota hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Yeh KPI card aapke school ke sabhi 8 core modules ki active database rows ko jodkar dikhata hai: <code>1 (owner) + 674 (students) + 19 (staff) + 27 (classes) + 24 (subjects) + 9 (fees_types) + 8 (expenses) + 54 (salary_records) = 816 Verified Rows</code>.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">21. Kya school ke purane session ka data delete karke naya session shuru karna chahiye?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nahi! Purane session ka data kabhi delete na karein. Pehle <strong>Download Full School Backup</strong> se poore saal ka final archive save karein, aur phir <code>/students</code> aur <code>/classes</code> mein students ko next class mein promote karein taaki pichhle saal ki fee history aur results hamesha available rahein.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">22. Kya Staff ya Teachers ko Data Center VAULT ka access milta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Security aur RLS Compliance ke liye Data Center VAULT sirf authorized School Admin / Principal account ke liye hota hai, taaki koi bhi staff member galti se bulk records upload ya poore school ka database backup download na kar sake.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">23. Kya Backup file mein Students ke photos aur documents bhi aate hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">JSON backup file mein har student, staff aur driver ki profile details ke saath unke cloud photo URLs bhi store rehte hain, jisse file ka size lightweight (kuch KB/MB) rehta hai aur 1 second mein download ho jaati hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">24. Data Center aur Generator Tools mein kya farq hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Generator Tools</strong> (<code>/generator-tools</code>) parents aur students ke liye printable PDFs (ID Cards, Admit Cards, Fee Bills, Marksheets, Certificates) banane ke liye hai, jabki <strong>Data Center VAULT</strong> (<code>/data-center</code>) admin ke liye database backup, JSON Schema inspection aur Bulk Import operations ke liye hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">25. Kya Bulk Upload karne ke liye koi coding ya technical knowledge chahiye?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Bilkul nahi! Har card par maujood <strong>Schema</strong> button aapko ek ready-made sample template dikhata hai. Aap bas <em>Download Sample Template JSON</em> par click karke us file mein apna data daalein (ya kisi free Excel-to-JSON tool ka use karein) aur <strong>Bulk Upload</strong> dabakar file select kar dein — baaki saara kaam My Zini ERP khud kar leta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">26. Agar kisi school ke paas 2,000+ students hon toh kya Data Center unhe handle kar sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Data Center VAULT cloud-native architecture par bana hai, isliye chahe aapke school mein 200 students hon ya 5,000+ students, <em>Download Full School Backup</em> aur <em>Bulk Upload</em> dono seconds mein process ho jaate hain aur RLS security ke saath tenant-isolated rehte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">27. Data Center mein "Backup Engine: JSON Format" kyun chuna gaya hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">JSON (JavaScript Object Notation) duniya ka sabse lightweight aur universal data exchange standard hai. CSV ke muqable JSON mein nested structures, special Hindi/English characters, dates aur numeric types 100% accurate rehte hain aur bina kisi data corruption ke restore ho sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">28. Kya "Download Full School Backup" karne se live portal par koi slowdown hota hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Bilkul nahi! Read-only backup export cloud storage se instant generate hota hai, isliye school ke fee counter, attendance ya student login par koi bhi performance impact nahi padta.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Real School Scenarios: Data Center VAULT ka Daily &amp; Monthly Use</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700">
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">1. Naye School Onboarding (10-Minute Migration)</h3>
+                            <p>Purane software se exported list ko <code>classes</code>, <code>subjects</code>, <code>staff</code> aur <code>students</code> ke Sample JSON Templates mein convert karke Bulk Upload karein — 10 minute mein poora school live!</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">2. Every Friday 1-Click Cloud-to-Local Backup</h3>
+                            <p>Har Friday shaam ko office band karne se pehle <strong>Download Full School Backup</strong> par ek click karke sabhi 816+ records ka JSON snapshot archive karein.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">3. Annual Session Rollover Safety</h3>
+                            <p>Naye academic session mein class promotion ya bulk fee update karne se pehle poora database backup download karke 100% safety ensure karein.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">4. Developer &amp; IT Integration</h3>
+                            <p>School IT team <strong>Copy JSON</strong> schema use karke custom biometric ya legacy tools ka data My Zini ERP ke saath cleanly sync kar sakti hai.</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600 mt-4"><strong>Pro Tip:</strong> Hamesha bulk upload ka order aise rakhein: pehle <strong>Class Setup (classes)</strong> aur <strong>Subjects List</strong> upload karein, uske baad <strong>Staff Records</strong> aur sabse aakhir mein <strong>Students Registry</strong> — isse saari class aur subject mappings 100% clean rehti hain.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 text-center text-sm">
+            <p>&copy; 2026 My Zini Digital ERP — Digital Education System. All rights reserved.</p>
+            <p class="mt-2"><a href="../index.html" class="text-sky-400 hover:underline">Home</a> • <a href="../index.html#blogs-preview" class="text-sky-400 hover:underline">All Blogs</a> • <a href="../privacy-policy.html" class="text-sky-400 hover:underline">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
