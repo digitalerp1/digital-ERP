@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Zini Digital ERP mein System Settings, Staff Permissions (RBAC), Display Mode aur Security Kaise Configure Karein? | Hinglish Guide</title>
+    <meta name="description" content="My Zini Digital ERP (/settings) ka complete Hinglish guide: 4 Settings Tabs (Staff Permissions, Display Mode, App Specs, Security), 6 Class-Wise Permissions, 5 General Switches, Light/Dark Theme, Desktop vs Auto Responsive, PostgreSQL Specs, Reset Local Cache aur Update Password.">
+    <meta name="keywords" content="school erp system settings configuration, myzini digital erp staff permissions rbac, school teacher class wise permissions software, myzini dark theme display mode, reset local cache update password erp">
+    <meta name="author" content="Digital Education System">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://digitalerp.shop/blogs/how-to-configure-school-settings-myzini-erp.html">
+    <link rel="icon" type="image/png" href="/icon.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://digitalerp.shop/blogs/how-to-configure-school-settings-myzini-erp.html">
+    <meta property="og:title" content="My Zini Digital ERP mein System Settings, Staff Permissions & Security Kaise Configure Karein?">
+    <meta property="og:description" content="Settings (/settings) ke sabhi 4 tabs: Staff Permissions (6 Class-Wise + 5 General Switches), Display Mode (Light/Dark, Desktop/Auto), App Specs (v3.9.0, PostgreSQL, Reset Cache) aur Security ka Hinglish guide.">
+    <meta property="og:image" content="https://digitalerp.shop/blogs/images/set_visual_01_hero.png">
+    <meta property="article:published_time" content="2026-11-27T14:22:00+05:30">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Zini Digital ERP System Settings & RBAC Permissions (Hinglish Guide)">
+    <meta name="twitter:description" content="12 real screenshots & visual diagrams ke saath System Settings (/settings) ka poora Hinglish guide.">
+    <meta name="twitter:image" content="https://digitalerp.shop/blogs/images/set_visual_01_hero.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "My Zini Digital ERP mein System Settings, Staff Permissions (RBAC), Display Mode aur Security Kaise Configure Karein? (Hinglish Guide)",
+          "description": "My Zini Digital ERP ke Settings (/settings) module ka complete Hinglish tutorial: Staff Permissions (6 Class-Wise + 5 General Switches), Display Mode (Always Desktop vs Auto Responsive, Light/Dark Theme), App Specs (PostgreSQL, Reset Local Cache) aur Security (Update Password).",
+          "image": [
+            "https://digitalerp.shop/blogs/images/set_visual_01_hero.png",
+            "https://digitalerp.shop/blogs/images/set_01_overview.png",
+            "https://digitalerp.shop/blogs/images/set_04_display_mode.png"
+          ],
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "inLanguage": "hi-Latn",
+          "author": { "@type": "Organization", "name": "My Zini Digital ERP", "url": "https://digitalerp.shop" },
+          "publisher": { "@type": "Organization", "name": "Digital Education System", "logo": { "@type": "ImageObject", "url": "https://digitalerp.shop/icon.png" } },
+          "mainEntityOfPage": "https://digitalerp.shop/blogs/how-to-configure-school-settings-myzini-erp.html"
+        },
+        {
+          "@type": "HowTo",
+          "name": "My Zini Digital ERP mein Staff Permissions aur System Settings Configure Karne ke Steps",
+          "description": "Live verified workflow on myzini.digitalerp.shop/settings.",
+          "step": [
+            { "@type": "HowToStep", "name": "Settings (/settings) Open Karein", "text": "Sidebar ke bottom se Settings open karein jahan 4 tabs milte hain: Staff Permissions, Display Mode, App Specs aur Security." },
+            { "@type": "HowToStep", "name": "Staff Member Select aur Class-Wise Permissions Set Karein", "text": "All/Active/Not Set list se staff chunein aur 6 Class-Wise Permissions (Add Students, Take Attendance, Edit Student, Fee Bills, Fee Payments, Payment Reports) mein classes allow karein." },
+            { "@type": "HowToStep", "name": "General Switches ON/OFF & Save All Permissions Karein", "text": "5 General Switches (Mark Staff Attendance, Add Staff, Create Classes, Edit Staff Profile, Edit Staff Salary & Dues) toggle karke 'Save All Permissions' dabayein." },
+            { "@type": "HowToStep", "name": "Display Mode, App Specs & Security Configure Karein", "text": "Display Mode mein Light/Dark Theme & Auto Responsive set karein, App Specs se Reset Local Cache karein, aur Security se Update Password karein." }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            { "@type": "Question", "name": "My Zini Digital ERP Settings (/settings) mein kaun-kaun se 4 main tabs milte hain?", "acceptedAnswer": { "@type": "Answer", "text": "Isme 4 main tabs milte hain: 👥 Staff Permissions, 🖥️ Display Mode, 📱 App Specs, aur 🔒 Security." } },
+            { "@type": "Question", "name": "Staff Permissions mein kaun-kaun si 6 Class-Wise Permissions milti hain?", "acceptedAnswer": { "@type": "Answer", "text": "6 Class-Wise Permissions hain: Add New Students, Take Student Attendance, Edit Student Information, Create & Print Fee Bills, Receive & Record Fee Payments, aur View & Analyze Payment Reports." } },
+            { "@type": "Question", "name": "Display Mode tab mein kaunse layout aur theme options milte hain?", "acceptedAnswer": { "@type": "Answer", "text": "Layout mein Always Desktop Layout vs Auto Responsive milta hai, aur Appearance & Color Theme mein Light Theme (Default) vs Dark Theme milta hai." } }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #334155; } code { overflow-wrap: anywhere; word-break: break-word; }</style>
+</head>
+<body class="overflow-x-hidden">
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
+            <div class="flex justify-between items-center">
+                <a href="../index.html" class="text-xl sm:text-2xl font-bold text-slate-800">My Zini <span class="text-blue-600">ERP</span></a>
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="../index.html" class="text-slate-600 hover:text-blue-600">Home</a>
+                    <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold">Blogs</a>
+                    <a href="../index.html#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
+                </nav>
+                <button id="blog-mobile-toggle" aria-label="Toggle Menu" class="md:hidden text-slate-700 p-2 rounded-lg hover:bg-slate-100" onclick="document.getElementById('blog-mobile-menu').classList.toggle('hidden')">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <div id="blog-mobile-menu" class="hidden md:hidden mt-3 pb-2 border-t border-slate-100 pt-3 flex flex-col space-y-2 text-sm font-medium">
+                <a href="../index.html" class="text-slate-700 hover:text-blue-600 py-1.5">Home</a>
+                <a href="../index.html#blogs-preview" class="text-blue-600 font-semibold py-1.5">All Blogs</a>
+                <a href="../index.html#contact" class="bg-blue-600 text-white text-center px-4 py-2 rounded-lg hover:bg-blue-700">Register (₹100 Fee)</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-8 sm:py-12 max-w-4xl">
+        <nav class="text-xs sm:text-sm text-slate-500 mb-6 flex flex-wrap items-center gap-2">
+            <a href="../index.html" class="hover:text-blue-600">Home</a>
+            <span>/</span>
+            <a href="../index.html#blogs-preview" class="hover:text-blue-600">Blogs</a>
+            <span>/</span>
+            <span class="text-slate-700 font-medium">System Settings (/settings)</span>
+        </nav>
+
+        <article class="bg-white rounded-2xl sm:rounded-3xl shadow-sm border border-slate-200 p-5 sm:p-8 lg:p-12">
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-4">
+                <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Settings &amp; RBAC Security</span>
+                <span class="text-xs sm:text-sm text-slate-500">Published: 27 Nov 2026</span>
+                <span class="text-xs sm:text-sm text-slate-500">• 15 min read</span>
+                <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-0.5 rounded-full">✓ Live Verified on myzini.digitalerp.shop</span>
+            </div>
+
+            <h1 class="text-2xl sm:text-4xl lg:text-[40px] font-extrabold text-slate-900 leading-tight mb-6 break-words">
+                My Zini Digital ERP mein System Settings, Staff Permissions (RBAC), Display Mode aur Security Kaise Configure Karein? (Hinglish Guide)
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-600 leading-relaxed mb-8">
+                Ek bade school mein har teacher ya office clerk ko poora Admin access dena bilkul surakshit nahi hota — Class 5 ka teacher sirf Class 5 ki attendance le, accountant sirf fee collection dekhe, aur kisi ko bhi bina permission ke staff salary edit karne ka haq na ho! Isi granular Role-Based Access Control (RBAC) aur app customization ke liye <strong>My Zini Digital ERP</strong> mein <strong>Settings</strong> (<code>/settings</code>) panel diya gaya hai. Is Hinglish guide mein humne live portal par iske sabhi 4 tabs (<em>Staff Permissions</em>, <em>Display Mode</em>, <em>App Specs</em>, aur <em>Security</em>) ko test karke poora step-by-step walkthrough तैयार kiya hai.
+            </p>
+
+            <!-- Hero Visual -->
+            <figure class="mb-10">
+                <img src="images/set_visual_01_hero.png" alt="My Zini Digital ERP System Settings, RBAC Staff Permissions & Security Banner" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                <figcaption class="text-xs sm:text-sm text-slate-500 text-center mt-2">My Zini Digital ERP ka Settings Hub — Staff Permissions (RBAC), Display Mode, App Specs aur Security.</figcaption>
+            </figure>
+
+            <!-- TL;DR Quick Summary -->
+            <div class="bg-gradient-to-br from-indigo-50 to-slate-100 border border-indigo-200 rounded-2xl p-5 sm:p-7 mb-10">
+                <h2 class="text-lg sm:text-xl font-bold text-slate-900 mb-3 flex items-center gap-2">
+                    <span>⚡</span> TL;DR — Quick Summary (AI &amp; Reader Snapshot)
+                </h2>
+                <ul class="space-y-2 text-sm sm:text-base text-slate-700 list-disc pl-5">
+                    <li><strong>Route:</strong> Sidebar ke bottom par <code>Settings</code> (<code>https://myzini.digitalerp.shop/settings</code>).</li>
+                    <li><strong>4 Main Tabs:</strong> <code>👥 Staff Permissions</code>, <code>🖥️ Display Mode</code>, <code>📱 App Specs</code>, aur <code>🔒 Security</code>.</li>
+                    <li><strong>Staff Permissions (RBAC):</strong> 19 Staff list (<code>All</code>, <code>Active (5)</code>, <code>Not Set (14)</code>) + <strong>6 Class-Wise Permissions</strong> + <strong>5 General Switches</strong> + <code>Clear All</code> &amp; <code>Save All Permissions</code>.</li>
+                    <li><strong>Display Mode:</strong> <code>Always Desktop Layout</code> vs <code>Auto Responsive</code> + <code>☀️ Light Theme (Default)</code> vs <code>🌙 Dark Theme</code>.</li>
+                    <li><strong>App Specs &amp; Security:</strong> Software Version (<code>v3.9.0</code>), Database (<code>PostgreSQL</code>), <code>🧹 Reset Local Cache</code>, <code>Manage School Profile</code>, aur <code>Update Password</code>.</li>
+                </ul>
+            </div>
+
+            <!-- Section 1: Staff Permissions (RBAC) -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">1. Staff Permissions (RBAC): Step 1, Step 2 (Class-Wise) aur Step 3 (General Switches)</h2>
+                <p class="text-slate-600 leading-relaxed mb-4">
+                    <code>/settings</code> kholte hi default tab <strong>👥 Staff Permissions</strong> open hota hai. Yahan aapko 3 clean steps mein permissions assign karne ka system milta hai:
+                </p>
+                <ul class="space-y-3 text-slate-600 list-disc pl-5 mb-6">
+                    <li><strong>Step 1 — Select Staff Member:</strong> Search box (<code>Search staff...</code>) aur 3 filter pills: <code>All (19)</code>, <code>Active (5)</code>, <code>Not Set (14)</code>. Har card par staff ka naam, status badge (<em>Active</em> / <em>Not Set</em>), Staff ID (e.g. <code>STF-1003</code>), Role (<em>Staff</em> / <em>Teacher</em>) aur allowed classes count (e.g. <code>Classes: 12 Allowed</code>) dikhta hai.</li>
+                    <li><strong>Step 2 — Class-Wise Permissions (6 Rules):</strong> Kisi bhi rule ke arrow (▼) par click karke aap select kar sakte hain ki yeh staff kaun-kaun si classes par action le sakta hai:
+                        <code>➕ Add New Students</code>, <code>📋 Take Student Attendance</code>, <code>✏️ Edit Student Information</code>, <code>🧾 Create &amp; Print Fee Bills</code>, <code>💵 Receive &amp; Record Fee Payments</code>, aur <code>📊 View &amp; Analyze Payment Reports</code>.
+                    </li>
+                    <li><strong>Step 3 — General Permissions (5 Switches):</strong> System-wide admin switches jinhe aap <code>Allowed</code> ya <code>Off</code> toggle kar sakte hain:
+                        <code>👥 Mark Staff Attendance</code>, <code>👤 Add New Staff Members</code>, <code>🏛️ Create New Classes</code>, <code>📝 Edit Staff Profile Details</code>, aur <code>💰 Edit Staff Salary &amp; Dues</code>.
+                    </li>
+                </ul>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <figure>
+                        <img src="images/set_01_overview.png" alt="Staff Permissions RBAC Dashboard in My Zini ERP" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Live Screenshot: /settings par Select Staff Member, Class-Wise Permissions aur General Switches.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/set_02_scroll.png" alt="General Permissions Switches & Save All Permissions" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">General Permissions Switches (Allowed / Off) aur Save All Permissions button.</figcaption>
+                    </figure>
+                </div>
+
+                <figure class="mb-6">
+                    <img src="images/set_visual_02_workflow.png" alt="3-Step RBAC Staff Permission Workflow" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                    <figcaption class="text-xs sm:text-sm text-slate-500 text-center mt-2">3-Step RBAC Workflow: Staff chunein, Class-wise permissions set karein aur Save All Permissions dabayein.</figcaption>
+                </figure>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <figure>
+                        <img src="images/set_03_class_accordion.png" alt="Expanding Take Student Attendance Class-Wise Accordion" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Class-Wise Accordion expand karke specific classes ko allow/disallow karein.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/set_07_active_staff.png" alt="Active Staff Permissions Filter View" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Active (5) filter: Sirf configured staff members (Amit Verma, Sam Yadav, Sandeep Paswan...).</figcaption>
+                    </figure>
+                </div>
+
+                <figure class="mb-6">
+                    <img src="images/set_visual_03_rbac.png" alt="6 Class-Wise Permissions + 5 General Switches Breakdown" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                    <figcaption class="text-xs sm:text-sm text-slate-500 text-center mt-2">My Zini ERP ka Granular RBAC Matrix: 6 Class-Wise Rules + 5 Admin Switches.</figcaption>
+                </figure>
+            </section>
+
+            <!-- Section 2: Display Mode, App Specs & Security Tabs -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">2. Display Mode, App Specs aur Security Tabs ki Poori Jankari</h2>
+                <p class="text-slate-600 leading-relaxed mb-5">
+                    Staff Permissions ke alawa <code>/settings</code> mein 3 aur zaroori tabs milte hain jo har device par aapka experience smooth aur secure banate hain:
+                </p>
+
+                <ul class="space-y-3 text-slate-600 list-disc pl-5 mb-6">
+                    <li><strong>🖥️ Display Mode (Interface &amp; Display Settings):</strong>
+                        Yahan aap screen scaling set kar sakte hain: <strong>Always Desktop Layout</strong> vs <strong>Auto Responsive</strong> (<em>Forces full desktop layout on smaller tablet and mobile screens</em>). Saath hi <strong>Appearance &amp; Color Theme</strong> mein <strong>☀️ Light Theme (Default)</strong> ya <strong>🌙 Dark Theme</strong> choose kar sakte hain!
+                    </li>
+                    <li><strong>📱 App Specs (Application Specs &amp; Maintenance):</strong>
+                        Yahan live system specs dikhte hain: <code>Software Version: v3.9.0</code> aur <code>Database: PostgreSQL</code>. Agar kabhi viewport ya local browser cache atak jaaye, toh <strong>🧹 Reset Local Cache</strong> (<em>Clears stored viewport preferences and cache</em>) ke aage <strong>Reset</strong> button milta hai.
+                    </li>
+                    <li><strong>🔒 Security (Account &amp; Security):</strong>
+                        Yahan 2 direct cards milte hain: <strong>School Profile</strong> (<code>Manage School Profile ➔</code> — school name, campus address aur logo update karne ke liye) aur <strong>Password &amp; Authentication</strong> (<code>Update Password ➔</code> — admin password change karne ke liye).
+                    </li>
+                </ul>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <figure>
+                        <img src="images/set_04_display_mode.png" alt="Display Mode Tab Light Dark Theme & Auto Responsive" class="w-full h-auto rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">🖥️ Display Mode: Layout &amp; Light/Dark Theme.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/set_05_app_specs.png" alt="App Specs Tab PostgreSQL & Reset Local Cache" class="w-full h-auto rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">📱 App Specs: PostgreSQL &amp; Reset Cache.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/set_06_security_tab.png" alt="Security Tab Manage School Profile & Update Password" class="w-full h-auto rounded-xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">🔒 Security: Profile &amp; Update Password.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Section 3: Mobile Responsive & Comparison -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">3. Mobile Responsive Settings aur Shared Password se Tulna</h2>
+                <p class="text-slate-600 leading-relaxed mb-5">
+                    Mobile phone (390px) par bhi Settings ke chaaron tabs (<code>👥Permissions</code>, <code>🖥️Display</code>, <code>📱Specs</code>, <code>🔒Security</code>) compact pill bar ke roop mein upar dikhte hain taaki Principal chalte-phirte kisi bhi teacher ki permission update kar sakein.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 items-center">
+                    <figure>
+                        <img src="images/set_08_mobile_view.png" alt="Settings Page Mobile Responsive View 390px" class="w-full max-w-xs mx-auto h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Live Mobile View (390x844): Compact 4-tab bar aur Staff list.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/set_visual_04_benefits.png" alt="Shared Admin Password vs My Zini Granular RBAC" class="w-full h-auto rounded-2xl border border-slate-200 shadow-sm">
+                        <figcaption class="text-xs text-slate-500 text-center mt-2">Shared Single Password vs My Zini Granular RBAC.</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Quick Reference Table -->
+            <section class="mb-12">
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Quick Reference Table: /settings Module Cheat Sheet</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse border border-slate-200 rounded-xl text-sm">
+                        <thead class="bg-slate-900 text-white">
+                            <tr>
+                                <th class="p-3">Tab Name</th>
+                                <th class="p-3">Main Options</th>
+                                <th class="p-3">Kab Use Karein?</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200 text-slate-600">
+                            <tr><td class="p-3 font-semibold text-slate-800">👥 Staff Permissions</td><td class="p-3">6 Class-Wise Rules + 5 General Switches + <code>Clear All</code></td><td class="p-3">Teachers aur Clerks ko limited role access dene ke liye</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">🖥️ Display Mode</td><td class="p-3"><code>Always Desktop Layout</code> / <code>Auto Responsive</code> + Light/Dark Theme</td><td class="p-3">Mobile/Tablet scaling aur Dark Theme set karne ke liye</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">📱 App Specs</td><td class="p-3">Version (<code>v3.9.0</code>), <code>PostgreSQL</code>, <code>Reset Local Cache</code></td><td class="p-3">System info dekhne ya local cache clear karne ke liye</td></tr>
+                            <tr><td class="p-3 font-semibold text-slate-800">🔒 Security</td><td class="p-3"><code>Manage School Profile</code> + <code>Update Password</code></td><td class="p-3">Admin password badalne aur profile update karne ke liye</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- FAQs & Real Scenarios -->
+            <section class="mb-8">
+                <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-6">Frequently Asked Questions (FAQs)</h2>
+                    <div class="space-y-5">
+                        <div>
+                            <h3 class="font-bold text-slate-800">1. Agar kisi Teacher ko sirf Class 5 ki attendance lene ka access dena ho toh kaise karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>👥 Staff Permissions</strong> tab mein us teacher ko select karein, Step 2 mein <strong>📋 Take Student Attendance</strong> ke arrow par click karke sirf <em>Class 5</em> tick karein, baaki sabhi options <em>No Access</em> ya <em>Off</em> rakhein, aur <strong>Save All Permissions</strong> daba dein.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">2. "Not Set (14)" aur "Active (5)" badges ka kya matlab hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Active (5)</strong> woh staff members hain jinke liye aapne permissions configure karke save kiye hue hain (jaise <em>Amit Verma</em>, <em>Sam Yadav</em>, <em>Sandeep Paswan</em>). <strong>Not Set (14)</strong> ka matlab hai ki un staff members ko abhi tak koi special ERP permission assign nahi ki gayi hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">3. "💰 Edit Staff Salary &amp; Dues" switch ko Off rakhna kyun zaroori hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Yeh ek sensitive payroll control hai! Normal teachers aur receptionists ke liye ise hamesha <strong>Off</strong> rakhein taaki koi bhi staff member apni ya doosron ki salary aur absent fines ko edit na kar sake. Ise sirf Principal ya Senior HR ke liye <em>Allowed</em> karein.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">4. "Always Desktop Layout" aur "Auto Responsive" mein kya farq hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Auto Responsive</strong> mobile aur tablet screen ke hisab se layout ko automatically stack karta hai (padhne mein aasan). Lekin agar aap tablet par bhi full wide spreadsheet-style tables dekhna chahte hain, toh <strong>Always Desktop Layout</strong> select kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">5. "🧹 Reset Local Cache" button kab use karna chahiye?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Agar kabhi layout toggle karne ke baad screen sahi scale na ho rahi ho ya purana cached UI dikh raha ho, toh <strong>📱 App Specs</strong> tab mein jakar <strong>Reset</strong> dabane par aapke browser ki local preferences clean ho jaati hain (aapka cloud database data bilkul safe rehta hai).</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">6. Kya Dark Theme poore ERP par apply hoti hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! <strong>🖥️ Display Mode</strong> ke andar <em>Appearance &amp; Color Theme</em> mein <strong>🌙 Dark Theme</strong> select karne par raat mein kaam karne wale admins aur accountants ko aankhon par kam strain padta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">7. "Clear All" button kya karta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Agar koi staff member school chhod kar jaa raha ho ya unka department badal raha ho, toh unke naam ke upar maujood <strong>Clear All</strong> button dabakar aap unki saari assigned classes aur permissions ek click mein reset kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">8. Admin account ka password kaise badlein?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>🔒 Security</strong> tab open karein aur <em>Password &amp; Authentication</em> card par <strong>Update Password ➔</strong> click karein. Har 3–6 mahine mein password update karna school data security ke liye best practice hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">9. Apne school ke liye My Zini Digital ERP kaise shuru karein?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Aap <a href="../index.html#contact" class="text-blue-600 hover:underline">Digital ERP Registration Form</a> par jaakar sirf <strong>₹100 Registration Fee</strong> ke saath apna school register kar sakte hain aur Role-Based Staff Permissions setup kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">10. "Receive &amp; Record Fee Payments" aur "Create &amp; Print Fee Bills" alag-alag kyun hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Bahut se schools mein ek clerk sirf Fee Bills/Dues print karke parents ko deta hai (<em>Create &amp; Print Fee Bills</em>), jabki cash sirf senior cashier collect karta hai (<em>Receive &amp; Record Fee Payments</em>). Alag rules hone se fraud aur cash mismatch ka risk khatam ho jaata hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">11. Kya "Database: PostgreSQL" ka matlab hai hamara data enterprise-grade hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! <strong>PostgreSQL</strong> duniya ke sabse reliable aur ACID-compliant relational databases mein se ek hai, jo Row Level Security (RLS) ke saath aapke school ke fee records aur student profiles ko 100% safe rakhta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">12. "Save Permissions" (top-right) aur "Save All Permissions" (bottom) mein kya antar hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Dono buttons selected staff member ki Class-Wise aur General permissions ko cloud database mein save karte hain — ek top header par aur ek bottom bar par diya gaya hai taaki aapko upar-neeche scroll na karna pade.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">13. Kya naya staff add karne ke baad woh turant Settings ki list mein dikhta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Jaise hi aap <code>/staff</code> par naya teacher ya clerk add karte hain, woh turant <code>/settings</code> ke <em>Not Set</em> tab mein aa jaata hai jahan se aap unhe permissions de sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">14. "View &amp; Analyze Payment Reports" permission kis staff ko deni chahiye?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Yeh permission sirf Senior Accountant, Vice Principal, ya Fee In-charge ko deni chahiye taaki financial analytics aur dues reports sirf authorized logon tak hi seemit rahein.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">15. Kya Settings mein "Manage School Profile" dabane se /profile khulta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan! Security tab ke andar <strong>Manage School Profile ➔</strong> shortcut aapko seedha <code>/profile</code> par le jaata hai jahan se aap school name, address aur GPS location manage kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">16. "Mark Staff Attendance" aur "Add New Staff Members" General Switches kis staff ko dene chahiye?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Yeh dono switches HR Coordinator, Vice Principal, ya Office Superintendent ko dene chahiye. Normal subject teachers ke liye inhe <strong>Off</strong> rakhna behtar hota hai taaki koi bhi teacher doosre teachers ki attendance ya salary record na badal sake.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">17. "Create New Classes" aur "Edit Staff Profile Details" switches ka kya impact hota hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Agar <strong>Create New Classes</strong> switch Allowed hai, toh woh staff <code>/classes</code> par nayi classes aur monthly tuition fee structure bana sakta hai. Isi tarah <strong>Edit Staff Profile Details</strong> se HR staff ke phone number, address aur designation update kar sakta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">18. Kya ek hi staff member ko alag-alag permissions mein alag classes assign ki ja sakti hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan bilkul! Live portal par <em>Amit Verma (STF-1003)</em> ke profile mein dekha gaya ki unhe <strong>Add New Students</strong> mein 3 classes, <strong>Take Student Attendance</strong> mein 4 classes, <strong>Edit Student Information</strong> mein 5 classes, aur <strong>View &amp; Analyze Payment Reports</strong> mein 1 class allow ki gayi hai — yani har permission completely independent hai!</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">19. Sidebar mein "Settings v3.8.23" aur App Specs mein "Software Version v3.9.0" kyun dikhta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Sidebar badge UI module build version (<code>v3.8.23</code>) darshata hai, jabki <strong>📱 App Specs</strong> tab ke andar core cloud engine ka latest release version (<code>v3.9.0</code>) aur PostgreSQL database status dikhai deta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">20. Agar koi staff member apni login ID se login kare aur "No Access" wale module khole toh kya hoga?</h3>
+                            <p class="text-sm text-slate-600 mt-1">System RBAC permissions aur PostgreSQL Row Level Security (RLS) dono levels par check karta hai. Jin classes ya features par staff ko permission nahi hai, woh unhe bilkul access ya edit nahi kar paayenge.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">21. "Search staff..." box mein kya-kya search kiya ja sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Aap 19+ staff members ki list mein kisi bhi teacher ya clerk ka <strong>Full Name</strong> (jaise <em>Amit</em>, <em>Sneha</em>, <em>Sandeep</em>) ya unka <strong>Staff ID</strong> (jaise <code>STF-1003</code>) type karke turant unka permission card dhoondh sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">22. Kya "Edit Student Information" permission dene se teacher student ki fees bhi badal sakta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Edit Student Information</strong> sirf student ke biodata, parent contact aur roll numbers edit karne ke liye hai. Fee collection aur fee bills ke liye alag se <strong>Create &amp; Print Fee Bills</strong> aur <strong>Receive &amp; Record Fee Payments</strong> permissions di gayi hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">23. Kya Dark Theme set karne par baaki sabhi users ka screen bhi Dark ho jaata hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Nahi! Display Mode settings (Light/Dark Theme aur Always Desktop vs Auto Responsive) aapke apne browser/device ke local preferences mein save hoti hain, isliye har user apni pasand ka theme rakh sakta hai.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">24. "Reset Local Cache" karne ke baad kya dubara login karna padta hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1"><strong>Reset Local Cache</strong> sirf stored viewport aur UI preferences ko clear karta hai taaki screen scaling fresh ho jaaye. Aapke cloud database records (students, fees, staff) par iska koi asar nahi padta.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">25. School Admin ko apna password kitne dinon mein badalna chahiye?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Security best practices ke mutabik har 90 din (3 mahine) mein ya jab bhi koi senior admin/accountant school chhod kar jaaye, tab <strong>🔒 Security → Update Password ➔</strong> se naya strong password set karna chahiye.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">26. "12 Classes Selected" header ka kya matlab hota hai jab koi staff select hota hai?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Jab aap kisi staff (jaise <em>Amit Verma • STF-1003</em>) par click karte hain, toh right panel ke top par <code>12 Classes Selected</code> dikhta hai — iska matlab hai ki unki sabhi 6 Class-Wise Permissions ko milakar kul 12 class-level access slots currently enabled hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">27. Kya "Auto Responsive" mode mein mobile phone par bhi Staff Permissions edit ki ja sakti hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan bilkul! Live mobile view (390px) mein humne verify kiya ki top par 4 compact tabs (<code>👥Permissions</code>, <code>🖥️Display</code>, <code>📱Specs</code>, <code>🔒Security</code>) aur neeche poori staff list cleanly scroll hoti hai jisse Principal phone se bhi permissions toggle kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">28. Kya "Staff" aur "Teacher" roles ke liye alag-alag permissions milti hain?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Settings mein har staff member ke card par unka role tag (<em>Staff</em> ya <em>Teacher</em>) dikhta hai, aur Principal dono ke liye apni zaroorat ke hisab se same 6 Class-Wise aur 5 General Switches customize kar sakte hain.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800">29. Kya naye session ki shuruwat mein sabhi Teachers ki Class-Wise Permissions update karni chahiye?</h3>
+                            <p class="text-sm text-slate-600 mt-1">Haan bilkul! Jab naye session mein teachers ko nayi classes allot hoti hain, toh Principal sirf 5 minute mein <strong>👥 Staff Permissions</strong> open karke purani classes untick aur nayi classes allow karke <strong>Save All Permissions</strong> kar sakte hain — isse poora academic year bina kisi data leakage ke smoothly chalta hai.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+                    <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-4">Real School Scenarios: Settings &amp; RBAC ka Smart Use</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-700">
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">1. Class Teacher Setup (Zero Finance Access)</h3>
+                            <p>Class teachers ke liye sirf <strong>Take Student Attendance</strong> mein unki apni class allow karein aur sabhi Fee/Salary switches ko <strong>Off</strong> rakhein.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">2. Fee Counter Cashier Setup</h3>
+                            <p>Cashier ko sabhi classes ke liye <strong>Receive &amp; Record Fee Payments</strong> aur <strong>Create &amp; Print Fee Bills</strong> allow karein, lekin <em>Edit Staff Salary</em> ko <strong>Off</strong> rakhein.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">3. Staff Resignation Access Revoke</h3>
+                            <p>Kisi staff ke school chhodte hi <strong>Clear All</strong> dabakar Save karein — unka saara ERP access turant band ho jaata hai.</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-xl border border-slate-200">
+                            <h3 class="font-bold text-slate-900 mb-1">4. Tablet Users ke liye Desktop Mode</h3>
+                            <p>Office iPad/Tablet par bade finance tables dekhne ke liye <strong>Display Mode</strong> mein <em>Always Desktop Layout</em> switch karein.</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600 mt-4"><strong>Pro Tip:</strong> Har mahine ek baar <strong>Active (5)</strong> filter check karein taaki verify rahe ki sirf current working staff ke paas hi ERP permissions active hain aur kisi former employee ka access chalu nahi hai.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 mt-12">
+        <div class="container mx-auto px-4 sm:px-6 text-center text-sm">
+            <p>&copy; 2026 My Zini Digital ERP — Digital Education System. All rights reserved.</p>
+            <p class="mt-2"><a href="../index.html" class="text-sky-400 hover:underline">Home</a> • <a href="../index.html#blogs-preview" class="text-sky-400 hover:underline">All Blogs</a> • <a href="../privacy-policy.html" class="text-sky-400 hover:underline">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>

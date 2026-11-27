@@ -24,5 +24,5 @@
 | 17 | Online Payments & Fee Gateways | `Payments` | `how-to-accept-online-school-fee-payments-myzini-erp` | online school fee payment system india | published | `blogs/images/pay_visual_01_hero.png` | 2026-11-27 |
 | 18 | Data Center (Import, Export & Backups) | `/data-center` | `how-to-use-data-center-backup-export-myzini-erp` | school erp data export backup center | published | `blogs/images/dc_visual_01_hero.png` | 2026-11-27 |
 | 19 | My Profile & Institution Account | `/profile` | `how-to-manage-school-profile-myzini-erp` | school profile settings myzini digital erp | published | `blogs/images/prof_visual_01_hero.png` | 2026-11-27 |
-| 20 | System Settings & Configuration | `/settings` | `how-to-configure-school-settings-myzini-erp` | school erp system settings configuration | pending | `blogs/images/how-to-configure-school-settings-myzini-erp.png` | - |
+| 20 | System Settings & Configuration | `/settings` | `how-to-configure-school-settings-myzini-erp` | school erp system settings configuration | published | `blogs/images/set_visual_01_hero.png` | 2026-11-27 |
 | 21 | Built-in How to Use Guide & Support | `/how-to-use` | `how-to-access-help-and-support-myzini-erp` | myzini digital erp help guide support | pending | `blogs/images/how-to-access-help-and-support-myzini-erp.png` | - |
