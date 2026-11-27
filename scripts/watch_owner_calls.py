@@ -27,6 +27,16 @@ DONE_TASKS_FILE = os.path.join(
     "reports",
     "live_voice_tasks_done.txt",
 )
+DELEGATED_CALLS_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "reports",
+    "delegated_calls.jsonl",
+)
+DONE_DELEGATED_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "reports",
+    "delegated_calls_done.txt",
+)
 OWNER_MARKERS = ("9241981083", "6696340586678")
 
 
