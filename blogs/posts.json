@@ -1,5 +1,16 @@
 [
   {
+    "slug": "how-to-access-help-and-support-myzini-erp",
+    "title": "My Zini Digital ERP mein Built-in How to Use Guide, 7-Step Setup Roadmap aur Live Support Kaise Use Karein? (Hinglish Guide)",
+    "description": "How to Use HELP DESK (/how-to-use) ke sabhi 5 interactive tabs: Recommended Setup Roadmap (7 Steps ~19 mins), Form Field Manual (5 Forms), Modules Guide (6 Tools with AI Query Helper), FAQ & Answers (8 Q&A) aur Live WhatsApp/Email Support Desk (+91 8809251129) ka Hinglish guide 12 images ke saath.",
+    "category": "Help Desk & Onboarding",
+    "image": "blogs/images/htu_visual_01_hero.png",
+    "imageAlt": "My Zini Digital ERP How to Use Guide & Support Banner",
+    "publishedAt": "2026-11-27",
+    "readTime": "15 min read",
+    "url": "blogs/how-to-access-help-and-support-myzini-erp.html"
+  },
+  {
     "slug": "how-to-configure-school-settings-myzini-erp",
     "title": "My Zini Digital ERP mein System Settings, Staff Permissions (RBAC), Display Mode aur Security Kaise Configure Karein? (Hinglish Guide)",
     "description": "Settings (/settings) ke sabhi 4 tabs: Staff Permissions (6 Class-Wise Rules + 5 General Switches, Clear All), Display Mode (Always Desktop vs Auto Responsive, Light/Dark Theme), App Specs (v3.9.0, PostgreSQL, Reset Local Cache) aur Security (Update Password) ka Hinglish guide 12 images ke saath.",
