@@ -19,7 +19,7 @@
 | 12 | School Expenses Tracking | `/expenses` | `how-to-record-and-track-school-expenses-myzini-erp` | school expense management accounting erp | published | `blogs/images/exp_visual_01_hero.png` | 2026-11-27 |
 | 13 | Family Management (Sibling Fee & Records) | `/family-management` | `how-to-use-family-management-myzini-erp` | school family sibling management erp | published | `blogs/images/fam_visual_01_hero.png` | 2026-11-27 |
 | 14 | Leave Forms & Leave Management | `/leave-management` | `how-to-manage-student-staff-leave-forms-myzini-erp` | school leave management system online | published | `blogs/images/leave_visual_01_hero.png` | 2026-11-27 |
-| 15 | Hostel Management | `/hostel` | `how-to-manage-school-hostel-myzini-erp` | school hostel management software myzini | pending | `blogs/images/how-to-manage-school-hostel-myzini-erp.png` | - |
+| 15 | Hostel Management | `/hostel` | `how-to-manage-school-hostel-myzini-erp` | school hostel management software myzini | published | `blogs/images/hostel_visual_01_hero.png` | 2026-11-27 |
 | 16 | School Transport & Route Management | `/transport` | `how-to-manage-school-transport-routes-myzini-erp` | school bus transport management erp | pending | `blogs/images/how-to-manage-school-transport-routes-myzini-erp.png` | - |
 | 17 | Online Payments & Fee Gateways | `Payments` | `how-to-accept-online-school-fee-payments-myzini-erp` | online school fee payment system india | pending | `blogs/images/how-to-accept-online-school-fee-payments-myzini-erp.png` | - |
 | 18 | Data Center (Import, Export & Backups) | `/data-center` | `how-to-use-data-center-backup-export-myzini-erp` | school erp data export backup center | pending | `blogs/images/how-to-use-data-center-backup-export-myzini-erp.png` | - |
