@@ -76,30 +76,45 @@ function drawErpScreen(c, t, mode) {
     c.fillStyle = '#4ade80';
     c.fillText('• ₹100 One-Time Registration', bx + 20, by + 102);
     c.fillText('• Web + Android + Parent App', bx + 20, by + 130);
+    const prog = Math.min(1, Math.max(0, (t - 25) / 25));
+    c.fillStyle = '#1e293b';
+    c.fillRect(bx + 20, by + 150, 260, 12);
+    c.fillStyle = '#38bdf8';
+    c.fillRect(bx + 20, by + 150, 260 * prog, 12);
   } else if (mode === 'rfid') {
     c.fillText('RFID & Daily Attendance', bx + 20, by + 72);
     const pulse = Math.floor((t * 2) % 3);
     c.fillStyle = '#4ade80';
-    c.fillText(`• Card Scanned: Present ✓`, bx + 20, by + 104);
+    c.fillText('• Card Scanned: Present ✓', bx + 20, by + 104);
     c.fillStyle = pulse === 0 ? '#fbbf24' : '#38bdf8';
     c.fillText('• Parent WhatsApp Alert Sent', bx + 20, by + 134);
+    const count = 420 + Math.floor(((t - 55) / 35) * 195);
+    c.fillStyle = '#93c5fd';
+    c.fillText(`Present Today: ${count} / 623`, bx + 20, by + 164);
   } else if (mode === 'fees') {
     c.fillText('Fee Collection & Dues Radar', bx + 20, by + 72);
     c.fillStyle = '#4ade80';
     c.fillText('• 1-Click QR Fee Receipt', bx + 20, by + 104);
     c.fillText('• Auto WhatsApp Dues Alert', bx + 20, by + 134);
+    const amt = 48500 + Math.floor(((t - 90) / 35) * 62000);
+    c.fillStyle = '#fbbf24';
+    c.fillText(`Today Inflow: ₹${amt.toLocaleString('en-IN')}`, bx + 20, by + 164);
   } else if (mode === 'exams') {
     c.fillText('Exams, ID & Admit Cards', bx + 20, by + 72);
     c.fillStyle = '#fbbf24';
     c.fillText('• 17+ Admit Card Styles', bx + 20, by + 104);
     c.fillStyle = '#4ade80';
     c.fillText('• Online Marksheets Ready', bx + 20, by + 134);
+    c.fillStyle = '#38bdf8';
+    c.fillText('• 1-Click Bulk PDF Export', bx + 20, by + 164);
   } else {
     c.fillText('All-in-One School Command', bx + 20, by + 72);
     c.fillStyle = '#4ade80';
     c.fillText('• myzini.digitalerp.shop', bx + 20, by + 104);
     c.fillStyle = '#93c5fd';
     c.fillText('• Demo: +91 9241981083', bx + 20, by + 134);
+    c.fillStyle = '#fbbf24';
+    c.fillText('• Start Your Free Trial Now!', bx + 20, by + 164);
   }
   c.restore();
 }
