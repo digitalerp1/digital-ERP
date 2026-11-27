@@ -1,5 +1,16 @@
 [
   {
+    "slug": "how-to-manage-school-profile-myzini-erp",
+    "title": "My Zini Digital ERP mein My Profile, GPS Geofence aur School Account Kaise Manage Karein? (Hinglish Guide)",
+    "description": "My Profile (/profile) ke sabhi options: Subscription Status Countdown, School Code & Active Premium Badge, General & Contact Details (Call, WhatsApp, Board Code), Campus Geolocation & GPS Map (Leaflet/Google Maps Geofence), Hostel Infrastructure aur School Shortcuts ka Hinglish guide 12 images ke saath.",
+    "category": "School Profile & GPS",
+    "image": "blogs/images/prof_visual_01_hero.png",
+    "imageAlt": "My Zini Digital ERP My Profile & GPS Geofence Banner",
+    "publishedAt": "2026-11-27",
+    "readTime": "15 min read",
+    "url": "blogs/how-to-manage-school-profile-myzini-erp.html"
+  },
+  {
     "slug": "how-to-use-data-center-backup-export-myzini-erp",
     "title": "My Zini Digital ERP mein Data Center VAULT (Bulk Import, JSON Schema & Full Backup) Kaise Use Karein? (Hinglish Guide)",
     "description": "Data Center VAULT (/data-center) ke sabhi options: 4 Live KPIs (8 Modules, 816 Rows, 100% RLS Secure, JSON Format), Download Full School Backup, 8 Core Datasets (owner, students, staff, classes, subjects, fees_types, expenses, salary_records), Bulk Upload aur JSON Schema Guide ka Hinglish guide 12 images ke saath.",
