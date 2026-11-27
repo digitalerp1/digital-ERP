@@ -69,6 +69,11 @@ def main():
         with open(DONE_TASKS_FILE, "r", encoding="utf-8") as f:
             done_tasks = {line.strip() for line in f if line.strip()}
 
+    done_delegated = set()
+    if os.path.exists(DONE_DELEGATED_FILE):
+        with open(DONE_DELEGATED_FILE, "r", encoding="utf-8") as f:
+            done_delegated = {line.strip() for line in f if line.strip()}
+
     while True:
         try:
             if os.path.exists(TASK_QUEUE_FILE):
@@ -89,7 +94,42 @@ def main():
             pass
 
         try:
-            for r in fetch_history(api_key):
+            history = fetch_history(api_key)
+            if os.path.exists(DELEGATED_CALLS_FILE):
+                with open(DELEGATED_CALLS_FILE, "r", encoding="utf-8") as df:
+                    for line in df:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        ditem = json.loads(line)
+                        did = ditem.get("id")
+                        if not did or did in done_delegated:
+                            continue
+                        for r in history:
+                            if (ditem.get("recordId") and r.get("id") == ditem.get("recordId")) or (
+                                ditem.get("callId") and r.get("callId") == ditem.get("callId")
+                            ):
+                                if str(r.get("status") or "").lower() == "ended":
+                                    time.sleep(3)
+                                    for upd in fetch_history(api_key):
+                                        if upd.get("id") == r.get("id"):
+                                            r = upd
+                                            break
+                                    os.makedirs(os.path.dirname(DONE_DELEGATED_FILE), exist_ok=True)
+                                    with open(DONE_DELEGATED_FILE, "a", encoding="utf-8") as ddf:
+                                        ddf.write(did + "\n")
+                                    print(json.dumps({
+                                        "event": "DELEGATED_CALL_COMPLETED",
+                                        "delegatedId": did,
+                                        "targetPhone": ditem.get("targetPhone"),
+                                        "postCallAction": ditem.get("postCallAction"),
+                                        "durationSec": r.get("durationSec"),
+                                        "callSummary": r.get("callSummary"),
+                                        "transcript": r.get("transcript"),
+                                    }, indent=2, ensure_ascii=False))
+                                    return
+
+            for r in history:
                 rid = r.get("id")
                 cid = r.get("callId")
                 if not rid or rid in seen or not is_owner_inbound(r):
