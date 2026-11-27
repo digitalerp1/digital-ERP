@@ -5,6 +5,11 @@
 ## Core Documentation & Pages
 - [Home & Registration](https://digitalerp.shop/): Main product overview, 50+ ERP features, pricing plans, and institution registration (₹100 Registration Fee).
 - [Live ERP Portal](https://myzini.digitalerp.shop/): School administration dashboard.
+- [Knowledge Base & Guides Hub](https://digitalerp.shop/blogs/): Searchable index of all verified Hinglish & English school ERP tutorials.
+- [Best School Management Software in India](https://digitalerp.shop/school-management-software.html): Complete school ERP overview covering admissions, attendance, fees, results, ID cards, transport, and hostel.
+- [School Fee Management Software](https://digitalerp.shop/school-fee-management-software.html): Automated fee collection, pending dues radar, sibling concessions, and WhatsApp fee reminders.
+- [RFID School Attendance System](https://digitalerp.shop/school-attendance-rfid-software.html): RFID smart card attendance polling, exit tracking, and daily/monthly reports.
+- [Coaching Management Software](https://digitalerp.shop/coaching-management-software.html): Batch timetables, fee dues, test results, and FCM announcements for coaching institutes.
 
 ## Verified How-To Guides
 - [My Zini Digital ERP System Settings, RBAC Staff Permissions & Security (Hinglish Guide)](https://digitalerp.shop/blogs/how-to-configure-school-settings-myzini-erp.html): Complete Hinglish guide covering Settings (/settings) 4 tabs: Staff Permissions (6 Class-Wise + 5 General Switches), Display Mode (Desktop/Auto Responsive, Light/Dark Theme), App Specs (v3.9.0, PostgreSQL, Reset Local Cache), and Security (Update Password).

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Zini Digital ERP Knowledge Base — School Management Guides &amp; Tutorials</title>
+  <meta name="description" content="Explore step-by-step Hinglish and English guides for My Zini Digital ERP: student admissions, RFID attendance, fee collection, WhatsApp dues reminders, exam marksheets, transport, and hostel management.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://digitalerp.shop/blogs/">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitalerp.shop/blogs/">
+  <meta property="og:title" content="My Zini Digital ERP Knowledge Base — School Management Guides">
+  <meta property="og:description" content="Step-by-step tutorials with real dashboard screenshots for every My Zini Digital ERP module.">
+  <meta property="og:image" content="https://digitalerp.shop/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "My Zini Digital ERP Knowledge Base",
+    "url": "https://digitalerp.shop/blogs/",
+    "description": "Verified how-to guides for school management software, RFID attendance, fee collection, and coaching ERP.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "My Zini Digital ERP",
+      "url": "https://digitalerp.shop/"
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+  <header class="bg-white/90 backdrop-blur sticky top-0 z-50 border-b border-slate-200">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl sm:text-2xl font-bold text-slate-900">My Zini <span class="text-blue-600">ERP</span></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/school-management-software.html" class="hover:text-blue-600">School ERP</a>
+        <a href="/blogs/" class="text-blue-600 font-semibold">Blogs</a>
+        <a href="https://myzini.digitalerp.shop" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Open Live ERP</a>
+      </nav>
+      <a href="https://myzini.digitalerp.shop" target="_blank" rel="noopener noreferrer" class="md:hidden bg-blue-600 text-white text-xs font-semibold px-3 py-2 rounded-lg">Live ERP</a>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 py-10 sm:py-14">
+    <div class="max-w-3xl mx-auto text-center mb-10">
+      <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-3">Verified Knowledge Base</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">My Zini Digital ERP Guides &amp; Tutorials</h1>
+      <p class="text-slate-600 text-base sm:text-lg mb-6">Har school management module ka live-tested step-by-step guide — real screenshots aur Hinglish + English explanations ke saath.</p>
+      <div class="flex flex-col sm:flex-row gap-3 max-w-2xl mx-auto">
+        <input id="search-input" type="search" placeholder="Search guides (e.g., fee, attendance, RFID, marksheet, hostel)..." class="flex-1 px-4 py-3 rounded-xl border border-slate-300 bg-white shadow-sm focus:ring-2 focus:ring-blue-500 outline-none text-sm">
+        <select id="category-filter" class="px-4 py-3 rounded-xl border border-slate-300 bg-white shadow-sm text-sm">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="post-count" class="text-xs text-slate-500 mb-4"></div>
+    <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </main>
+
+  <footer class="bg-slate-900 text-slate-400 py-8 mt-12">
+    <div class="container mx-auto px-4 sm:px-6 text-center text-sm">
+      <p>&copy; <span id="yr"></span> My Zini Digital ERP &bull; <a href="/" class="hover:text-white">Home</a> &bull; <a href="/school-management-software.html" class="hover:text-white">School Management Software</a> &bull; <a href="https://wa.me/919241981083" class="hover:text-white">WhatsApp: +91 9241981083</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    let allPosts = [];
+    const grid = document.getElementById('posts-grid');
+    const searchEl = document.getElementById('search-input');
+    const catEl = document.getElementById('category-filter');
+    const countEl = document.getElementById('post-count');
+
+    function render(posts) {
+      countEl.textContent = `Showing ${posts.length} verified guide(s)`;
+      if (!posts.length) {
+        grid.innerHTML = '<p class="col-span-full text-center text-slate-500 py-10">No guides matched your filter.</p>';
+        return;
+      }
+      grid.innerHTML = posts.map(p => {
+        const href = '/' + p.url.replace(/^\//, '');
+        const img = '/' + p.image.replace(/^\//, '');
+        return `
+          <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-md transition-shadow">
+            <a href="${href}" class="block aspect-video bg-slate-100 overflow-hidden">
+              <img src="${img}" alt="${p.imageAlt || p.title}" loading="lazy" class="w-full h-full object-cover">
+            </a>
+            <div class="p-5 flex flex-col flex-grow">
+              <div class="flex items-center justify-between text-xs text-slate-500 mb-2">
+                <span class="bg-blue-50 text-blue-700 font-semibold px-2.5 py-0.5 rounded-full">${p.category}</span>
+                <span>${p.publishedAt}</span>
+              </div>
+              <h2 class="text-lg font-bold text-slate-900 mb-2 leading-snug"><a href="${href}" class="hover:text-blue-600">${p.title}</a></h2>
+              <p class="text-slate-600 text-sm mb-4 flex-grow">${p.description}</p>
+              <a href="${href}" class="text-blue-600 font-semibold text-sm hover:underline">Read Full Guide &rarr;</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function applyFilter() {
+      const q = searchEl.value.trim().toLowerCase();
+      const c = catEl.value;
+      render(allPosts.filter(p =>
+        (!c || p.category === c) &&
+        (!q || p.title.toLowerCase().includes(q) || p.description.toLowerCase().includes(q) || p.category.toLowerCase().includes(q))
+      ));
+    }
+
+    fetch('/blogs/posts.json')
+      .then(r => r.json())
+      .then(posts => {
+        allPosts = Array.isArray(posts) ? posts : [];
+        const cats = [...new Set(allPosts.map(p => p.category))];
+        cats.forEach(c => {
+          const opt = document.createElement('option');
+          opt.value = c;
+          opt.textContent = c;
+          catEl.appendChild(opt);
+        });
+        render(allPosts);
+      });
+
+    searchEl.addEventListener('input', applyFilter);
+    catEl.addEventListener('change', applyFilter);
+  </script>
+</body>
+</html>

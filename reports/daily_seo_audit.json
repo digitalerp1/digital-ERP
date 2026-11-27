@@ -1,0 +1,390 @@
+{
+  "generated_at": "2026-11-27T15:01:18.387818",
+  "total_pages_audited": 28,
+  "critical_issues": 0,
+  "warnings": 48,
+  "sitemap_urls": 28,
+  "pages": [
+    {
+      "file": "coaching-management-software.html",
+      "title": "Coaching Institute & Tuition Management Software \u2014 My Zini Digital ERP",
+      "title_len": 70,
+      "desc_len": 136,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/coaching-management-software.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "file": "index.html",
+      "title": "My Zini Digital ERP \u2014 Free School Management Software & Coaching ERP",
+      "title_len": 68,
+      "desc_len": 229,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Meta description length 229 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "indexphone.html",
+      "title": "Digital ERP",
+      "title_len": 11,
+      "desc_len": 95,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop",
+      "json_ld_count": 0,
+      "issues": [],
+      "warnings": [
+        "Title length 11 (ideal 30-65)",
+        "Incomplete Open Graph tags",
+        "No JSON-LD structured data"
+      ]
+    },
+    {
+      "file": "privacy-policy.html",
+      "title": "Students Privacy Policy - Myzini Students App",
+      "title_len": 45,
+      "desc_len": 161,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/privacy-policy.html",
+      "json_ld_count": 0,
+      "issues": [],
+      "warnings": [
+        "Incomplete Open Graph tags",
+        "No JSON-LD structured data"
+      ]
+    },
+    {
+      "file": "school-attendance-rfid-software.html",
+      "title": "RFID School Attendance System & Smart Reports \u2014 My Zini Digital ERP",
+      "title_len": 67,
+      "desc_len": 146,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/school-attendance-rfid-software.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "file": "school-fee-management-software.html",
+      "title": "School Fee Management Software & WhatsApp Dues Alerts \u2014 My Zini ERP",
+      "title_len": 67,
+      "desc_len": 145,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/school-fee-management-software.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "file": "school-management-software.html",
+      "title": "Best School Management Software in India \u2014 My Zini Digital ERP",
+      "title_len": 62,
+      "desc_len": 172,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/school-management-software.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Meta description length 172 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-accept-online-school-fee-payments-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Payments & Shortcuts Hub (Cashier Terminal) Kaise Use Karein? | Hinglish Guide",
+      "title_len": 103,
+      "desc_len": 244,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-accept-online-school-fee-payments-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 103 (ideal 30-65)",
+        "Meta description length 244 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-configure-school-settings-myzini-erp.html",
+      "title": "My Zini Digital ERP mein System Settings, Staff Permissions (RBAC), Display Mode aur Security Kaise Configure Karein? | Hinglish Guide",
+      "title_len": 134,
+      "desc_len": 280,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-configure-school-settings-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 134 (ideal 30-65)",
+        "Meta description length 280 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-create-and-manage-classes-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Classes, Subjects aur Timetable Kaise Manage Karein? | Hinglish Guide",
+      "title_len": 94,
+      "desc_len": 237,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-create-and-manage-classes-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 94 (ideal 30-65)",
+        "Meta description length 237 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-create-school-announcements-notices-myzini-erp.html",
+      "title": "My Zini Digital ERP mein School Announcements aur FCM Notice Board Kaise Use Karein? | Hinglish Guide",
+      "title_len": 101,
+      "desc_len": 222,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-create-school-announcements-notices-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 101 (ideal 30-65)",
+        "Meta description length 222 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-manage-fee-collection-finance-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Fee Collection aur Finance Management Kaise Use Karein? | Hinglish Guide",
+      "title_len": 97,
+      "desc_len": 231,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-manage-fee-collection-finance-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 97 (ideal 30-65)",
+        "Meta description length 231 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-manage-school-hostel-myzini-erp.html",
+      "title": "My Zini Digital ERP mein School Hostel Management aur Hostel Fees Kaise Manage Karein? | Hinglish Guide",
+      "title_len": 103,
+      "desc_len": 221,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-manage-school-hostel-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 103 (ideal 30-65)",
+        "Meta description length 221 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-manage-school-profile-myzini-erp.html",
+      "title": "My Zini Digital ERP mein My Profile, GPS Geofence aur School Account Kaise Manage Karein? | Hinglish Guide",
+      "title_len": 106,
+      "desc_len": 286,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-manage-school-profile-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 106 (ideal 30-65)",
+        "Meta description length 286 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-manage-school-transport-routes-myzini-erp.html",
+      "title": "My Zini Digital ERP mein School Transport, Bus Routes aur Drivers Kaise Manage Karein? | Hinglish Guide",
+      "title_len": 103,
+      "desc_len": 259,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-manage-school-transport-routes-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 103 (ideal 30-65)",
+        "Meta description length 259 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-manage-staff-and-salaries-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Staff Management aur Salary Tracking Kaise Use Karein? | Hinglish Guide",
+      "title_len": 96,
+      "desc_len": 242,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-manage-staff-and-salaries-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 96 (ideal 30-65)",
+        "Meta description length 242 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-manage-student-staff-leave-forms-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Leave Forms aur Student-Staff Chhutti Kaise Manage Karein? | Hinglish Guide",
+      "title_len": 100,
+      "desc_len": 242,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-manage-student-staff-leave-forms-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 100 (ideal 30-65)",
+        "Meta description length 242 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-publish-exam-results-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Exam Results aur Marksheets Kaise Publish Karein? | Hinglish Guide",
+      "title_len": 91,
+      "desc_len": 216,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-publish-exam-results-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 91 (ideal 30-65)",
+        "Meta description length 216 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-record-and-track-school-expenses-myzini-erp.html",
+      "title": "My Zini Digital ERP mein School Expenses aur Daily Kharcha Kaise Track Karein? | Hinglish Guide",
+      "title_len": 95,
+      "desc_len": 234,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-record-and-track-school-expenses-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 95 (ideal 30-65)",
+        "Meta description length 234 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-take-attendance-and-view-reports-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Daily Attendance aur Attendance Report Kaise Use Karein? | Hinglish Guide",
+      "title_len": 98,
+      "desc_len": 247,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-take-attendance-and-view-reports-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 98 (ideal 30-65)",
+        "Meta description length 247 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-track-student-dues-list-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Pending Dues List (Fee Dues Radar) Kaise Use Karein? | Hinglish Guide",
+      "title_len": 94,
+      "desc_len": 220,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-track-student-dues-list-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 94 (ideal 30-65)",
+        "Meta description length 220 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-use-data-center-backup-export-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Data Center VAULT (Bulk Import, JSON Schema & Full Backup) Kaise Use Karein? | Hinglish Guide",
+      "title_len": 118,
+      "desc_len": 290,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-use-data-center-backup-export-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 118 (ideal 30-65)",
+        "Meta description length 290 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-use-family-management-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Family Management aur Sibling Fee Billing Kaise Use Karein? | Hinglish Guide",
+      "title_len": 101,
+      "desc_len": 246,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-use-family-management-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 101 (ideal 30-65)",
+        "Meta description length 246 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-use-generator-tools-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Generator Tools (ID Cards, Admit Cards, Marksheets & Certificates) Kaise Use Karein? | Hinglish Guide",
+      "title_len": 126,
+      "desc_len": 249,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-use-generator-tools-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 126 (ideal 30-65)",
+        "Meta description length 249 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-use-rfid-cards-for-students-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Assigned RFID Cards aur Smart Attendance Kaise Use Karein? | Hinglish Guide",
+      "title_len": 100,
+      "desc_len": 235,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-use-rfid-cards-for-students-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 100 (ideal 30-65)",
+        "Meta description length 235 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-use-school-dashboard-quick-actions-myzini-erp.html",
+      "title": "My Zini Digital ERP mein School Dashboard aur Quick Actions Kaise Use Karein? | Complete Hinglish Guide",
+      "title_len": 103,
+      "desc_len": 247,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-use-school-dashboard-quick-actions-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 103 (ideal 30-65)",
+        "Meta description length 247 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/how-to-use-student-management-myzini-erp.html",
+      "title": "My Zini Digital ERP mein Student Management Kaise Use Karein? | Complete Hinglish Guide",
+      "title_len": 87,
+      "desc_len": 250,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/how-to-use-student-management-myzini-erp.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 87 (ideal 30-65)",
+        "Meta description length 250 (ideal 120-160)"
+      ]
+    },
+    {
+      "file": "blogs/index.html",
+      "title": "My Zini Digital ERP Knowledge Base \u2014 School Management Guides & Tutorials",
+      "title_len": 73,
+      "desc_len": 202,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Meta description length 202 (ideal 120-160)"
+      ]
+    }
+  ]
+}
