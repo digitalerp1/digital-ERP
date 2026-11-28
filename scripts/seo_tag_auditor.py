@@ -21,7 +21,7 @@ from html.parser import HTMLParser
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKIP_FILES = {"delete.html", "apizini.html", "chatbot.html", "privacy-policy1.html"}
-SKIP_DIRS = {".git", "components", "task", "node_modules", "reports"}
+SKIP_DIRS = {".git", "components", "task", "node_modules", "reports", "videos"}
 
 
 class PageSEOParser(HTMLParser):

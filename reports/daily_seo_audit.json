@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-27T18:00:43.771937",
-  "total_pages_audited": 34,
+  "generated_at": "2026-11-28T08:01:40.768645",
+  "total_pages_audited": 37,
   "critical_issues": 0,
-  "warnings": 57,
-  "sitemap_urls": 34,
+  "warnings": 61,
+  "sitemap_urls": 38,
   "pages": [
     {
       "file": "coaching-management-software.html",
@@ -79,6 +79,19 @@
       "json_ld_count": 1,
       "issues": [],
       "warnings": []
+    },
+    {
+      "file": "school-management-software-bihar.html",
+      "title": "Best School Management Software in Bihar & Patna \u2014 My Zini Digital ERP",
+      "title_len": 70,
+      "desc_len": 164,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/school-management-software-bihar.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Incomplete Open Graph tags"
+      ]
     },
     {
       "file": "school-management-software.html",
@@ -429,6 +442,20 @@
       ]
     },
     {
+      "file": "blogs/reduce-school-fee-defaulters-whatsapp-reminders.html",
+      "title": "School Fee Defaulters ko WhatsApp Reminder Automation se 2x Fast Kaise Recover Karein? | Hinglish Guide",
+      "title_len": 103,
+      "desc_len": 259,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/blogs/reduce-school-fee-defaulters-whatsapp-reminders.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Title length 103 (ideal 30-65)",
+        "Meta description length 259 (ideal 120-160)"
+      ]
+    },
+    {
       "file": "tools/attendance-percentage-calculator.html",
       "title": "Free School & College Attendance Percentage Calculator \u2014 My Zini ERP",
       "title_len": 68,
@@ -461,6 +488,19 @@
       "desc_len": 156,
       "h1_count": 1,
       "canonical": "https://digitalerp.shop/tools/school-fee-receipt-generator.html",
+      "json_ld_count": 1,
+      "issues": [],
+      "warnings": [
+        "Incomplete Open Graph tags"
+      ]
+    },
+    {
+      "file": "tools/transfer-certificate-generator.html",
+      "title": "Free School Transfer Certificate (TC) & Bonafide Generator \u2014 My Zini ERP",
+      "title_len": 72,
+      "desc_len": 135,
+      "h1_count": 1,
+      "canonical": "https://digitalerp.shop/tools/transfer-certificate-generator.html",
       "json_ld_count": 1,
       "issues": [],
       "warnings": [

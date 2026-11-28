@@ -13,6 +13,9 @@
 - [Free CBSE CGPA & Marks Percentage Calculator](https://digitalerp.shop/tools/cbse-cgpa-percentage-calculator.html): Free online CGPA to percentage and grade calculator.
 - [Free Attendance Percentage Calculator](https://digitalerp.shop/tools/attendance-percentage-calculator.html): Free 75% attendance target calculator for students and schools.
 - [Free School Fee Receipt Generator](https://digitalerp.shop/tools/school-fee-receipt-generator.html): Free printable school fee receipt maker online.
+- [Free School TC & Bonafide Generator](https://digitalerp.shop/tools/transfer-certificate-generator.html): Free printable Transfer Certificate (TC) and Bonafide Student Certificate maker online.
+- [Free School Transfer Certificate & Bonafide Generator](https://digitalerp.shop/tools/transfer-certificate-generator.html): Free printable TC & Bonafide certificate generator for schools.
+- [Best School Management Software in Bihar & Patna](https://digitalerp.shop/school-management-software-bihar.html): Regional school ERP guide for CBSE, ICSE, and BSEB schools in Bihar & Patna.
 
 ## Verified How-To Guides
 - [Reduce School Fee Defaulters with WhatsApp Automation (Hinglish Playbook)](https://digitalerp.shop/blogs/reduce-school-fee-defaulters-whatsapp-reminders.html): Complete Hinglish fee recovery playbook covering Fee Dues Radar (/dues-list), Automation Setup, Pending Dues vs Advance Surplus filters, Exclude Sibling Concession, Family WhatsApp Statements, and 3-Stage Cadence.

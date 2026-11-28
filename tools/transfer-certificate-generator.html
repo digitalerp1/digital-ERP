@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free School Transfer Certificate (TC) &amp; Bonafide Generator — My Zini ERP</title>
+  <meta name="description" content="Generate and print official School Transfer Certificate (TC) and Bonafide Student Certificate online for free with My Zini Digital ERP.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://digitalerp.shop/tools/transfer-certificate-generator.html">
+  <link rel="icon" type="image/png" href="/icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "School Transfer Certificate & Bonafide Generator",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "All",
+    "url": "https://digitalerp.shop/tools/transfer-certificate-generator.html",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 print:hidden">
+    <div class="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="text-xl font-bold text-slate-900">My Zini <span class="text-blue-600">ERP</span></a>
+      <nav class="flex items-center gap-4 text-sm font-medium text-slate-600">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/blogs/" class="hover:text-blue-600">Guides</a>
+        <a href="https://myzini.digitalerp.shop" target="_blank" rel="noopener noreferrer" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Open School ERP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 sm:px-6 py-10 max-w-4xl">
+    <div class="text-center mb-8 print:hidden">
+      <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase mb-3">Free School Admin Tool</span>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">School Transfer Certificate (TC) &amp; Bonafide Generator</h1>
+      <p class="text-slate-600">Create and print clean Transfer Certificates or Bonafide Certificates for students in seconds — zero signup required.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 items-start">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3 print:hidden">
+        <select id="c-type" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm font-semibold">
+          <option value="TRANSFER CERTIFICATE (TC)">Transfer Certificate (TC)</option>
+          <option value="BONAFIDE STUDENT CERTIFICATE">Bonafide Student Certificate</option>
+        </select>
+        <input id="c-school" type="text" value="My Zini Public School, Patna" placeholder="School Name &amp; City" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        <input id="c-student" type="text" value="Ananya Sharma" placeholder="Student Full Name" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        <input id="c-father" type="text" value="Rajesh Sharma" placeholder="Father's / Guardian's Name" class="w-full px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        <div class="grid grid-cols-2 gap-2">
+          <input id="c-class" type="text" value="Class 8-A" placeholder="Class" class="px-3 py-2 rounded-lg border border-slate-300 text-sm">
+          <input id="c-adm" type="text" value="ADM-2026-104" placeholder="Admission No." class="px-3 py-2 rounded-lg border border-slate-300 text-sm">
+        </div>
+        <div class="flex gap-2 pt-2">
+          <button onclick="renderCert()" class="flex-1 bg-blue-600 text-white font-semibold py-2.5 rounded-xl hover:bg-blue-700 text-sm">Update Preview</button>
+          <button onclick="window.print()" class="bg-slate-800 text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-slate-900 text-sm">Print / PDF</button>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl border-2 border-slate-800 shadow-sm text-sm leading-relaxed">
+        <div class="text-center border-b-2 border-slate-800 pb-3 mb-5">
+          <div id="p-school" class="text-lg font-extrabold text-slate-900">My Zini Public School, Patna</div>
+          <div id="p-type" class="text-sm font-bold text-blue-700 mt-1 tracking-wide">TRANSFER CERTIFICATE (TC)</div>
+        </div>
+        <p class="mb-4 text-slate-700">
+          This is to certify that <strong id="p-student">Ananya Sharma</strong>, S/D of <strong id="p-father">Rajesh Sharma</strong>,
+          Admission No. <strong id="p-adm">ADM-2026-104</strong>, is/was a bonafide student of <strong id="p-class">Class 8-A</strong> at this institution.
+          Their conduct and character have been recorded as <strong>Good</strong>, and all school dues are cleared.
+        </p>
+        <div class="flex justify-between pt-8 mt-6 border-t border-slate-200 text-xs text-slate-600">
+          <span>Date: <strong id="p-date"></strong></span>
+          <span>Principal Signature &amp; Seal</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6 text-center mt-8 print:hidden">
+      <h2 class="text-xl font-bold text-slate-900 mb-2">Generate Bulk ID Cards, Admit Cards &amp; Certificates in 1 Click</h2>
+      <p class="text-sm text-slate-600 mb-4">Automate TC, Character, Bonafide, 17+ Admit Card styles, and Marksheets for your entire school inside My Zini Digital ERP.</p>
+      <a href="/blogs/how-to-use-generator-tools-myzini-erp.html" class="inline-block bg-blue-600 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-blue-700 text-sm">See Generator Tools Guide &rarr;</a>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('p-date').textContent = new Date().toLocaleDateString('en-IN');
+    function renderCert() {
+      document.getElementById('p-type').textContent = document.getElementById('c-type').value;
+      document.getElementById('p-school').textContent = document.getElementById('c-school').value;
+      document.getElementById('p-student').textContent = document.getElementById('c-student').value;
+      document.getElementById('p-father').textContent = document.getElementById('c-father').value;
+      document.getElementById('p-class').textContent = document.getElementById('c-class').value;
+      document.getElementById('p-adm').textContent = document.getElementById('c-adm').value;
+    }
+  </script>
+</body>
+</html>
