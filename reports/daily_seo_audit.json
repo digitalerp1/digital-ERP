@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-28T08:01:46.858847",
+  "generated_at": "2026-11-28T10:01:05.789329",
   "total_pages_audited": 37,
   "critical_issues": 0,
-  "warnings": 61,
+  "warnings": 54,
   "sitemap_urls": 38,
   "pages": [
     {
@@ -20,14 +20,12 @@
       "file": "index.html",
       "title": "My Zini Digital ERP \u2014 Free School Management Software & Coaching ERP",
       "title_len": 68,
-      "desc_len": 229,
+      "desc_len": 157,
       "h1_count": 1,
       "canonical": "https://digitalerp.shop/",
       "json_ld_count": 1,
       "issues": [],
-      "warnings": [
-        "Meta description length 229 (ideal 120-160)"
-      ]
+      "warnings": []
     },
     {
       "file": "indexphone.html",
@@ -89,22 +87,18 @@
       "canonical": "https://digitalerp.shop/school-management-software-bihar.html",
       "json_ld_count": 1,
       "issues": [],
-      "warnings": [
-        "Incomplete Open Graph tags"
-      ]
+      "warnings": []
     },
     {
       "file": "school-management-software.html",
       "title": "Best School Management Software in India \u2014 My Zini Digital ERP",
       "title_len": 62,
-      "desc_len": 172,
+      "desc_len": 145,
       "h1_count": 1,
       "canonical": "https://digitalerp.shop/school-management-software.html",
       "json_ld_count": 1,
       "issues": [],
-      "warnings": [
-        "Meta description length 172 (ideal 120-160)"
-      ]
+      "warnings": []
     },
     {
       "file": "blogs/best-free-school-management-software-india-myzini.html",
@@ -464,9 +458,7 @@
       "canonical": "https://digitalerp.shop/tools/attendance-percentage-calculator.html",
       "json_ld_count": 1,
       "issues": [],
-      "warnings": [
-        "Incomplete Open Graph tags"
-      ]
+      "warnings": []
     },
     {
       "file": "tools/cbse-cgpa-percentage-calculator.html",
@@ -477,9 +469,7 @@
       "canonical": "https://digitalerp.shop/tools/cbse-cgpa-percentage-calculator.html",
       "json_ld_count": 1,
       "issues": [],
-      "warnings": [
-        "Incomplete Open Graph tags"
-      ]
+      "warnings": []
     },
     {
       "file": "tools/school-fee-receipt-generator.html",
@@ -490,9 +480,7 @@
       "canonical": "https://digitalerp.shop/tools/school-fee-receipt-generator.html",
       "json_ld_count": 1,
       "issues": [],
-      "warnings": [
-        "Incomplete Open Graph tags"
-      ]
+      "warnings": []
     },
     {
       "file": "tools/transfer-certificate-generator.html",
@@ -503,9 +491,7 @@
       "canonical": "https://digitalerp.shop/tools/transfer-certificate-generator.html",
       "json_ld_count": 1,
       "issues": [],
-      "warnings": [
-        "Incomplete Open Graph tags"
-      ]
+      "warnings": []
     }
   ]
 }

@@ -1,20 +1,20 @@
 # Daily SEO & Tag Audit Report — My Zini Digital ERP
-- **Generated:** 2026-11-28T08:01:46.858847
+- **Generated:** 2026-11-28T10:01:05.789329
 - **Pages Audited:** 37
 - **Critical Issues:** 0
-- **Warnings:** 61
+- **Warnings:** 54
 - **Sitemap URLs:** 38
 
 | Page | Title Len | Desc Len | H1 | JSON-LD | Issues | Warnings |
 | :--- | :---: | :---: | :---: | :---: | :--- | :--- |
 | `coaching-management-software.html` | 70 | 136 | 1 | 1 | OK | - |
-| `index.html` | 68 | 229 | 1 | 1 | OK | Meta description length 229 (ideal 120-160) |
+| `index.html` | 68 | 157 | 1 | 1 | OK | - |
 | `indexphone.html` | 11 | 95 | 1 | 0 | OK | Title length 11 (ideal 30-65); Incomplete Open Graph tags; No JSON-LD structured data |
 | `privacy-policy.html` | 45 | 161 | 1 | 0 | OK | Incomplete Open Graph tags; No JSON-LD structured data |
 | `school-attendance-rfid-software.html` | 67 | 146 | 1 | 1 | OK | - |
 | `school-fee-management-software.html` | 67 | 145 | 1 | 1 | OK | - |
-| `school-management-software-bihar.html` | 70 | 164 | 1 | 1 | OK | Incomplete Open Graph tags |
-| `school-management-software.html` | 62 | 172 | 1 | 1 | OK | Meta description length 172 (ideal 120-160) |
+| `school-management-software-bihar.html` | 70 | 164 | 1 | 1 | OK | - |
+| `school-management-software.html` | 62 | 145 | 1 | 1 | OK | - |
 | `blogs/best-free-school-management-software-india-myzini.html` | 118 | 264 | 1 | 1 | OK | Title length 118 (ideal 30-65); Meta description length 264 (ideal 120-160) |
 | `blogs/how-to-accept-online-school-fee-payments-myzini-erp.html` | 103 | 244 | 1 | 1 | OK | Title length 103 (ideal 30-65); Meta description length 244 (ideal 120-160) |
 | `blogs/how-to-access-help-and-support-myzini-erp.html` | 124 | 271 | 1 | 1 | OK | Title length 124 (ideal 30-65); Meta description length 271 (ideal 120-160) |
@@ -40,7 +40,7 @@
 | `blogs/how-to-use-student-management-myzini-erp.html` | 87 | 250 | 1 | 1 | OK | Title length 87 (ideal 30-65); Meta description length 250 (ideal 120-160) |
 | `blogs/index.html` | 73 | 202 | 1 | 1 | OK | Meta description length 202 (ideal 120-160) |
 | `blogs/reduce-school-fee-defaulters-whatsapp-reminders.html` | 103 | 259 | 1 | 1 | OK | Title length 103 (ideal 30-65); Meta description length 259 (ideal 120-160) |
-| `tools/attendance-percentage-calculator.html` | 68 | 141 | 1 | 1 | OK | Incomplete Open Graph tags |
-| `tools/cbse-cgpa-percentage-calculator.html` | 66 | 148 | 1 | 1 | OK | Incomplete Open Graph tags |
-| `tools/school-fee-receipt-generator.html` | 62 | 156 | 1 | 1 | OK | Incomplete Open Graph tags |
-| `tools/transfer-certificate-generator.html` | 72 | 135 | 1 | 1 | OK | Incomplete Open Graph tags |
+| `tools/attendance-percentage-calculator.html` | 68 | 141 | 1 | 1 | OK | - |
+| `tools/cbse-cgpa-percentage-calculator.html` | 66 | 148 | 1 | 1 | OK | - |
+| `tools/school-fee-receipt-generator.html` | 62 | 156 | 1 | 1 | OK | - |
+| `tools/transfer-certificate-generator.html` | 72 | 135 | 1 | 1 | OK | - |
