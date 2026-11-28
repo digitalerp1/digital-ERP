@@ -1,5 +1,5 @@
 # Authorised Backlinks & Citations Status Report
-- **Checked At:** 2026-11-27T18:00:43.825371
+- **Checked At:** 2026-11-28T06:00:13.213025
 - **External URLs Checked:** 14
 
 | External URL | HTTP Status | Links to `digitalerp.shop` |
